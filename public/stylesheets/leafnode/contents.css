@@ -1,0 +1,138 @@
+@import url(baby-landing.css);
+@import url(product-detail.css);
+@import url(catalog-order.css);
+#content {
+  float: left;
+  width: 680px;
+  margin-left: 10px; }
+  #content #featured-dolls {
+    clear: both; }
+    #content #featured-dolls p {
+      font-weight: bold;
+      color: #ff22a7; }
+    #content #featured-dolls ul {
+      margin: 10px auto;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      padding-left: 50px; }
+      #content #featured-dolls ul li {
+        text-align: center;
+        float: left;
+        padding-left: 10px;
+        padding-right: 5px; }
+        #content #featured-dolls ul li p {
+          color: #ccc !important; }
+        #content #featured-dolls ul li a {
+          font-weight: bold;
+          text-decoration: none;
+          color: #ccc !important; }
+        #content #featured-dolls ul li img {
+          display: block;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          width: 125px;
+          height: 100px;
+          background: #ccc; }
+  #content #products {
+    background: #fff;
+    padding: 10px; }
+    #content #products #flash-main-and-ads {
+      width: 660px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px; }
+      #content #products #flash-main-and-ads #flash-main {
+        width: 440px;
+        height: 380px;
+        float: left;
+        background: #ccc; }
+      #content #products #flash-main-and-ads #side-ads {
+        float: right;
+        padding: 10px;
+        padding-right: 0;
+        padding-top: 5px;
+        background: #ffc8d6; }
+        #content #products #flash-main-and-ads #side-ads li {
+          margin-bottom: 3px; }
+    #content #products #product-line {
+      width: 660px;
+      border-bottom: 1px solid #ccc; }
+      #content #products #product-line ul {
+        margin: 10px 0; }
+        #content #products #product-line ul li {
+          text-align: center;
+          float: left;
+          padding-left: 20px;
+          padding-right: 8px; }
+          #content #products #product-line ul li a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            font-family: "Arial Black"; }
+          #content #products #product-line ul li img {
+            border: 1px solid #ff22a7;
+            display: block;
+            margin-top: 5px;
+            width: 135px;
+            height: 125px;
+            background: #ccc; }
+    #content #products #featured-artists {
+      width: 660px; }
+      #content #products #featured-artists #featured-header {
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px; }
+        #content #products #featured-artists #featured-header h2 {
+          width: 49%;
+          float: left;
+          font-size: 14px; }
+          #content #products #featured-artists #featured-header h2 span {
+            font-family: Verdana;
+            font-size: 18px;
+            color: #ff22a7; }
+        #content #products #featured-artists #featured-header #artist-search {
+          width: 48%;
+          float: right;
+          text-align: right; }
+          #content #products #featured-artists #featured-header #artist-search input, #content #products #featured-artists #featured-header #artist-search select {
+            float: left; }
+          #content #products #featured-artists #featured-header #artist-search .search-by {
+            width: 145px;
+            margin-left: 125px;
+            margin-right: 5px; }
+      #content #products #featured-artists ul {
+        float: left; }
+        #content #products #featured-artists ul li {
+          display: block;
+          float: left;
+          padding-right: 10px;
+          padding-left: 20px; }
+          #content #products #featured-artists ul li dd {
+            width: 135px; }
+          #content #products #featured-artists ul li a {
+            text-decoration: none; }
+          #content #products #featured-artists ul li img {
+            width: 135px;
+            height: 115px;
+            display: block;
+            padding-bottom: 10px;
+            padding-top: 30px;
+            border-bottom: 1px solid #ccc; }
+          #content #products #featured-artists ul li.artist img {
+            width: 135px;
+            height: 145px;
+            display: block;
+            padding-bottom: 10px;
+            padding-top: 0;
+            border-bottom: 1px solid #ccc; }
+      #content #products #featured-artists p.more-artists {
+        font-weight: bold;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px; }
+        #content #products #featured-artists p.more-artists a {
+          text-decoration: none; }
+  #content #bottom-banner-ad {
+    text-align: center;
+    margin: 20px auto; }
+    #content #bottom-banner-ad img {
+      margin: auto; }

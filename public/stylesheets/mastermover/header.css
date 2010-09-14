@@ -1,0 +1,29 @@
+#header {
+  position: relative;
+  background: #fd0;
+  height: 105px;
+  padding-top: 15px; }
+  #header h1 {
+    text-indent: -10000px;
+    background: url(../../images/mastermover/mastermover.jpg) no-repeat;
+    width: 383px;
+    height: 71px; }
+  #header #country-and-contact {
+    position: absolute;
+    top: 0;
+    right: 7px; }
+    #header #country-and-contact #country-select {
+      background: url(../../images/mastermover/langbg.jpg) no-repeat;
+      width: 285px;
+      height: 30px; }
+      #header #country-and-contact #country-select form select {
+        border: 1px solid #7F9DB9;
+        font-size: 13px;
+        float: right;
+        margin-top: 4px;
+        margin-right: 6px; }
+    #header #country-and-contact #contact-info p {
+      font-weight: bold;
+      font-size: 18px;
+      padding-top: 30px;
+      padding-left: 30px; }

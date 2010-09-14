@@ -1,0 +1,113 @@
+
+#content.clear
+  #catalog-order-form
+    %h3 Catalog Quick Order Form
+    
+    %form#quick-order
+      %fieldset
+        %ul
+          %li
+            %p.instructions
+              With your catalog in hand, Paradies Galleries makes it quick and easy for you to place an order. 
+              %br
+              When you have finished, click
+              %strong "Continue"
+            %p.instructions
+              To order from our printed catalog, enter the product codes and quantity in the spaces below.
+              %br
+              Click "Continue" when you have entered all of your items
+            %p.instructions
+              1) Enter Promotion Code (if needed)
+          
+          
+          
+          %li#promo-code
+            %label Promotion Code
+            %input{:type => "text", :class => "textfield", :name => "promo-code" }
+            
+          %li.clear
+            %table#product-codes
+              %tr
+                %th{ :colspan => "2"} Enter Product Codes
+                %th.centered Qty
+              %tr
+                %td
+                  %label{ :for => "pc_1" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_1", :id => "pc_1" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_1", :id => "pq_1" }
+              %tr
+                %td
+                  %label{ :for => "pc_2" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_2", :id => "pc_2" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_2", :id => "pq_2" }
+              %tr
+                %td
+                  %label{ :for => "pc_3" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_3", :id => "pc_3" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_3", :id => "pq_3" }
+              %tr
+                %td
+                  %label{ :for => "pc_4" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_4", :id => "pc_4" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_4", :id => "pq_4" }
+              %tr
+                %td
+                  %label{ :for => "pc_5" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_5", :id => "pc_5" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_5", :id => "pq_5" }
+              %tr
+                %td
+                  %label{ :for => "pc_6" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_6", :id => "pc_6" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_6", :id => "pq_6" }
+              %tr
+                %td
+                  %label{ :for => "pc_7" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_7", :id => "pc_7" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_7", :id => "pq_7" }
+              %tr
+                %td
+                  %label{ :for => "pc_8" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_8", :id => "pc_8" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_8", :id => "pq_8" }
+              %tr
+                %td
+                  %label{ :for => "pc_9" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_9", :id => "pc_9" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_9", :id => "pq_9" }
+              %tr
+                %td
+                  %label{ :for => "pc_10" } Product Code
+                %td
+                  %input{:type => "text", :class => "textfield", :name => "pc_10", :id => "pc_10" }
+                %td.centered
+                  %input{:type => "text", :class => "textfield", :size => "5", :name => "pq_10", :id => "pq_10" }
+              %tr
+                %td{ :colspan => "3", :class => "continue" }
+                  = link_to "Continue", "/"
+                  
+            #current-catalog
+              %p
+                = link_to "Our Current Catalog", "/"
+              = link_to image_tag("leafnode/curr-cat.jpg"), "/", :class => "current-catalog-image"
+      
+      
+    

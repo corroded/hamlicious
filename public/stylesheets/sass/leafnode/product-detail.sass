@@ -1,0 +1,88 @@
+
+@import mixins.sass
+
+#product-page
+  :border
+    :bottom 1px solid #ccc
+  :margin
+    :bottom 10px
+  #product-image
+    :width 400px
+    :float left
+    :padding 20px
+    #image-controls
+      +centered
+      :width 350px
+      li
+        :display inline
+    
+    #extra-controls
+      :width 350px
+      :margin
+        :top 10px
+      #view-more
+        :float right
+        
+      #add-to-cart
+        :border 1px solid #ccc
+        :padding 2px
+        :float left
+
+        p
+          :color #fff
+          :background #ff0099
+          :float left
+          :margin 0
+          :padding 3px 5px
+          
+          a
+            :color #fff
+            :text
+              :decoration none
+      
+    #image-links
+      +centered
+      :clear both
+      :width 350px
+      :margin
+        :top 20px
+      p
+        +13px
+      ul
+        li 
+          +13px
+          :display inline
+          
+          &.stars
+            :list-style-type none
+        
+  #doll-details
+    :float left
+    :width 240px
+    :padding
+      :top 40px
+    h2, h3
+      +uppercase
+      +centered
+      +strong
+      :color #666
+      :font
+        :size 18px
+    h4
+      +centered
+      :color #666
+      
+    p.doll-desc
+      :margin 20px 0
+      :text
+        :align justify
+  
+    #extra-features
+      :padding
+        :left 60px
+        :top 20px
+      h3
+        :text
+          :transform none
+          :align left
+        

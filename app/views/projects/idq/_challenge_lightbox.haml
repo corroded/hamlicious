@@ -1,0 +1,26 @@
+= image_tag("/images/idq/close-button.jpg", :class => "lightbox-close")
+
+%h3 Challenge A Friend
+%ul
+  %li
+    %p
+      %strong 1. Choose up to 3 friends:
+    %p
+      %label{:for => "friend_name"} Friend's name
+      %input{:type => "text", :id => "friend_name"}
+      = link_to "Add another", "#", :class => "additional-field"
+    
+  %li
+    %p
+      %strong 2. Choose the quiz you'd like them to take:
+    %p
+      %label{:for => "quiz_title"}Quiz title
+      %input{:type => "text", :value => "The Renewable Energy Quiz", :id => "quiz_title"}
+
+  %li
+    %p
+      %strong 3. Enter a message (Optional)
+    %textarea{:rows => 10, :cols => 80} Bob Smithers has challenged you to take the Energy Quiz!
+  
+  %li
+    = submit_tag("Submit")

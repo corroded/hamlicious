@@ -1,0 +1,10 @@
+
+%ul#nav
+  %li= link_to "Home", '#lightbox', :id => "login-box"
+  %li= link_to "About", '/'
+  %li= link_to "IDC Profile", '/', :class => "current-tab"
+  %li= link_to "Quizzes", '/'
+  %li= link_to "News", '/'
+  %li.presented= image_tag("/images/idq/presented-by-devex.png")
+  
+= render :partial => "projects/idq/sub_nav"

@@ -1,0 +1,77 @@
+
+@import mixins.sass
+
+#catalog-order-form
+  :margin
+    :bottom 20px
+  h3
+    +strong
+    +italics
+    +centered
+    :margin
+      :top 20px
+      :bottom 10px
+    :font
+      :size 24px
+    :color #f09
+    
+  #quick-order
+    :background url(../../images/leafnode/quick-order-bg.jpg) no-repeat
+    :width 648px
+    :height 637px
+    :padding 20px
+      :top 0
+    
+    p
+      :margin 20px 0
+      
+    #promo-code
+      label
+        +strong
+        :font
+          :size 18px
+        :display inline
+        :color #f09
+        
+      
+    #product-codes
+      :width 315px
+      :float left
+      :margin
+        :top 20px
+      th
+        :text
+          :align left
+          :decoration underline
+        :color #666
+        :font
+          :size 18px
+        :padding
+          :bottom 20px
+        
+      td
+        :padding 5px 0
+        
+      .continue
+        +strong
+        :text
+          :align right
+    
+    #current-catalog
+      :width 230px
+      :float right
+      :margin
+        :right 20px
+      p
+        +strong
+        +centered
+        :margin 0
+      .current-catalog-image
+        +centered
+        :margin
+          :top 10px
+        :padding 10px 20px
+        :background #fff
+        :border 1px solid #ccc
+        :display block
+        

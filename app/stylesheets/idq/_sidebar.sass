@@ -1,0 +1,95 @@
+
+#sidebar
+  h5
+    :margin
+      :top 5px
+      
+  p
+    :padding
+      :top 0
+      
+  .activity
+    :width 180px
+      
+  .feature-box
+    :margin
+      :top 20px
+      
+    h4
+      +border-top-radius(10px)
+      :background #f90
+      :padding 10px
+      :color #000
+      :font
+        :weight bold
+        
+    .box-content
+      +border-bottom-radius(10px)
+      :background #f2f2f2
+      :border 1px solid #f90
+      :padding 10px
+      
+  .quiz-image
+    :display block
+    :width 270px
+    :height 145px
+    :border 1px solid #ccc
+            
+  #leaderboard
+    p
+      :margin 0
+      :padding 0
+      
+    table
+      :padding
+        :top 10px
+      
+      th
+        +uppercase
+        :font
+          :size .8em
+          
+      th,
+      td
+        :text
+          :align center
+        :padding
+          :bottom 10px
+          
+        &:first-child
+          :text
+            :align left
+  
+  #my-challenges
+    .action-links
+      :padding 0
+        :left 50px
+        :bottom 10px
+      :margin 0
+      :text
+        :transform uppercase
+      :font
+        :size .9em
+      :clear both
+      
+      a
+        :padding 0 10px
+  
+  #new-quizzes,
+  #recommended-quizzes
+    p
+      :padding 0
+      
+  #challenge-a-friend
+    :padding
+      :bottom 10px
+      
+  #contact-us
+    :padding
+      :bottom 10px
+      
+  .contact-box
+    :margin 10px 0
+    :padding 10px
+    :background #f2f2f2
+    :border 1px solid #ccc

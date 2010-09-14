@@ -1,0 +1,45 @@
+
+@import mixins.sass
+
+#header
+  :position relative
+  :background #fd0
+  :height 105px
+  :padding
+    :top 15px
+  
+  h1
+    :text
+      :indent -10000px
+    :background url(../../images/mastermover/mastermover.jpg) no-repeat
+    :width 383px
+    :height 71px
+      
+  #country-and-contact
+    :position absolute
+    :top 0
+    :right 7px
+    
+    #country-select
+      :background url(../../images/mastermover/langbg.jpg) no-repeat
+      :width 285px
+      :height 30px
+      
+      form
+        select
+          :border 1px solid #7F9DB9
+          :font
+            :size 13px
+          :float right
+          :margin
+            :top 4px
+            :right 6px
+            
+    #contact-info
+      p
+        +strong
+        :font
+          :size 18px
+        :padding 
+          :top 30px
+          :left 30px

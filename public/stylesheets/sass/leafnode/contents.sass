@@ -1,0 +1,195 @@
+
+@import mixins.sass
+@import baby-landing.css
+@import product-detail.css
+@import catalog-order.css
+
+#content
+  :float left
+  :width 680px
+  :margin
+    :left 10px
+    
+  #featured-dolls
+    :clear both
+
+    p
+      +strong
+      :color  #ff22a7
+      
+    ul
+      :margin 10px auto
+      :border
+        :bottom 1px solid #ccc
+      :padding
+        :bottom 10px
+        :left 50px
+      li
+        +centered
+        :float left
+        :padding
+          :left 10px
+          :right 5px
+          
+        p
+          :color #ccc !important
+          
+        a
+          +strong
+          :text
+            :decoration none
+          :color #ccc !important
+        
+        img
+          :display block
+          :margin
+            :top 5px
+            :bottom 5px
+          :width 125px
+          :height 100px
+          :background #ccc  
+  
+  #products
+    :background #fff
+    //:background url(../../images/leafnode/products-bg.gif) bottom center no-repeat
+    :padding 10px
+    
+    #flash-main-and-ads
+      :width 660px
+      :border 
+        :bottom 1px solid #ccc
+      :padding
+        :bottom 10px
+        
+      #flash-main
+        :width 440px
+        :height 380px
+        :float left
+        :background #ccc
+        
+      #side-ads
+        :float right
+        :padding 10px
+          :right 0
+          :top 5px
+        :background #ffc8d6
+        
+        li
+          :margin
+            :bottom 3px
+            
+    #product-line
+      :width 660px
+      :border
+        :bottom 1px solid #ccc
+      ul  
+        :margin 10px 0
+        li
+          +centered
+          :float left
+          :padding
+            :left 20px
+            :right 8px
+          
+          a
+            +strong
+            :text
+              :decoration none
+            :color #000
+            :font
+              :family "Arial Black"
+          
+          img
+            :border 1px solid #ff22a7
+            :display block
+            :margin
+              :top 5px
+            :width 135px
+            :height 125px
+            :background #ccc
+
+    #featured-artists
+      :width 660px
+      #featured-header
+        :margin
+          :top 10px
+          :right 20px
+          :bottom 10px
+        h2
+          :width 49%
+          :float left
+          :font
+            :size 14px
+          span
+            :font
+              :family Verdana
+              :size 18px
+            :color #ff22a7
+        #artist-search
+          :width 48%
+          :float right
+          :text
+            :align right
+            
+          input, select
+            :float left
+            
+          .search-by
+            :width 145px
+            :margin
+              :left 125px
+              :right 5px
+      ul
+        :float left
+        li
+          :display block
+          :float left
+          :padding
+            :right 10px
+            :left 20px
+          
+          dd
+            :width 135px
+            
+          a
+            :text
+              :decoration none
+            
+          img
+            :width 135px
+            :height 115px
+            :display block
+            :padding
+              :bottom 10px
+              :top 30px
+            :border
+              :bottom 1px solid #ccc
+          &.artist
+            img
+              :width 135px
+              :height 145px
+              :display block
+              :padding
+                :bottom 10px
+                :top 0
+              :border
+                :bottom 1px solid #ccc
+              
+      p.more-artists
+        +strong
+        :float right
+        :margin
+          :top 10px
+          :right 10px
+        a
+          :text
+            :decoration none
+            
+  #bottom-banner-ad
+    +centered
+    :margin 20px auto
+      
+    img
+      :margin auto
+      
+        

@@ -1,0 +1,390 @@
+body {
+  background: url(../../images/emissionshub/body-bg.png) repeat-x;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  margin: auto; }
+
+ul {
+  list-style-type: none; }
+
+h2 {
+  color: #1b3c7c;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+input {
+  border: 1px solid;
+  border-color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 0 5px;
+  background: transparent; }
+
+.submit {
+  padding: 0 5px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.clear {
+  clear: both; }
+
+form {
+  font-family: Arial, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
+  a:hover {
+    text-decoration: underline; }
+
+#container {
+  width: 800px;
+  margin: auto; }
+  #container h1#header {
+    background: url(../../images/emissionshub/logo.png) no-repeat;
+    width: 780px;
+    margin: 10px;
+    height: 120px;
+    font-size: 40px;
+    text-indent: -1000px; }
+    #container h1#header a {
+      display: block;
+      height: 120px;
+      width: 780px;
+      overflow: hidden; }
+  #container #menu {
+    background: url(../../images/emissionshub/menubar.png);
+    width: 780px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    clear: both;
+    height: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 13px; }
+    #container #menu ul li {
+      height: 100%;
+      float: left; }
+      #container #menu ul li a {
+        text-transform: uppercase;
+        display: block;
+        padding: 2px 12px;
+        font-weight: bold; }
+        #container #menu ul li a:hover {
+          color: #1b3c7c;
+          text-decoration: none;
+          border-bottom: 5px solid;
+          border-color: #999;
+          background: url(../../images/emissionshub/menuhover.png) repeat-x; }
+  #container #searchbox .textfield {
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 5px;
+    padding: 0;
+    font-size: 11px;
+    font-width: 100px;
+    height: 15px;
+    border: 1px solid;
+    border-color: #ffffff;
+    background-color: #ffffff; }
+  #container #searchbox .submit {
+    width: 70px;
+    padding: 0;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #ffffff; }
+  #container #main {
+    margin-top: 15px; }
+    #container #main #sidebar {
+      float: left;
+      position: relatve;
+      width: 140px;
+      margin: 0 10px; }
+      #container #main #sidebar #login-details,
+      #container #main #sidebar #logged-in {
+        display: block;
+        padding: 5px 0;
+        width: 140px;
+        background: url(../../images/emissionshub/login-bg.png) no-repeat; }
+        #container #main #sidebar #login-details h4,
+        #container #main #sidebar #logged-in h4 {
+          font-family: Arial, sans-serif;
+          margin: 5px;
+          margin-top: 0;
+          margin-bottom: 10px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #ffffff;
+          border-bottom: 1px solid;
+          border-color: #ffffff; }
+        #container #main #sidebar #login-details input,
+        #container #main #sidebar #logged-in input {
+          clear: both;
+          width: 120px;
+          margin: 3px 5px;
+          height: 15px; }
+        #container #main #sidebar #login-details .submit,
+        #container #main #sidebar #logged-in .submit {
+          height: 25px;
+          width: 132px;
+          padding: 3px 5px;
+          font-size: 13px;
+          font-weight: bold;
+          color: #ffffff; }
+        #container #main #sidebar #login-details .signup a,
+        #container #main #sidebar #logged-in .signup a {
+          font-family: Arial, serif;
+          font-weight: bold;
+          display: block;
+          text-align: center;
+          margin-top: 5px;
+          padding: 0;
+          color: #1b3c7c; }
+        #container #main #sidebar #login-details ul li,
+        #container #main #sidebar #logged-in ul li {
+          margin: 5px; }
+          #container #main #sidebar #login-details ul li a,
+          #container #main #sidebar #logged-in ul li a {
+            padding: 5px;
+            display: block;
+            text-align: center;
+            color: #ffffff;
+            border: 1px solid;
+            border-color: #ffffff; }
+            #container #main #sidebar #login-details ul li a:hover,
+            #container #main #sidebar #logged-in ul li a:hover {
+              text-decoration: none;
+              background: #1b3c7c; }
+      #container #main #sidebar #login-details {
+        display: none; }
+      #container #main #sidebar #feed-link {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: Arial, serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center; }
+        #container #main #sidebar #feed-link a {
+          color: #1b3c7c;
+          display: block;
+          text-align: center;
+          border: 1px solid;
+          border-color: #333333;
+          border-right: 0;
+          border-left: 0;
+          padding: 10px 0; }
+          #container #main #sidebar #feed-link a:hover {
+            text-decoration: none;
+            background: #efefef; }
+        #container #main #sidebar #feed-link img {
+          width: 12px;
+          height: 12px;
+          border: 0; }
+      #container #main #sidebar #media-partners,
+      #container #main #sidebar #sister-sites {
+        font-family: Arial, sans-serif;
+        width: 100%;
+        margin-top: 10px; }
+        #container #main #sidebar #media-partners h3,
+        #container #main #sidebar #sister-sites h3 {
+          text-decoration: underline;
+          font-size: 18px;
+          color: #1b3c7c;
+          text-align: center; }
+        #container #main #sidebar #media-partners ul li,
+        #container #main #sidebar #sister-sites ul li {
+          clear: both;
+          margin: 10px auto;
+          width: 120px;
+          height: 60px;
+          background: #1b3c7c;
+          color: #ffffff; }
+      #container #main #sidebar #skyscraper-ad {
+        width: 100%; }
+        #container #main #sidebar #skyscraper-ad img {
+          display: block;
+          clear: both;
+          margin: 10px;
+          width: 120px;
+          height: 600px;
+          background: #1b3c7c; }
+    #container #main #content {
+      float: left;
+      width: 630px; }
+      #container #main #content #top-stories h2 {
+        color: #333333;
+        letter-spacing: -1px; }
+      #container #main #content #top-stories ul {
+        font-family: Arial, sans-serif;
+        background: url(../../images/emissionshub/top-stories-bg.png) no-repeat;
+        height: 180px;
+        padding-left: 5px;
+        overflow: hidden; }
+        #container #main #content #top-stories ul li {
+          float: left;
+          padding: 5px;
+          margin-top: 5px;
+          margin-right: 5px;
+          margin-bottom: 10px;
+          width: 140px; }
+          #container #main #content #top-stories ul li a {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold; }
+            #container #main #content #top-stories ul li a .top-image {
+              width: 140px;
+              height: 110px;
+              background: #1b3c7c;
+              border: 1px solid;
+              border-color: #ffffff;
+              display: block; }
+            #container #main #content #top-stories ul li a .top-headline {
+              display: block;
+              text-transform: uppercase;
+              text-align: center; }
+            #container #main #content #top-stories ul li a img {
+              margin: 4px;
+              width: 130px;
+              height: 100px;
+              border: 1px solid;
+              border-color: #ffffff; }
+            #container #main #content #top-stories ul li a:hover {
+              color: #cccccc;
+              text-decoration: none; }
+              #container #main #content #top-stories ul li a:hover .top-image {
+                border: 1px solid;
+                border-color: #cccccc; }
+                #container #main #content #top-stories ul li a:hover .top-image img {
+                  border: 1px solid;
+                  border-color: #cccccc; }
+      #container #main #content #latest-news {
+        margin: 10px 0; }
+        #container #main #content #latest-news h2 {
+          color: #333333;
+          letter-spacing: -1px; }
+        #container #main #content #latest-news .banner-ad {
+          float: left;
+          width: 468px;
+          height: 90px;
+          background: #1b3c7c;
+          margin-bottom: 10px;
+          margin-left: 80px; }
+        #container #main #content #latest-news .news-item {
+          width: 610px;
+          background: url(../../images/emissionshub/news-bg.png) no-repeat;
+          float: left;
+          margin-bottom: 10px;
+          border-bottom: 1px solid;
+          border-top: 1px solid;
+          border-color: #cccccc;
+          padding: 10px; }
+          #container #main #content #latest-news .news-item h3.news-title a {
+            font-family: Arial, sans-serif;
+            color: #1b3c7c;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase; }
+          #container #main #content #latest-news .news-item .news-details {
+            float: left;
+            width: 140px; }
+            #container #main #content #latest-news .news-item .news-details .news-image {
+              background: #1b3c7c;
+              width: 140px;
+              height: 110px;
+              margin: 5px 0;
+              border: 1px solid;
+              border-color: #ffffff; }
+              #container #main #content #latest-news .news-item .news-details .news-image img {
+                margin: 4px;
+                width: 130px;
+                height: 100px;
+                border: 1px solid;
+                border-color: #ffffff; }
+            #container #main #content #latest-news .news-item .news-details .full-date {
+              text-align: right;
+              width: 130px;
+              color: #1b3c7c;
+              margin-top: -10px;
+              border-bottom: 1px solid;
+              border-color: #333333;
+              padding: 5px;
+              font-size: 15px;
+              font-weight: bold; }
+              #container #main #content #latest-news .news-item .news-details .full-date .date {
+                font-size: 20px; }
+              #container #main #content #latest-news .news-item .news-details .full-date .day {
+                font-weight: bold; }
+            #container #main #content #latest-news .news-item .news-details .news-tags {
+              text-align: right;
+              padding: 5px;
+              color: #333333;
+              margin: 5px 0; }
+              #container #main #content #latest-news .news-item .news-details .news-tags a {
+                color: #333333; }
+              #container #main #content #latest-news .news-item .news-details .news-tags ul {
+                display: inline;
+                width: 130px; }
+                #container #main #content #latest-news .news-item .news-details .news-tags ul li {
+                  display: inline; }
+            #container #main #content #latest-news .news-item .news-details .news-comments a {
+              text-align: right;
+              text-decoration: none;
+              border-top: 1px solid;
+              border-bottom: 1px solid;
+              padding: 5px;
+              display: block;
+              color: #333333;
+              margin: 5px 0; }
+              #container #main #content #latest-news .news-item .news-details .news-comments a:hover {
+                background: #efefef; }
+            #container #main #content #latest-news .news-item .news-details .news-views {
+              text-align: right;
+              border-bottom: 1px solid;
+              border-color: #333333;
+              padding: 5px;
+              margin: 5px 0;
+              color: #333333;
+              font-style: italic; }
+          #container #main #content #latest-news .news-item .news-content {
+            float: left;
+            margin-left: 10px;
+            width: 450px;
+            padding: 0px 0;
+            color: #333333; }
+            #container #main #content #latest-news .news-item .news-content p {
+              font-size: 14px;
+              line-height: 20px;
+              margin-bottom: 10px; }
+            #container #main #content #latest-news .news-item .news-content .read-more a {
+              color: #1b3c7c;
+              font-weight: bold; }
+        #container #main #content #latest-news ul#pagination {
+          float: left;
+          width: 100%;
+          text-align: center;
+          display: block; }
+          #container #main #content #latest-news ul#pagination li {
+            float: left;
+            color: #1b3c7c; }
+            #container #main #content #latest-news ul#pagination li a {
+              display: block;
+              margin-right: 10px;
+              margin-top: 0;
+              margin-bottom: 10px;
+              border: 1px solid;
+              border-color: #1b3c7c;
+              padding: 2px 5px;
+              color: #1b3c7c; }
+              #container #main #content #latest-news ul#pagination li a:hover {
+                color: #ffffff;
+                background: #1b3c7c;
+                text-decoration: none; }
+  #container #footer {
+    color: #1b3c7c; }
+    #container #footer p {
+      text-align: center; }
+      #container #footer p a {
+        color: #1b3c7c; }

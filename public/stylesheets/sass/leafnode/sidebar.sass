@@ -1,0 +1,55 @@
+
+@import mixins.sass
+
+#sidebar
+  :float left
+  :width 175px
+  :margin
+    :left 40px
+    
+  ul
+    :padding 0 10px
+    :margin 10px 0
+    
+    &#catalogs
+      :padding 0 5px
+
+    &#categories
+      h2
+        :text
+          :decoration underline
+        :color #ff3fb2
+        :margin
+          :bottom 5px
+      
+      a
+        +strong
+        :text
+          :decoration none
+        :color #000
+        :display block
+        :padding 5px 0
+        
+        &:hover
+          :background #fff4fa
+          
+      .promo-link
+        +uppercase
+        +strong
+        :font
+          :family Arial Black
+          
+    &#misc-ads
+      :margin auto
+     
+  #cat-search
+    input
+      :float left
+      :margin
+        :top 2px
+      
+    select
+      :float left
+      :width 140px
+      :margin
+        :right 5px

@@ -1,0 +1,20 @@
+
+= content_for(:head) do
+  %title Biofuelshub.com - Building a global biofuels community
+  = stylesheet_link_tag "reset"
+  = stylesheet_link_tag "clear"
+  = stylesheet_link_tag "emissionshub/main"
+
+#container
+
+  %h1#header= link_to "EMISSIONSHUB.COM", "#"
+    
+  = render :partial => "projects/biofuelshub/menu"
+  
+  #main.clear
+    = render :partial => "projects/emissionshub/sidebar"
+    = render :partial => "projects/biofuelshub/content"
+    
+  %br.clear
+  
+  = render :partial => "projects/emissionshub/footer"

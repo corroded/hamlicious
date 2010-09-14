@@ -1,0 +1,17 @@
+
+#header
+  #logo
+    %p Tag Line Here
+  #top-nav
+    %ul
+      %li= link_to "Login", "/"
+      %li= link_to "Catalog Quick Order", "/"
+      %li= link_to "Wish List", "/"
+      %li
+        %a{ :href => "" }
+          = image_tag("leafnode/shopping-cart.jpg")
+          Shopping Cart
+    %p#contact-number 1-800-67-DOLLS
+    #shopping-cart.clear
+      %p 0 items :
+      %p $000.00

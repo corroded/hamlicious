@@ -1,0 +1,79 @@
+
+#nav
+  +pie-clearfix
+  +relative
+  :background #666 url(/images/idq/nav-bg.jpg) repeat-x
+  :clear both
+  :height 38px
+  :font
+    :size 1.2em
+  :margin 0
+  :padding 0
+  
+  li
+    +float-left
+    :margin 0
+    :height 38px
+    
+    &.presented
+      +absolute-right
+      +uppercase
+      :bottom -10px
+      :color #fff
+      :font
+        :size .7em
+      :padding
+        :right 10px
+        
+    a
+      :display block
+      :color #a4a4a4
+      :padding 10px 15px
+      :height 18px
+        
+      &.current-tab
+        :background $main-color
+        :color #fff
+        
+      &:hover
+        @extend .current-tab
+        :text
+          :decoration none
+          
+#sub-nav
+  @extend #nav
+  :background $main-color
+  :font
+    :size 1.1em
+  :height 38px
+
+  li
+    a
+      :padding 10px 15px
+      :color #fff
+  
+      &.current-tab
+        :font
+          :weight bold
+        :text
+          :decoration underline
+          
+      &:hover
+        :font
+          :weight normal
+          
+          
+.updated
+  +border-radius(10px)
+  +box-shadow(#000, 0px, 0px, 10px)
+  :background #f00
+  :padding 1px 5px
+  :margin
+    :left 5px
+  :font
+    :size .8em
+    
+  a
+    :display inline
+    :padding 0
+  

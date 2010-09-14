@@ -1,0 +1,48 @@
+#beta-signup {
+  border: 1px solid #9966cb;
+  height: 200px; }
+  #beta-signup .left-float-content {
+    width: 550px; }
+  #beta-signup h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    padding: 0;
+    padding-top: 10px;
+    color: #AFC4DE; }
+  #beta-signup h2 {
+    font-size: 2em;
+    color: #D8BFD8; }
+  #beta-signup p {
+    margin: 10px 0; }
+  #beta-signup form fieldset li {
+    display: inline; }
+  #beta-signup label {
+    font-weight: bold;
+    font-size: 15px;
+    color: #AFC4DE; }
+  #beta-signup input {
+    margin-top: 5px;
+    color: #ccc; }
+    #beta-signup input.submit {
+      color: #fff;
+      background: #D8BFD8;
+      padding: 2px;
+      border: 0; }
+    #beta-signup input:focus {
+      color: #000; }
+
+.left-float {
+  float: left;
+  margin-right: 10px; }
+
+.left-float-content {
+  float: left; }
+
+body {
+  background: url(../../images/experts/bg.jpg) repeat-x;
+  font-size: 12px;
+  font-family: "Arial", "sans-serif"; }
+
+#container {
+  width: 975px;
+  margin: auto; }

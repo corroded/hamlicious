@@ -1,0 +1,27 @@
+#baby-products {
+  background: #fff;
+  padding: 10px; }
+  #baby-products #baby-banner-ad {
+    margin-bottom: 10px; }
+  #baby-products #product-line {
+    width: 660px; }
+    #baby-products #product-line ul {
+      margin: 10px 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px; }
+      #baby-products #product-line ul li {
+        text-align: center;
+        float: left;
+        padding-left: 10px;
+        padding-right: 5px; }
+        #baby-products #product-line ul li a {
+          font-weight: bold;
+          text-decoration: none;
+          color: #ccc; }
+        #baby-products #product-line ul li img {
+          display: block;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          width: 150px;
+          height: 120px;
+          background: #ccc; }

@@ -1,0 +1,69 @@
+
+#content
+  h1
+    :color $main-color
+    
+  #map
+    :border 1px solid #ccc
+    :height 370px
+    :margin 20px 0
+    
+  #quiz
+    .correct-answer
+      :color #016800
+      :padding 0
+        :left 20px
+        
+    .wrong-answer
+      @extend .correct-answer
+      :color #cb0000
+      
+    .action-links
+      +relative
+      :background #f2f2f2
+      :border 1px solid #ccc
+      :padding 15px
+      
+      .submit-quiz
+        :float right
+        
+        
+.search-box
+  +pie-clearfix
+  :margin
+    :top 10px
+  :padding 10px
+  :background #d0ebfe
+  
+  p
+    +reset
+    
+  input
+    :margin
+      :left 10px
+
+.sort-by
+  :background #ccc
+  :padding 10px
+  :margin
+    :top 10px
+  
+  p
+    +reset
+    
+  strong
+    :color #999
+
+.quiz-description
+  :margin
+    :bottom 0 !important
+  :width 640px
+  
+.quiz-photo
+  +absolute-right
+  :padding
+    :right 20px
+    
+.challenge-quiz
+  :font
+    :size 1em !important

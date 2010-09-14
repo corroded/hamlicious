@@ -1,0 +1,104 @@
+#menu {
+  width: 870px;
+  margin: 5px auto; }
+  #menu ul#primary li {
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: .9; }
+    #menu ul#primary li.promo-link a {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: -1px;
+      display: block;
+      width: 67px;
+      height: 30px;
+      background: url(../../images/leafnode/sale-button.jpg) no-repeat;
+      color: #ffffcc;
+      font-size: 16px;
+      line-height: .9; }
+      #menu ul#primary li.promo-link a:hover {
+        background: url(../../images/leafnode/sale-button.jpg) no-repeat; }
+    #menu ul#primary li a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      margin-top: 5px;
+      padding: 5px 10px 0;
+      width: 67px;
+      height: 25px;
+      background: url(../../images/leafnode/menu-item-bg.jpg) no-repeat; }
+      #menu ul#primary li a.short-text {
+        padding-top: 8px;
+        height: 22px; }
+      #menu ul#primary li a:hover {
+        background: url(../../images/leafnode/menu-item-bg-hover.jpg) no-repeat;
+        color: #fff; }
+  #menu ul#secondary {
+    background: url(../../images/leafnode/secondary-menu-bg.jpg) repeat-x;
+    height: 34px;
+    clear: both;
+    margin: auto; }
+    #menu ul#secondary li {
+      display: block;
+      float: left; }
+      #menu ul#secondary li#shop-by-price {
+        float: right; }
+      #menu ul#secondary li a {
+        font-weight: bold;
+        font-size: 13px;
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 10px 15px; }
+    #menu ul#secondary.secondary-sale {
+      background: url(../../images/leafnode/secondary-menu-bg-sale.jpg) repeat-x; }
+  #menu #search-box {
+    border: 1px solid #ccc;
+    height: 50px;
+    padding-left: 5px; }
+    #menu #search-box .form {
+      display: block;
+      width: 409px;
+      float: left;
+      height: 25px;
+      padding: 10px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      background: #ccc; }
+      #menu #search-box .form p {
+        display: inline; }
+    #menu #search-box #search-form {
+      font-weight: bold; }
+      #menu #search-box #search-form #search {
+        background: #fff url(../../images/leafnode/search-bg.jpg) right no-repeat; }
+      #menu #search-box #search-form #search-tips {
+        margin: 5px;
+        float: left;
+        font-size: 12px;
+        color: #fff; }
+      #menu #search-box #search-form input {
+        float: left;
+        margin-left: 5px; }
+      #menu #search-box #search-form label {
+        margin-top: 3px;
+        float: left; }
+    #menu #search-box #email-signup-form {
+      font-weight: bold;
+      padding-left: 55px;
+      width: 365px;
+      background: #ccc url(../../images/leafnode/email-signup-bg.jpg) no-repeat; }
+      #menu #search-box #email-signup-form label {
+        color: #0000cc;
+        float: left;
+        margin-top: 3px; }
+      #menu #search-box #email-signup-form #emailsignup {
+        background: #fff url(../../images/leafnode/email-bg.jpg) right no-repeat; }
+      #menu #search-box #email-signup-form input {
+        float: left;
+        margin-left: 5px; }

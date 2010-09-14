@@ -1,0 +1,22 @@
+#login-lightbox
+  %h3 Login With Your Facebook Account
+
+  %form
+    %fieldset
+      %ul
+        %li
+          %label Email
+          %input{:type => "text", :size => "45"}
+          
+        %li
+          %label Password
+          %input{:type => "password", :size => "45"}
+          %br
+          %span= link_to "Forgot Password?", "/"
+          
+        %li
+          %input{:type => "checkbox"}
+          %label.checkbox-label Remember me
+          
+        %li
+          = image_submit_tag("/images/idq/button-Facebook-Connect.png")

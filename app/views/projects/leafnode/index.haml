@@ -1,0 +1,23 @@
+
+= content_for(:head) do
+  %title Paradise Galleries: Collectible Real Lifelike Baby Dolls, Children Dolls, Lady Dolls…
+  = stylesheet_link_tag "reset"
+  = stylesheet_link_tag "clear"
+  = stylesheet_link_tag "leafnode/main"
+
+#container
+
+  = render :partial => "projects/leafnode/header"
+  = render :partial => "projects/leafnode/menu"
+  
+  #main.clear
+    #banner-ad= link_to image_tag("leafnode/banner-ad.jpg"), "/"
+    = render :partial => "projects/leafnode/sidebar"
+    = render :partial => "projects/leafnode/content"
+    //= render :partial => "projects/leafnode/extra-pages/baby_landing"
+    //= render :partial => "projects/leafnode/extra-pages/product_detail"
+    //= render :partial => "projects/leafnode/extra-pages/catalog_order_form"
+
+    
+  
+    = render :partial => "projects/leafnode/footer"

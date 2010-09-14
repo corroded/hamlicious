@@ -1,0 +1,90 @@
+#profile
+  %h2 My Profile  
+  
+  #profile-box
+    = image_tag("/images/idq/placeholder_photo.jpg", :width => "80", :height => "80", :alt => "First Name Last Name", :title => "First Name Last Name", :class => "avatar")
+    %p.profile-details
+      %span.profile-name Bob Rogers
+      %br
+      %span.profile-country United States
+      %br
+      %span.profile-rank 
+        Rank: 
+        %strong.uppercase Devex Expert
+    %p.profile-stats
+      %span.stat-name Total Points
+      %span.stat-value 28
+    %p.profile-stats
+      %span.stat-name No. of Pins earned
+      %span.stat-value 2
+      
+  %table.recent-history
+    %tr.heading
+      %th{:width => "230"} Action
+      %th{:width => "75"} Score
+      %th{:width => "100"} Date
+      %th{:width => "60"} Points
+      %th{:width => "100"} &nbsp;
+      %th Hide
+    %tr
+      %td{:colspan => "6", :class => "action-value"} Green Thumb Pin
+    %tr
+      %td= link_to "Quiz Name", "/"
+      %td 38%
+      %td 22 July 2010
+      %td 4
+      %td{:rowspan => "3"}= image_tag("/images/idq/placeholder_sample-pin.png")
+      %td
+        %input{:type => "checkbox"}
+    %tr
+      %td= link_to "Quiz Name", "/"
+      %td 38%
+      %td 22 July 2010
+      %td 4
+      %td
+        %input{:type => "checkbox"}
+    %tr.row-border
+      %td= link_to "Quiz Name", "/"
+      %td 38%
+      %td 22 July 2010
+      %td 4
+      %td
+        %input{:type => "checkbox"}
+    %tr
+      %td{:colspan => "6", :class => "action-value"} Challenge Sent
+    %tr.row-border
+      %td
+        To
+        = link_to "John Smith", "/"
+        %br
+        = link_to "Quiz Name", "/"
+      %td &nbsp;
+      %td 18 July 2010
+      %td 3
+      %td= image_tag("/images/idq/placeholder_challenge-icon.png")
+      %td
+        %input{:type => "checkbox"}
+    %tr
+      %td{:colspan => "6", :class => "action-value"} Challenge Completed
+    %tr.row-border
+      %td
+        From
+        = link_to "Ryan Jackson", "/"
+        %br
+        = link_to "Quiz Name", "/"
+      %td 100%
+      %td 18 July 2010
+      %td 5
+      %td= image_tag("/images/idq/placeholder_challenge-icon.png")
+      %td
+        %input{:type => "checkbox"}
+        
+        
+  #level-up
+    = image_tag("/images/idq/placeholder_sample-rank-icon.png")
+    %h3 Rank Upgraded
+    %p 
+      Congratulations! You are now a 
+      %strong.uppercase Devex Expert!
+    
+    

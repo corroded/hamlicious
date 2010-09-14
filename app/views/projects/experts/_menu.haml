@@ -1,0 +1,14 @@
+#menu
+  %ul
+    %li= link_to "Home", '/'
+    %li= link_to "Experts", '/'
+    %li= link_to "Marketplace", '/'
+    %li= link_to "Bulletin", '/'
+    %li= link_to "Something", '/'
+    %li= link_to "Help", '/'
+
+  / #searchbox
+  /  - form_for "search" do |f| 
+  /    = f.text_field :search, :class => "textfield"
+  /   = f.submit "Search", :class => "submit"
+  

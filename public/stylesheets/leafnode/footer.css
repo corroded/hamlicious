@@ -1,0 +1,47 @@
+#footer {
+  width: 680px;
+  float: left;
+  margin-left: 220px;
+  font-size: 12px; }
+  #footer ul {
+    width: 225px;
+    height: 120px;
+    padding-left: 10px;
+    float: left;
+    border-right: 1px solid #ccc; }
+    #footer ul li {
+      width: 48%;
+      display: block;
+      float: left; }
+      #footer ul li a {
+        margin: 5px 0;
+        display: block;
+        color: #000;
+        text-decoration: none; }
+        #footer ul li a:hover {
+          text-decoration: underline; }
+  #footer #contact-details {
+    float: left;
+    padding-left: 30px; }
+    #footer #contact-details p {
+      color: #ff22a7;
+      text-align: right;
+      margin: 10px 0; }
+      #footer #contact-details p.abbreviated {
+        font-weight: bold;
+        margin-bottom: 0; }
+      #footer #contact-details p.number-form {
+        margin: 0;
+        font-style: italic; }
+  #footer #footer-text {
+    clear: both;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; }
+    #footer #footer-text p {
+      margin: 5px 0;
+      font-size: 12px; }
+      #footer #footer-text p a {
+        color: #000;
+        text-decoration: none; }

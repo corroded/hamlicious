@@ -1,0 +1,15 @@
+
+#beta-signup.clear
+  = image_tag "experts/silhouettes.png", :alt => "Welcome to Experts on Air!", :title => "Welcome to Experts on Air!", :width => 400, :height => 200, :class => "left-float"
+  .left-float-content
+    %h1 Insert witty tagline here
+    %h2 append even better remark here 
+    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu metus nibh, ac tristique nisi. Aliquam rhoncus tincidunt aliquam. Curabitur luctus bibendum elit sed molestie. Integer accumsan neque vel purus sodales tincidunt. In luctus orci ipsum. Nulla molestie vehicula dolor, ut pharetra quam condimentum at. Morbi at urna a quam commodo commodo quis a magna. 
+    %form
+      %fieldset
+        %ul.clear
+          %li
+            = label('email', '', "Subscribe to our newsletter for Experts on Air news!")
+            = text_field_tag( "email_", 'Enter your e-mail here', :size => 55)
+          %li
+            = submit_tag "Submit", :class => "submit"

@@ -1,0 +1,38 @@
+  
+#header
+  +relative
+  :height 180px
+  :background #313131 url(/images/idq/header-no-pins.jpg) no-repeat bottom center
+  :padding
+    :top 10px
+  
+  #login-box
+    +absolute-right
+    :margin
+      :right 10px
+    :color #666
+    :font
+      :weight bold
+      :size 1.1em
+      
+    a
+      :text
+        :decoration underline
+        
+  #welcome-message
+    @extend #login-box
+    :font
+      :weight normal
+    a
+      :text
+        :decoration none
+      :font
+        :size .8em
+  
+  #sub-heading
+    +absolute-right
+    :bottom 10px
+    :width 400px
+    :font
+      :size 1.2em
+    :color #0069a0

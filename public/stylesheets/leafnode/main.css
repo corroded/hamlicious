@@ -1,0 +1,28 @@
+@import url(menu.css);
+@import url(header.css);
+@import url(sidebar.css);
+@import url(contents.css);
+@import url(footer.css);
+body {
+  background: url(../../images/leafnode/bg.jpg) repeat-x bottom center;
+  height: 1700px;
+  font-family: Trebuchet MS, Arial, sans-serif;
+  font-size: 14px; }
+
+a {
+  color: #ff3fb2; }
+
+#container {
+  margin: auto;
+  width: 950px; }
+  #container #banner-ad {
+    width: 870px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px; }
+
+.search-by {
+  background: #fff url(../../images/leafnode/search-arrow.jpg) right no-repeat; }
+
+.centered {
+  text-align: center !important; }

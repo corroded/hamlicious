@@ -1,0 +1,34 @@
+#sidebar {
+  float: left;
+  width: 175px;
+  margin-left: 40px; }
+  #sidebar ul {
+    padding: 0 10px;
+    margin: 10px 0; }
+    #sidebar ul#catalogs {
+      padding: 0 5px; }
+    #sidebar ul#categories h2 {
+      text-decoration: underline;
+      color: #ff3fb2;
+      margin-bottom: 5px; }
+    #sidebar ul#categories a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+      display: block;
+      padding: 5px 0; }
+      #sidebar ul#categories a:hover {
+        background: #fff4fa; }
+    #sidebar ul#categories .promo-link {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: Arial Black; }
+    #sidebar ul#misc-ads {
+      margin: auto; }
+  #sidebar #cat-search input {
+    float: left;
+    margin-top: 2px; }
+  #sidebar #cat-search select {
+    float: left;
+    width: 140px;
+    margin-right: 5px; }

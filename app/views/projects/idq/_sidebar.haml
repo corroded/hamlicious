@@ -1,0 +1,201 @@
+#sidebar
+  #contact-us
+    %h5 Contact Us
+    
+    %form
+      %fieldset
+        %ul
+          %li
+            %label Your email address:
+            %input{:type => "text", :size => "35"}
+          %li
+            %label Comments:
+            %textarea{:rows => 5, :cols => 30}
+          %li
+            = image_submit_tag("/images/idq/button-submit.png")
+            
+  .contact-box
+    %p
+      %strong Devex Global 24-Hour Support (Monday-Friday)
+      
+    %p Global Telephone Contact Number: +1.202.249.9222
+      
+
+  #challenge-a-friend
+    %h5 Challenge A Friend
+    
+    %p Lorem ipsim asdas dkjasjd ajks dkjas dja gkjdaskjdgasjkdg jasgd kjasg djkhag djkags djkags jkdga sjdgasjd gajsdg jas dgjasgdjkas gdjkasgdjkagdkja gsdjkagsjdg
+    
+    %p
+      %label{:for => "name"} Enter Name:
+      %input{:type => "text", :size => "25"}
+      
+    %ul.friend-list
+      %li
+        = image_tag("/images/idq/avatar.gif", :class => "mini-avatar")
+        %input{:type => "checkbox"}
+        %label Lorem Ipsum
+      %li
+        = image_tag("/images/idq/avatar.gif", :class => "mini-avatar")
+        %input{:type => "checkbox"}
+        %label Lorem Ipsum
+      %li
+        = image_tag("/images/idq/avatar.gif", :class => "mini-avatar")
+        %input{:type => "checkbox"}
+        %label Lorem Lorem Ipsum
+      %li
+        = image_tag("/images/idq/avatar.gif", :class => "mini-avatar")
+        %input{:type => "checkbox"}
+        %label Lorem Lorem Ipsum
+      %li
+        = image_tag("/images/idq/avatar.gif", :class => "mini-avatar")
+        %input{:type => "checkbox"}
+        %label Lorem Lorem Ipsum
+      %li
+        = image_tag("/images/idq/avatar.gif", :class => "mini-avatar")
+        %input{:type => "checkbox"}
+        %label Lorem Lorem Ipsum
+      %li
+        = image_tag("/images/idq/avatar.gif", :class => "mini-avatar")
+        %input{:type => "checkbox"}
+        %label Lorem Lorem Ipsum
+      %li
+        = image_tag("/images/idq/avatar.gif", :class => "mini-avatar")
+        %input{:type => "checkbox"}
+        %label Lorem Lorem Ipsum
+        
+    %p.centered= image_submit_tag("/images/idq/challenge-button.png")
+
+      
+
+  #new-quizzes
+    %h5 New Quizzes 
+  
+    %p
+      = image_tag "/", :alt => "quiz title", :title => "quiz title", :class => "quiz-image", :width => 270, :height => 145
+  
+    %ul.quiz-list
+      %li
+        = link_to "Global Warming Quiz", "#"
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat semper mi.
+        %p.release-date Released 22 July 2010
+      %li
+        = link_to "Global Warming Quiz", "#"
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat semper mi.
+        %p.release-date Released 22 July 2010
+      %li
+        = link_to "Global Warming Quiz", "#"
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat semper mi.
+        %p.release-date Released 22 July 2010
+      %li
+        = link_to "Global Warming Quiz", "#"
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat semper mi.
+        %p.release-date Released 22 July 2010
+      %li
+        = link_to "Global Warming Quiz", "#"
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat semper mi.
+        %p.release-date Released 22 July 2010
+        
+    %p.section-footer
+      = link_to "View all quizzes", "/"
+
+  #recommended-quizzes
+    %h5 Recommended Quizzes
+    
+    %p= image_tag "/", :alt => "quiz title", :title => "quiz title", :class => "quiz-image", :width => 270, :height => 145
+  
+    %ul.quiz-list
+      %li
+        = link_to "Global Warming Quiz", "#"
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat semper mi.
+        %p.release-date Released 22 July 2010
+      %li
+        = link_to "Global Warming Quiz", "#"
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat semper mi.
+        %p.release-date Released 22 July 2010
+      %li
+        = link_to "Global Warming Quiz", "#"
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat semper mi.
+        %p.release-date Released 22 July 2010
+  
+    %p.section-footer= link_to "View all quizzes", "/"
+  
+  #leaderboard.feature-box
+    %h4 Leaderboard
+    .box-content
+      %p 
+        Here is the top five of all ID challengers worldwide.
+        = link_to "Login ", "/"
+        to see only your network's top challengers.
+        
+      %table
+        %tr
+          %th{:width => 150} Name
+          %th{:width => 50} Points
+          %th{:width => 50} Pins
+
+        %tr
+          %td 
+            1. 
+            = link_to "Polly C.", "/"
+          %td 250
+          %td 6
+        
+        %tr
+          %td 
+            2. 
+            = link_to "Oliver S.", "/"
+          %td 210
+          %td 6
+        
+        %tr
+          %td 
+            3. 
+            = link_to "John S.", "/"
+          %td 205
+          %td 5
+          
+        %tr
+          %td 
+            4. 
+            = link_to "Christian C.", "/"
+          %td 195
+          %td 3
+          
+        %tr
+          %td 
+            5. 
+            = link_to "Ais T.", "/"
+          %td 190
+          %td 2
+          
+  #my-challenges.feature-box
+    %h4 My Challenges (2)
+    .box-content
+      %ul
+        %li
+          = image_tag "/images/idq/avatar.gif", :alt => "first name last name", :title => "first name last name", :class => "avatar"
+          %p.activity
+            = link_to "John S.", "/"
+            scored 90% on the 
+            %strong= link_to "Water Sanitation Quiz", "/"
+            %br
+            %span.time-ago 15 minutes ago
+          %p.action-links
+            = link_to "Accept", "/"
+            |
+            = link_to "Decline", "/"
+            
+        %li
+          = image_tag "/images/idq/avatar.gif", :alt => "first name last name", :title => "first name last name", :class => "avatar"
+          %p.activity
+            = link_to "John S.", "/"
+            scored 90% on the 
+            %strong= link_to "Water Sanitation Quiz", "/"
+            %br
+            %span.time-ago 15 minutes ago
+          %p.action-links
+            = link_to "Accept", "/"
+            |
+            = link_to "Decline", "/"
+            

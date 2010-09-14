@@ -1,0 +1,53 @@
+#catalog-order-form {
+  margin-bottom: 20px; }
+  #catalog-order-form h3 {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #f09; }
+  #catalog-order-form #quick-order {
+    background: url(../../images/leafnode/quick-order-bg.jpg) no-repeat;
+    width: 648px;
+    height: 637px;
+    padding: 20px;
+    padding-top: 0; }
+    #catalog-order-form #quick-order p {
+      margin: 20px 0; }
+    #catalog-order-form #quick-order #promo-code label {
+      font-weight: bold;
+      font-size: 18px;
+      display: inline;
+      color: #f09; }
+    #catalog-order-form #quick-order #product-codes {
+      width: 315px;
+      float: left;
+      margin-top: 20px; }
+      #catalog-order-form #quick-order #product-codes th {
+        text-align: left;
+        text-decoration: underline;
+        color: #666;
+        font-size: 18px;
+        padding-bottom: 20px; }
+      #catalog-order-form #quick-order #product-codes td {
+        padding: 5px 0; }
+      #catalog-order-form #quick-order #product-codes .continue {
+        font-weight: bold;
+        text-align: right; }
+    #catalog-order-form #quick-order #current-catalog {
+      width: 230px;
+      float: right;
+      margin-right: 20px; }
+      #catalog-order-form #quick-order #current-catalog p {
+        font-weight: bold;
+        text-align: center;
+        margin: 0; }
+      #catalog-order-form #quick-order #current-catalog .current-catalog-image {
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #fff;
+        border: 1px solid #ccc;
+        display: block; }

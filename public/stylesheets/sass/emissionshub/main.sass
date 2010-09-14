@@ -1,0 +1,534 @@
+
+=debug
+  :border 1px solid #ff0000
+  
+= arial
+  :font
+    :family Arial, sans-serif
+
+!main_color = #1b3c7c
+!secondary_color = #fff
+!tertiary_color = #333
+!light_tertiary = #ccc
+  
+body
+  :background url(../../images/emissionshub/body-bg.png) repeat-x
+  :font
+    :family Georgia, serif
+    :size 12px
+  :margin auto
+  
+ul
+  :list-style-type none
+  
+h2
+  :color = !main_color
+  :font
+    :size 24px
+    :weight bold
+  :text
+    :transform uppercase
+    
+    
+
+input
+  :border 1px solid
+    :color = !secondary_color
+  :font
+    :family Arial, sans-serif
+  :padding 0 5px
+  :background transparent
+  
+.submit
+  :padding 0 5px
+  :text
+    :align center
+    :transform uppercase
+      
+.clear
+  :clear both
+  
+form
+  :font
+    :family Arial, sans-serif
+    
+a
+  :text-decoration none
+  :color = !secondary_color
+  
+  &:hover
+    :text
+      :decoration underline
+  
+#container
+  :width 800px
+  :margin auto
+  //:border 1px solid
+    //:color = !main_color
+  
+  h1#header
+    :background url(../../images/emissionshub/logo.png) no-repeat
+    :width 780px
+    :margin 10px
+    :height 120px
+    :font
+      :size 40px
+    :text
+      :indent -1000px
+    
+    a
+      :display block
+      :height 120px
+      :width 780px
+      :overflow hidden
+      
+  #menu
+    :background url(../../images/emissionshub/menubar.png)
+    :width 780px
+    :margin
+      :bottom 0
+      :right 10px
+      :left 10px
+    :clear both
+    :height 25px
+    :font
+      :family Arial, sans-serif
+      :size 13px
+    
+    ul
+      li
+        :height 100%
+        :float left
+      
+        a
+          :text
+            :transform uppercase
+          :display block
+          :padding 2px 12px
+          :font
+            :weight bold
+          
+          &:hover
+            :color = !main_color
+            :text
+              :decoration none
+            :border
+              :bottom 5px solid
+              :color #999
+            :background url(../../images/emissionshub/menuhover.png) repeat-x
+        
+  #searchbox
+    
+    .textfield
+      :margin
+        :top 3px
+        :left 40px
+        :right 5px
+      :padding 0
+      :font
+        :size 11px
+        :width 100px
+      :height 15px
+      :border 1px solid
+        :color = !secondary_color
+      :background
+        :color = !secondary_color
+      
+    .submit
+      :width 70px
+      :padding 0
+      :font
+        :size 11px
+        :weight bold
+      :margin
+        :top 0
+      :color = !secondary_color
+  
+  #main
+    :margin
+      :top 15px
+      
+    #sidebar
+      :float left
+      :position relatve
+      :width 140px
+      :margin 0 10px
+        
+      #login-details,
+      #logged-in
+        :display block
+        :padding 5px 0
+        :width 140px
+        :background url(../../images/emissionshub/login-bg.png) no-repeat
+          
+        h4
+          +arial
+          :margin 5px
+            :top 0
+            :bottom 10px
+          :font
+            :size 14px
+            :weight bold
+          :color = !secondary_color
+          :border
+            :bottom 1px solid
+            :color = !secondary_color
+        
+        input
+          :clear both
+          :width 120px
+          :margin 3px 5px
+          :height 15px
+          
+        .submit
+          :height 25px
+          :width 132px
+          :padding 3px 5px
+          :font
+            :size 13px
+            :weight bold
+          :color = !secondary_color
+          
+        .signup a
+          :font
+            :family Arial, serif
+            :weight bold
+          :display block
+          :text
+            :align center
+          :margin
+            :top 5px
+          :padding 0
+          :color = !main_color
+          
+        ul
+          li
+            :margin 5px
+              
+            a
+              :padding 5px
+              :display block
+              :text
+                :align center
+              :color = !secondary_color
+              :border 1px solid
+                :color = !secondary_color
+                
+              &:hover
+                :text
+                  :decoration none
+                :background = !main_color
+          
+      #login-details
+        :display none
+      
+      #feed-link
+        :width 100%
+        :margin
+          :top 10px
+        :font
+          :size 15px
+          :family Arial, serif
+          :weight bold
+        :text
+          :transform uppercase
+          :align center
+        a
+          //:color #FA9D39
+          :color = !main_color
+          :display block
+          :text
+            :align center
+          :border 1px solid
+            :color = !tertiary_color
+            :right 0
+            :left 0
+          :padding 10px 0
+          
+          &:hover
+            :text
+              :decoration none
+            :background #efefef
+          
+        img
+          :width 12px
+          :height 12px
+          :border 0
+          
+      #media-partners,
+      #sister-sites
+        +arial
+        :width 100%
+        :margin
+          :top 10px
+        h3
+          :text
+            :decoration underline
+          :font
+            :size 18px
+          :color = !main_color
+          :text
+            :align center
+        
+        ul
+          li
+            :clear both
+            :margin 10px auto
+            :width 120px
+            :height 60px
+            :background = !main_color
+            :color = !secondary_color
+      
+      #skyscraper-ad
+        :width 100%
+        img
+          :display block
+          :clear both
+          :margin 10px
+          :width 120px
+          :height 600px
+          :background = !main_color 
+          
+    #content
+      :float left
+      :width 630px
+      
+      #top-stories
+        h2
+          :color = !tertiary_color
+          :letter
+            :spacing -1px
+        ul
+          +arial
+          :background url(../../images/emissionshub/top-stories-bg.png) no-repeat
+          :height 180px
+          :padding
+            :left 5px
+          :overflow hidden
+          
+          li
+            :float left
+            :padding 5px
+            :margin
+              :top 5px
+              :right 5px
+              :bottom 10px
+            :width 140px
+            
+            a
+              :display block
+              :color = !secondary_color
+              :font
+                :size 14px
+                :weight bold
+                
+              .top-image
+                :width 140px
+                :height 110px
+                :background = !main_color
+                :border 1px solid
+                  :color = !secondary_color
+                :display block
+              
+              .top-headline
+                :display block
+                :text
+                  :transform uppercase
+                  :align center  
+                
+              img
+                :margin 4px
+                :width 130px
+                :height 100px
+                :border 1px solid
+                  :color = !secondary_color
+                  
+              &:hover
+                :color = !light_tertiary
+                :text
+                  :decoration none
+                .top-image
+                  :border 1px solid
+                    :color = !light_tertiary
+                  img
+                    :border 1px solid
+                      :color = !light_tertiary
+                  
+                  
+      #latest-news
+        :margin 10px 0
+        h2
+          :color = !tertiary_color
+          :letter
+            :spacing -1px
+            
+        .banner-ad
+          :float left
+          :width 468px
+          :height 90px
+          :background = !main_color
+          :margin 
+            :bottom 10px
+            :left 80px
+        
+        .news-item
+          :width 610px
+          :background url(../../images/emissionshub/news-bg.png) no-repeat
+          :float left
+          :margin
+            :bottom 10px
+          :border
+            :bottom 1px solid
+            :top 1px solid
+            :color = !light_tertiary
+          :padding 10px
+          
+          h3.news-title
+            a
+              +arial
+              :color = !main_color
+              :font
+                :size 20px
+                :weight bold
+              :text
+                :transform uppercase
+              
+              
+          .news-details
+            :float left
+            :width 140px
+            
+            .news-image
+              :background = !main_color
+              :width 140px
+              :height 110px
+              :margin 5px 0
+              :border 1px solid
+                :color = !secondary_color
+              
+              img
+                :margin 4px
+                :width 130px
+                :height 100px
+                :border 1px solid
+                  :color = !secondary_color
+            
+            .full-date
+              :text-align right
+              :width 130px
+              :color = !main_color
+              :margin
+                :top -10px
+              :border
+                :bottom 1px solid
+                :color = !tertiary_color
+              :padding 5px
+              :font
+                :size 15px
+                :weight bold
+              
+              .date
+                :font
+                  :size 20px
+                  
+              .day
+                :font
+                  :weight bold
+                
+            .news-tags
+              :text-align right
+              :padding 5px
+              :color = !tertiary_color
+              :margin 5px 0
+              a
+                :color = !tertiary_color
+              ul
+                :display inline
+                :width 130px
+                li
+                  :display inline
+                  
+            .news-comments
+              a
+                :text-align right
+                :text
+                  :decoration none
+                :border
+                  :top 1px solid
+                  :bottom 1px solid
+                :padding 5px
+                :display block
+                :color = !tertiary_color
+                :margin 5px 0
+                
+                &:hover
+                  :background #efefef
+            
+            .news-views
+              :text-align right
+              :border
+                :bottom 1px solid
+                :color = !tertiary_color
+              :padding 5px
+              :margin 5px 0
+              :color = !tertiary_color
+              :font
+                :style italic
+
+          .news-content
+            :float left
+            :margin
+              :left 10px
+            :width 450px
+            :padding 0px 0
+            :color = !tertiary_color
+            
+            p
+              :font
+                :size 14px
+              :line
+                :height 20px
+              :margin
+                :bottom 10px
+                
+            .read-more
+              a
+                :color = !main_color
+                :font
+                  :weight bold
+        
+        ul#pagination
+          :float left
+          :width 100%
+          :text
+            :align center
+          :display block
+            
+          li
+            :float left
+            :color = !main_color
+
+            a
+              :display block
+              :margin
+                :right 10px
+                :top 0
+                :bottom 10px
+              :border 1px solid
+                :color = !main_color
+              :padding 2px 5px
+              :color = !main_color
+              
+              &:hover
+                :color = !secondary_color
+                :background = !main_color
+                :text
+                  :decoration none
+
+  #footer
+    :color = !main_color
+    p
+      :text
+        :align center
+      a
+        :color = !main_color

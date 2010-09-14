@@ -1,0 +1,71 @@
+#content.clear
+  #products
+    #flash-main-and-ads.clear
+      #flash-main
+      %ul#side-ads
+        %li= link_to image_tag ("leafnode/doll-of-the-day.gif"), "/"
+        %li= link_to image_tag ("leafnode/shop-online.gif"), "/"
+        %li= link_to image_tag ("leafnode/top-10-dolls.gif"), "/"
+        %li= link_to image_tag ("leafnode/testimonials.gif"), "/"
+        
+    #product-line
+      %ul.clear
+        %li
+          %a{:href => "/"}
+            %p Babies
+            = image_tag("")
+        %li
+          %a{:href => "/"}
+            %p Native American
+            = image_tag("")
+        %li
+          %a{:href => "/"}
+            %p Bride Dolls
+            = image_tag("")
+        %li
+          %a{:href => "/"}
+            %p Girl Dolls
+            = image_tag("")
+    
+    #featured-artists.clear
+      #featured-header.clear
+        %h2 
+          %span Featured Artists 
+          and their dolls...
+        #artist-search.clear
+          //%input{ :type => "text", :id => "artistsearch", :value => "Search by Artist", :class => "search-by" }
+          %select.search-by
+            %option option 1
+            %option option 2
+            %option option 3
+            %option option 4
+          %input{ :type => "image", :id => "artistsearch-submit", :value => "", :src => "/images/leafnode/magnifying-glass.jpg" }
+      
+      %ul.clear
+        %li.artist
+          %a{:href => "/"}
+            = image_tag("")
+            %p Kymberli Durden
+        %li
+          %a{:href => "/"}
+            = image_tag("")
+            %dl
+              %dd.doll-name Paradise Galleries Doll
+              %dd.doll-price $000.00
+        %li
+          %a{:href => "/"}
+            = image_tag("")
+            %dl
+              %dd.doll-name Paradise Galleries Doll
+              %dd.doll-price $000.00
+        %li
+          %a{:href => "/"}
+            = image_tag("")
+            %dl
+              %dd.doll-name Paradise Galleries Doll
+              %dd.doll-price $000.00
+            
+      %p.more-artists= link_to "Meet ALL the Artists...", "/"
+      
+  #bottom-banner-ad
+    = link_to image_tag("leafnode/bottom-banner.gif"), "/"

@@ -1,0 +1,15 @@
+@import url(menu.css);
+@import url(header.css);
+@import url(footer.css);
+body {
+  background: #E7E7E7;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  behavior: url( "../csshover3.htc" ); }
+  body #container {
+    border: 2px solid #000;
+    background: #fff;
+    padding: 5px;
+    width: 940px;
+    margin: auto;
+    margin-top: 10px; }

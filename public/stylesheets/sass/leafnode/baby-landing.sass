@@ -1,0 +1,42 @@
+
+@import mixins.sass
+
+#baby-products
+  :background #fff
+  :padding 10px
+
+  #baby-banner-ad
+    :margin
+      :bottom 10px
+      
+  #product-line
+    :width 660px
+    ul  
+      :margin 10px 0
+      :border
+        :bottom 1px solid #ccc
+      :padding
+        :bottom 10px
+      li
+        +centered
+        :float left
+        :padding
+          :left 10px
+          :right 5px
+        
+        a
+          +strong
+          :text
+            :decoration none
+          :color #ccc
+        
+        img
+          :display block
+          :margin
+            :top 5px
+            :bottom 5px
+          :width 150px
+          :height 120px
+          :background #ccc
+          
+  

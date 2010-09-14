@@ -1,0 +1,24 @@
+
+= content_for(:head) do
+  %title Aid Worker IQ - The social quiz game to increase your knowledge on anything and everything International Development  
+  = stylesheet_link_tag 'compiled/idq/main.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+  /[if lt IE 8]
+    = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+  = javascript_include_tag 'http://code.jquery.com/jquery-1.4.2.min.js', 'jquery-fancybox', 'fancybox'
+  = stylesheet_link_tag 'jquery-fancybox', :media => 'screen'
+  
+#container
+
+  = render :partial => "projects/idq/header"
+  = render :partial => "projects/idq/menu"
+  
+  /= render :partial => "projects/idq/login"
+  = render :partial => "projects/idq/sww"
+  
+  / #main-right.clear
+  /   /= render :partial => "projects/idq/sub_content"
+  /   = render :partial => "projects/idq/content"
+  /   = render :partial => "projects/idq/sidebar"
+  
+  = render :partial => "projects/idq/footer"

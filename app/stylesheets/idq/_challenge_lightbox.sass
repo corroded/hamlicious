@@ -1,0 +1,35 @@
+#lightbox
+  +relative
+  
+  h3
+    :color $main-color
+  strong
+    :font
+      :size 1.3em
+      :weight bold
+      
+  p
+    +pie-clearfix
+    :margin 5px 0
+    :padding 0
+    
+  label
+    +float-left
+    :width 100px
+    
+  input
+    :width 250px
+    
+  input[type=submit]
+    :width 100px
+    
+  .additional-field
+    :padding 0 10px 
+    
+#fancybox-close
+  +absolute-right
+  +reset
+  :display block !important
+  :background url("/images/idq/close-button.jpg") no-repeat !important
+  :top 10px !important
+  :right 0 !important

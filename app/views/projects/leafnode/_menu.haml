@@ -1,0 +1,31 @@
+#menu
+  %ul#primary.clear
+    %li= link_to "Babies", '/', :class => "short-text"
+    %li= link_to "Children", '/', :class => "short-text"
+    %li= link_to "Native American", '/'
+    %li= link_to "Multi-Cultural", '/'
+    %li= link_to "Fashion &amp; Brides", '/'
+    %li= link_to "Fairy &amp; Fantasy", '/'
+    %li= link_to "Licensed", '/', :class => "short-text"
+    %li= link_to "Shop by Occasion", '/'
+    %li= link_to "Other Products", '/'
+    %li.promo-link= link_to "Sale!", '/', :class => "short-text"
+  %ul#secondary.clear
+    %li= link_to "Porcelain", "/"
+    %li= link_to "Vinyl", "/"
+    %li= link_to "Resin", "/"
+    %li.menu-category= link_to "Artist", "/"
+    %li= link_to "Collector Favorites", "/"
+    %li= link_to "New Releases", "/"
+    %li#shop-by-price.menu-category= link_to "Shop by Price", "/"
+  #search-box
+    #search-form.form.clear
+      %label{ :for => "search" } Search
+      %input{ :type => "text", :id => "search", :name => "search" }
+      %input{ :type => "image", :id => "go", :value => "Go!", :src => "/images/leafnode/doll-search-btn.jpg" }
+      %p#search-tips Search tips
+  
+    %form#email-signup-form.form.clear
+      %label{ :for => "emailsignup" } Sign Up for Email Savings!
+      %input{ :type => "text", :id => "emailsignup", :name => "email" }
+      %input{ :type => "image", :id => "ccgo", :name => "go", :value => "Go!", :src => "/images/leafnode/doll-search-btn.jpg" }

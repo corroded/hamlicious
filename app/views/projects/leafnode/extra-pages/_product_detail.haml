@@ -1,0 +1,68 @@
+
+#content.clear
+  #product-page.clear
+    #product-image.clear
+      %ul#image-controls
+        %li= link_to image_tag("leafnode/print-image.jpg"), "/"
+        %li= link_to image_tag("leafnode/email-image.jpg"), "/"
+        %li= link_to image_tag("leafnode/wishlist.jpg"), "/"
+      
+      = image_tag("leafnode/sample-image.jpg")
+      
+      #extra-controls.clear
+        #add-to-cart.clear
+          %p Buy Now
+          %p Add to Cart
+        
+        #view-more
+          = link_to image_tag("leafnode/view-more.jpg"), "/"
+      
+      #image-links
+        %p 80% of customers recommend this product to a friend
+        %ul
+          %li.stars * * * * *
+          %li &bull; 17 Customers Reviews
+          %li &bull; Write a Review
+        %ul
+          %li Share this product!
+          %li= link_to image_tag("leafnode/fb.jpg"), "/"
+          %li= link_to image_tag("leafnode/twitter.jpg"), "/"
+          
+    #doll-details
+      %h2.doll-name Doll Name
+      %h3.doll-price $00.00
+      %h4.doll-artist by Artist Name
+      
+      %p.doll-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dapibus turpis vel risus. Duis cursus mauris in est. Nulla facilisi. Nulla vitae risus. In enim odio; euismod vel, gravida eu, aliquam quis, arcu. Aenean malesuada mattis massa? Vivamus mauris lectus, euismod non, viverra et, elementum a, purus? Donec eget ipsum. Suspendisse pretium leo eu quam. Praesent rutrum nulla non lacus! Sed dignissim nibh vel sem. Etiam nisl lacus, iaculis et, facilisis vel, posuere in, odio. Vestibulum libero. Proin hendrerit lacus sed est.
+      
+      #extra-features
+        %h3 Features:
+        %ul
+          %li Size: 5" SEATED
+          %li Materials: PORCELAIN
+          %li Edition Size: OPEN
+          %li Artist: PING LAU
+    
+  #featured-dolls
+    %p You'll also like...
+    
+    %ul.clear
+      %li
+        %a{:href => "/"}
+          = image_tag("")
+          %p Doll Name $Price
+      %li
+        %a{:href => "/"}
+          = image_tag("")
+          %p Doll Name $Price
+      %li
+        %a{:href => "/"}
+          = image_tag("")
+          %p Doll Name $Price
+      %li
+        %a{:href => "/"}
+          = image_tag("")
+          %p Doll Name $Price
+      
+  #bottom-banner-ad
+    = link_to image_tag("leafnode/bottom-banner.gif"), "/"

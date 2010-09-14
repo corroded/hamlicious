@@ -1,0 +1,181 @@
+
+ul
+  :margin
+    :top 10px
+  :list-style-position inside
+    
+  li
+    +pie-clearfix
+    //:list-style-type none
+    :margin
+      :top 10px
+      
+  &.bordered
+    li
+      +pie-clearfix
+      :border
+        :bottom 1px solid #ccc
+      :padding
+        :top 10px
+        
+      &:first-child
+        :border
+          :top 1px solid #ccc
+
+  &.action-links
+    li
+      :margin
+        :top 5px
+      a
+        +uppercase
+        :font
+          :size .9em
+        :padding 5px 10px
+        :background #f2f2f2
+        :border 1px solid #ccc
+        :display block
+        :text
+          :align center
+          
+  &.quiz-list
+    li
+      :display list-item
+      :list-style
+        :image url(/images/idq/blue-bullet.png)
+        :position inside
+        
+      a
+        :font
+          :size 1.3em
+          
+      p
+        :margin 0
+          :bottom 10px
+        
+        &.release-date
+          :padding
+            :top 10px
+          :color #999
+          :font
+            :size .8em
+            
+  &.quiz-stats
+    @extend .quiz-list
+    li
+      :border
+        :top 0 !important
+      :margin
+        :top 0
+        
+  &.quiz-list-result
+    @extend .quiz-list
+    li
+      +relative
+      :display block
+      :border
+        :bottom 1px solid #ccc
+        
+      ul li
+        :border
+          :bottom 0
+      
+  &.inline-bullet-list
+    :margin 0
+    +pie-clearfix
+    li
+      +float-left
+      :display list-item
+      :list-style
+        :image url(/images/idq/blue-bullet.png)
+        :position inside
+      :margin
+        :right 10px
+        
+  &.minor-detail-list
+    +pie-clearfix
+    :margin 0
+    :color #999
+
+    li
+      +float-left
+      :border
+        :right 1px solid #ccc
+      :font
+        :size .9em
+      :padding 0 5px
+      
+      &:first-child
+        :padding
+          :left 0
+          
+      &:last-child
+        :border 0
+        
+      a
+        :font
+          :size inherit
+
+ol
+  :font
+    :weight bold
+    :size 1.2em
+  :list-style-position inside
+  :list-style-type decimal
+    
+.quiz-questions
+  :list-style-position inside
+  li
+    :margin
+      :top 20px
+      
+.faq
+  :margin
+    :top 10px
+  li
+    :margin
+      :bottom 20px
+    :font
+      :size .8em
+  p
+    +reset
+    :margin
+      :top 10px
+    :padding
+      :left 20px
+    :font
+      :weight 100
+  
+.choices
+  :margin 15px
+  :font
+    :size .9em
+    :weight 100
+  li
+    :margin
+      :top 5px
+
+.link-list
+  :margin 0
+    :top 20px
+  li
+    :margin 0
+    
+.friend-list
+  +pie-clearfix
+  li
+    +float-left
+    :width 50px
+    :overflow none
+    :margin
+      :right 20px
+      
+    label
+      :font
+        :weight 100
+        :size .8em
+      :color $main-color
+      
+    input[type=checkbox]
+      :display inline
+      :padding 0
+      :margin 0

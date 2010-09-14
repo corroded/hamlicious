@@ -1,0 +1,17 @@
+
+#header
+  %h1 MasterMover &trade; ...the possibilities are endless
+  
+  #country-and-contact
+    #country-select
+      %form{ :name => "jump1" }
+        %select{ :onchange => "location.href=jump1.myjumpbox.options[selectedIndex].value", :name => "myjumpbox"}
+          %option &ndash; Select Country &ndash;
+          %option{ :value => "http://www.mastermover.com"} United Kingdom
+          %option{ :value => "http://www.mastermover.ie"} Ireland
+          %option{ :value => "http://www.mastermover.fr"} Fran&ccedil;ais
+          %option{ :value => "http://www.master-mover.de"} Deutsch
+          %option{ :value => "http://www.mastermover.com/brasil"} Brasil
+        
+    #contact-info
+      %p Tel: +44 (0)1335 347700

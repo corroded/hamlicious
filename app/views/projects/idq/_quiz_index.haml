@@ -1,0 +1,93 @@
+#quiz
+  %h2 Renewable Energy Quiz
+
+  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dolor ut ligula eleifend pellentesque. Donec molestie pellentesque elit, eu tempus ipsum tristique eget. Cras sagittis nisl non augue tempor rutrum. Ut rutrum interdum augue, posuere placerat elit fermentum ac.
+
+  %p.quiz-details
+    5 Questions | By 
+    = link_to "Devex IDC", "/"
+    | Release on 22 July 2010
+    
+  %h3 Friends who have taken this quiz:
+
+  %ul.bordered
+    %li
+      = image_tag "/images/idq/avatar.gif", :alt => "first name last name", :title => "first name last name", :class => "avatar"
+      %p.activity
+        = link_to "John S.", "/"
+        scored 90% on the 
+        = link_to "Water Sanitation Quiz"
+        %br
+        %span.time-ago 15 minutes ago
+  
+  %ol.quiz-questions
+    %li
+      %strong What is Renewable Energy?
+      %p.correct-answer Your answer is correct!
+      %ul.choices
+        %li
+          %input{:type => "radio", :id => "answer1", :name => "question1"}
+          %label{:for => "answer1"} a. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer2", :name => "question1"}
+          %label{:for => "answer2"} b. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer3", :name => "question1"}
+          %label{:for => "answer3"} c. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer4", :name => "question1"}
+          %label{:for => "answer4"} d. Energy from unnatural resources that is naturally replenishing
+        
+    %li
+      %strong What is Renewable Energy?
+      %p.wrong-answer Your answer is wrong. The correct answer is b
+      %ul.choices
+        %li
+          %input{:type => "radio", :id => "answer1", :name => "question2"}
+          %label{:for => "answer1"} a. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer2", :name => "question2"}
+          %label{:for => "answer2"} b. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer3", :name => "question2"}
+          %label{:for => "answer3"} c. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer4", :name => "question2"}
+          %label{:for => "answer4"} d. Energy from unnatural resources that is naturally replenishing
+        
+    %li
+      %strong What is Renewable Energy?
+      %ul.choices
+        %li
+          %input{:type => "radio", :id => "answer1", :name => "question3"}
+          %label{:for => "answer1"} a. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer2", :name => "question3"}
+          %label{:for => "answer2"} b. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer3", :name => "question3"}
+          %label{:for => "answer3"} c. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer4", :name => "question3"}
+          %label{:for => "answer4"} d. Energy from unnatural resources that is naturally replenishing
+        
+    %li
+      %strong What is Renewable Energy?
+      %ul.choices
+        %li
+          %input{:type => "radio", :id => "answer1", :name => "question4"}
+          %label{:for => "answer1"} a. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer2", :name => "question4"}
+          %label{:for => "answer2"} b. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer3", :name => "question4"}
+          %label{:for => "answer3"} c. Energy from unnatural resources that is naturally replenishing
+        %li
+          %input{:type => "radio", :id => "answer4", :name => "question4"}
+          %label{:for => "answer4"} d. Energy from unnatural resources that is naturally replenishing
+          
+  
+  .action-links
+    = link_to "Cancel this Quiz", "/", :class => "cancel-quiz"
+    = link_to "Submit answers", "/", :class => "submit-quiz"

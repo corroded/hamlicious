@@ -1,0 +1,64 @@
+#product-page {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px; }
+  #product-page #product-image {
+    width: 400px;
+    float: left;
+    padding: 20px; }
+    #product-page #product-image #image-controls {
+      text-align: center;
+      width: 350px; }
+      #product-page #product-image #image-controls li {
+        display: inline; }
+    #product-page #product-image #extra-controls {
+      width: 350px;
+      margin-top: 10px; }
+      #product-page #product-image #extra-controls #view-more {
+        float: right; }
+      #product-page #product-image #extra-controls #add-to-cart {
+        border: 1px solid #ccc;
+        padding: 2px;
+        float: left; }
+        #product-page #product-image #extra-controls #add-to-cart p {
+          color: #fff;
+          background: #ff0099;
+          float: left;
+          margin: 0;
+          padding: 3px 5px; }
+          #product-page #product-image #extra-controls #add-to-cart p a {
+            color: #fff;
+            text-decoration: none; }
+    #product-page #product-image #image-links {
+      text-align: center;
+      clear: both;
+      width: 350px;
+      margin-top: 20px; }
+      #product-page #product-image #image-links p {
+        font-size: 13px; }
+      #product-page #product-image #image-links ul li {
+        font-size: 13px;
+        display: inline; }
+        #product-page #product-image #image-links ul li.stars {
+          list-style-type: none; }
+  #product-page #doll-details {
+    float: left;
+    width: 240px;
+    padding-top: 40px; }
+    #product-page #doll-details h2, #product-page #doll-details h3 {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      color: #666;
+      font-size: 18px; }
+    #product-page #doll-details h4 {
+      text-align: center;
+      color: #666; }
+    #product-page #doll-details p.doll-desc {
+      margin: 20px 0;
+      text-align: justify; }
+    #product-page #doll-details #extra-features {
+      padding-left: 60px;
+      padding-top: 20px; }
+      #product-page #doll-details #extra-features h3 {
+        text-transform: none;
+        text-align: left; }

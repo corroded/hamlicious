@@ -1,0 +1,96 @@
+#profile
+  #profile-box
+    +pie-clearfix
+    :background #f2f2f2
+    :padding 10px
+      :left 20px
+      :top 15px
+    :border 1px solid #ccc
+    
+  .profile-details
+    +float-left
+    :width 180px
+    :margin 0
+    :padding 0
+    
+    .profile-name
+      :font
+        :size 1.3em
+        :weight bold
+        
+    .profile-rank
+      :padding
+        :top 20px
+      :display block
+      :color $main-color
+    
+  .profile-stats
+    +border-radius(10px)
+    +float-left
+    :margin
+      :top 0
+      :right 10px
+    :background #fff
+    :padding 10px
+    :width 145px
+    :text
+      :align center
+    
+    .stat-name
+      +uppercase
+      :font
+        :size .9em
+        :weight bold
+      
+    .stat-value
+      :font
+        :size 3em
+      :display block
+      
+  .recent-history
+    :margin
+      :top 20px
+    :border-collapse collapse
+      
+    th
+      +centered
+      
+      &:first-child
+        :text
+          :align left
+        
+    td
+      +centered
+      :padding 0 10px
+        :bottom 5px
+      
+      &:first-child
+        :text
+          :align left
+          
+      &.action-value
+        :padding
+          :top 10px
+        :font
+          :size 1.3em
+          
+    tr
+      &.row-border
+        :border
+          :bottom 1px solid #ccc
+          
+  #level-up
+    +pie-clearfix
+    :margin
+      :top 20px
+    
+    h3
+      :padding 0
+    p
+      :padding 0
+      :font
+        :size 1.3em
+      :color $main-color
+      
+    img
+      :float right

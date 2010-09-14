@@ -1,0 +1,35 @@
+#sidebar
+  %ul#catalogs
+    %li= link_to image_tag("leafnode/catalog-quick-order.jpg"), "/"
+    %li= link_to image_tag("leafnode/free-catalog.jpg"), "/"
+    %li= image_tag("leafnode/guarantee.jpg")
+    
+  %ul#categories
+    %li
+      %h2 Shop by Category
+    %li= link_to "Babies", '/'
+    %li= link_to "Children", '/'
+    %li= link_to "Native American", '/'
+    %li= link_to "Multi-Cultural", '/'
+    %li= link_to "Fashion &amp; Brides", '/'
+    %li= link_to "Fairy &amp; Fantasy", '/'
+    %li= link_to "Licensed", '/'
+    %li= link_to "Shop by Occasion", '/'
+    %li= link_to "Other Products", '/'
+    %li.promo-link= link_to "Sale!", '/'
+    
+  %ul#misc-ads
+    %li= link_to image_tag("leafnode/birthday-club.gif"), "/"
+    %li= link_to image_tag("leafnode/tell-a-friend.gif"), "/"
+    
+  #cat-search.clear
+    //%input{ :type => "text", :id => "cat-search", :value => "Search by Category", :class => "search-by"}
+    %select.search-by
+      %option option 1
+      %option option 2
+      %option option 3
+      %option option 4
+    %input{ :type => "image", :id => "cat-search-submit", :value => "", :src => "/images/leafnode/magnifying-glass.jpg" }
+    
+  
+    

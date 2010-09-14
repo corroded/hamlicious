@@ -1,0 +1,146 @@
+
+@import mixins.sass
+
+#menu
+  :width 870px
+  :margin 5px auto
+  ul#primary
+    li
+      +centered
+      :font
+        :family Arial
+        :size 14px
+      :float left
+      :margin 0
+      :padding 0
+      :overflow hidden
+      :line
+        :height .9
+      
+      &.promo-link
+        a
+          +uppercase
+          +strong
+          :margin
+            :left -1px
+          :display block
+          :width 67px
+          :height 30px
+          :background url(../../images/leafnode/sale-button.jpg) no-repeat
+          :color #ffffcc
+          :font
+            :size 16px
+          :line
+            :height .9
+            
+          &:hover
+            :background url(../../images/leafnode/sale-button.jpg) no-repeat
+      
+      a
+        +strong
+        :text
+          :decoration none
+        :color #000
+        :display block
+        :margin
+          :top 5px
+        :padding 5px 10px 0
+        :width 67px
+        :height 25px
+        :background url(../../images/leafnode/menu-item-bg.jpg) no-repeat
+        
+        &.short-text
+          :padding
+            :top 8px
+          :height 22px
+          
+        &:hover
+          :background url(../../images/leafnode/menu-item-bg-hover.jpg) no-repeat
+          :color #fff
+        
+        
+      
+  ul#secondary
+    :background url(../../images/leafnode/secondary-menu-bg.jpg) repeat-x
+    :height 34px
+    :clear both
+    :margin auto
+    li
+      :display block
+      :float left
+      
+      &#shop-by-price
+        :float right
+      
+      a
+        +strong
+        :font
+          :size 13px
+        :text
+          :decoration none
+        :color #fff
+        :display block
+        :padding 10px 15px
+        
+    &.secondary-sale
+      :background url(../../images/leafnode/secondary-menu-bg-sale.jpg) repeat-x
+
+  #search-box
+    :border 1px solid #ccc
+    :height 50px
+    :padding
+      :left 5px
+    
+    .form
+      :display block
+      :width 409px
+      :float left
+      :height 25px
+      :padding 10px 
+        :top 15px
+        :bottom 5px
+      :background #ccc
+      
+      p
+        :display inline
+        
+    #search-form
+      +strong
+      #search
+        :background #fff url(../../images/leafnode/search-bg.jpg) right no-repeat
+      #search-tips
+        :margin 5px
+        :float left
+        :font
+          :size 12px
+        :color #fff
+          
+      input
+        :float left
+        :margin
+          :left 5px
+      label
+        :margin
+          :top 3px
+        :float left
+    
+    #email-signup-form
+      +strong
+      :padding
+        :left 55px
+      :width 365px
+      :background #ccc url(../../images/leafnode/email-signup-bg.jpg) no-repeat
+      label
+        :color #0000cc
+        :float left
+        :margin
+          :top 3px
+      #emailsignup
+        :background #fff url(../../images/leafnode/email-bg.jpg) right no-repeat
+        
+      input
+        :float left
+        :margin 
+          :left 5px
+      
+      

@@ -1,0 +1,47 @@
+
+@import mixins.sass
+
+#header
+  :height 110px
+  #logo
+    :float left
+    :background url(../../images/leafnode/logo.jpg) no-repeat
+    :text
+      :indent -10000px
+    :width 360px
+    :height 90px
+  #top-nav
+    :float right
+    :text
+      :align right
+    :margin
+      :top 25px
+      :right 40px
+    a
+      +strong
+      :text
+        :decoration none
+    ul
+      :margin
+        :bottom 10px
+      li
+        :padding
+          :left 10px
+        :display inline
+    #contact-number
+      :font
+        :style italic
+       
+    #shopping-cart
+      :border 1px solid #ccc
+      :padding 2px
+      :float right
+      :margin
+        :top 10px
+      p
+        :color #fff
+        :background #ff0099
+        :float left
+        :margin 0
+        :padding 3px 5px
+        

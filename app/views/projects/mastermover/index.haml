@@ -1,0 +1,17 @@
+
+= content_for(:head) do
+  %title Mastermover material handling made safe leader in load moving solutions
+  = stylesheet_link_tag "reset"
+  = stylesheet_link_tag "clear"
+  = stylesheet_link_tag "mastermover/main"
+
+#container.clear
+
+  = render :partial => "projects/mastermover/header"
+  = render :partial => "projects/mastermover/menu"
+  
+  #main.clear
+    //= render :partial => "projects/mastermover/sidebar"
+    = render :partial => "projects/mastermover/content"
+  
+  = render :partial => "projects/mastermover/footer"
