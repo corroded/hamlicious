@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* line 4, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 6, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+/* line 45, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 20, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 7, ../../../../app/stylesheets/farora/main.sass */
+body {
+  background: #131313;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+/* line 14, ../../../../app/stylesheets/farora/main.sass */
+#container {
+  width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 17, ../../../../app/stylesheets/farora/main.sass */
+ul {
+  list-style-type: none;
+}
+
+/* line 20, ../../../../app/stylesheets/farora/main.sass */
+a {
+  text-decoration: none;
+}
+/* line 24, ../../../../app/stylesheets/farora/main.sass */
+a:hover {
+  color: #999999;
+}
+
+/* line 1, ../../../../app/stylesheets/farora/_footer.sass */
+#footer {
+  clear: both;
+  *zoom: 1;
+}
+/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#footer:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 5, ../../../../app/stylesheets/farora/_footer.sass */
+#footer ul {
+  float: left;
+  width: 20%;
+  margin-left: 20px;
+  font-size: 0.9em;
+}
+/* line 13, ../../../../app/stylesheets/farora/_footer.sass */
+#footer ul h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #ffb628;
+  padding-bottom: 20px;
+}
+/* line 21, ../../../../app/stylesheets/farora/_footer.sass */
+#footer a {
+  color: white;
+}
+/* line 24, ../../../../app/stylesheets/farora/_footer.sass */
+#footer a:hover {
+  color: #999999;
+}
+
+/* line 1, ../../../../app/stylesheets/farora/_header.sass */
+#header {
+  padding: 15px;
+  height: 50px;
+  *zoom: 1;
+}
+/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#header:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 6, ../../../../app/stylesheets/farora/_header.sass */
+#header h1 {
+  text-indent: -10000px;
+  background: url(/images/farora/logo.png) no-repeat;
+  width: 108px;
+  height: 18px;
+  float: left;
+}
+/* line 14, ../../../../app/stylesheets/farora/_header.sass */
+#header .tagline {
+  color: #6e6e6e;
+  font-style: italic;
+  padding-left: 5px;
+  padding-top: 5px;
+  float: left;
+}
+
+/* line 1, ../../../../app/stylesheets/farora/_index.sass */
+#index-main {
+  *zoom: 1;
+}
+/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#index-main:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 3, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset {
+  background: #303030;
+  padding: 15px;
+  float: right;
+  width: 600px;
+}
+
+/* line 1, ../../../../app/stylesheets/farora/_nav.sass */
+#nav {
+  float: right;
+  padding-top: 5px;
+}
+/* line 7, ../../../../app/stylesheets/farora/_nav.sass */
+#nav ul li {
+  display: inline;
+  padding-left: 20px;
+}
+/* line 12, ../../../../app/stylesheets/farora/_nav.sass */
+#nav ul li a {
+  color: #9b9b9b;
+  text-decoration: none;
+}
+/* line 17, ../../../../app/stylesheets/farora/_nav.sass */
+#nav ul li a.invite-friends-link {
+  color: #ffb431;
+}
+/* line 21, ../../../../app/stylesheets/farora/_nav.sass */
+#nav ul li em a {
+  color: #93c9ff;
+}

@@ -1,0 +1,17 @@
+= content_for(:head) do
+  %title Farora.com 
+  = stylesheet_link_tag 'compiled/farora/main.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+  /[if lt IE 8]
+    = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+
+#container
+  = render :partial => "projects/farora/header"
+  
+  = render :partial => "projects/farora/login_page"
+  / #main-right.clear
+  /   /= render :partial => "projects/farora/sub_content"
+  /   = render :partial => "projects/farora/content"
+  /   = render :partial => "projects/farora/sidebar"
+  
+  = render :partial => "projects/farora/footer"

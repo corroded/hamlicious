@@ -1,0 +1,30 @@
+@import blueprint/reset
+@import blueprint/grid
+@import blueprint/fancy-type
+@import compass/utilities/general/clearfix
+@import compass/css3
+
+body
+  :background #131313
+  :font
+    :family Arial, sans-serif
+    :size 14px
+  :color #fff
+    
+#container
+  +container
+  
+ul
+  :list-style-type none
+
+a
+  :text
+    :decoration none
+  
+  &:hover
+    :color #999
+  
+@import footer
+@import header
+@import index
+@import nav
