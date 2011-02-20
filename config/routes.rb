@@ -1,4 +1,8 @@
 Hamlicious::Application.routes.draw do
+  
+  match 'projects/:id', :controller => 'projects', :action => 'index'
+  match '/', :controller => 'home', :action => 'index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

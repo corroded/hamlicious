@@ -1,0 +1,43 @@
+#index-main
+  %form
+    %fieldset
+      %h3
+        %span.city Farora Boston,
+        %em= link_to "not your city?", "/"
+    
+      %ol
+        %li
+          %label 
+            Location
+          %input{:size => 20, :value => "Boston, MA"}
+        %li
+          %label Pick a Salon or Spa
+          %input{:size => 35, :value => "Type in Salon / Spa Name or Search All", :class => "salon"}
+        %li
+          %label Type of Service
+          %select
+            %option Any Service
+            %option Any Service
+            %option Any Service
+            %option Any Service
+        %li
+          %label Stylist
+          %select
+            %option Any Stylist
+            %option Any Stylist
+            %option Any Stylist
+            %option Any Stylist
+        %li.no-count
+          %label Price
+          %input{:disabled => true, :class => "price", :size => 3}
+        %li.after-count
+          %label Date
+          %input{:id => "date", :readonly => "readonly", :class => "date"}
+        %li
+          %label Start Time
+          %input{:id => "start-time", :readonly => "readonly", :class => "date"}
+        %li
+          %label End Time
+          %input{:id => "end-time", :readonly => "readonly", :class => "date"}
+        %li.no-count.commit
+          %input{:type => "submit", :class => "submit", :value => "Show Available Bookings"}
