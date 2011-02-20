@@ -18,7 +18,12 @@ gem 'rails', '3.0.4'
 
 # Bundle the extra gems:
 # gem 'bj'
-# gem 'nokogiri'
+gem 'nokogiri'
+gem 'haml'
+gem "haml-rails"
+gem "rails3-generators"
+gem 'compass'
+gem 'jquery-rails', '>= 0.2.6'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
