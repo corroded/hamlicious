@@ -1,0 +1,118 @@
+#index-main
+  +pie-clearfix
+  background: url(/images/farora/bg1.jpg) no-repeat top center
+  height: 500px
+  
+  fieldset
+    :background-color #303030
+    :color #ffffff
+    +opacity(.90)
+    :padding 25px 50px
+    :float right
+    :width 600px
+    :margin
+      :top 80px
+    
+    h3
+      :font
+        :size 1.2em
+        :weight bold
+    
+    em
+      :font
+        :weight normal
+        :style italic
+        :size .9em
+      a
+        :color #47a3ff
+        :text
+          :decoration underline
+        
+    ol
+      +pie-clearfix
+      :background #a6a6a6
+      :padding 30px
+      :color #000
+      :margin
+        :top 30px
+      :counter-reset item
+      
+      li
+        :float left
+        :list-style
+          :position inside
+        :margin
+          :right 10px
+          :bottom 10px
+        
+        &:before
+          content: counter(item) "."
+          counter-increment: item
+          
+        &.no-count
+          counter-increment: item -1
+          content: counter(item, " ")
+          
+          &:before
+            content: ""
+        &.commit
+          :padding
+            :top 20px
+          :width 100%
+          :text
+            :align center
+          
+        label
+          :color #fff
+          :font
+            :weight bold
+          :text
+            :transform uppercase          
+        input
+          :display block
+          :padding 5px
+          :font
+            :size .9em
+          :border 1px solid #ccc
+          :color #444
+          :width 190px
+          :margin
+            :top 5px
+          +border-radius(5px)
+          
+          &.salon
+            :width 250px
+          &.price
+            :width 50px
+            :height 20px
+          &.date
+            :width 150px
+          &[disabled]
+            :background #b8b8b8
+            :border 1px solid #b8b8b8
+
+
+        select
+          :display block
+          :font
+            :size 1em
+          :padding 5px
+          :background #fff
+          :border 0
+          :height 30px
+          :width 200px
+          :margin
+            :top 5px
+                      
+        .submit
+          :font
+            :size 1em
+          :margin 0 auto
+          :border none
+          :color #fff
+          :cursor pointer
+          +sprite-background-rectangle("farora/buttons.png", 500, 50)
+          +sprite-row(3)
+          
+          &:hover
+            +sprite-row(4)
