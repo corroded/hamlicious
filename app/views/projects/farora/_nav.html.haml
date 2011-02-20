@@ -11,7 +11,11 @@
       = link_to "account", "/"
     %li
       = link_to "+ invite friends", "/", :class => "invite-friends-link"
-    %li= link_to "my #{image_tag("farora/heart.png")}'s", "/", :class => "favorites-link"
+    %li
+      %a{:href => "/", :class => "favorites-link"}
+        = "my "
+        =  image_tag("farora/heart.png")
+        = "'s"
     %li= link_to "help", "/help"
     %li
       %em= link_to "search", "/search"
