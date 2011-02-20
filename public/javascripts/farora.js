@@ -5,7 +5,7 @@ $(document).ready(function() {
     minDate: 0
   });
   
-  $("#start-time").timepicker();
-  $("#end-time").timepicker();
+  $("#start-time").calendricalTime();
+  $("#end-time").calendricalTime();
   
 });

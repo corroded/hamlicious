@@ -87,11 +87,88 @@ a:hover {
   color: #999999;
 }
 
+/* line 1, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup {
+  background: white;
+  border: solid 1px #999999;
+  padding: 2px;
+  text-align: center;
+  width: 160px;
+}
+/* line 7, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table {
+  border-collapse: collapse;
+  width: 160px;
+}
+/* line 10, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table .monthCell {
+  padding: 2px 0;
+}
+/* line 12, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table .monthCell a {
+  display: block;
+  float: left;
+  line-height: 20px;
+}
+/* line 16, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table .monthCell .prevMonth, .calendricalDatePopup table .monthCell .nextMoth {
+  width: 24px;
+}
+/* line 18, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table .monthCell .monthName {
+  width: 110px;
+}
+/* line 20, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table a {
+  text-decoration: none;
+}
+/* line 22, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table td {
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+}
+/* line 26, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table td a {
+  display: block;
+  color: black;
+  padding: 2px 3px;
+}
+/* line 30, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table td a:hover {
+  background: #ccccff;
+  border: none;
+  padding: 2px 3px;
+}
+/* line 34, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table td.today a {
+  background: #eeeebb;
+}
+/* line 36, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table td.selected a {
+  background: #ccccff;
+}
+/* line 38, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table td.today_selected a {
+  background: #eeeebb;
+  border: solid 1px #dddd66;
+  padding: 1px 2px;
+}
+/* line 42, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalDatePopup table td.nonMonth a {
+  color: #999999;
+}
+
+/* line 45, ../../../../app/stylesheets/farora/_calendrical.sass */
+.calendricalEndTimePopup {
+  width: 160px;
+}
+
 /* line 1, ../../../../app/stylesheets/farora/_footer.sass */
 #footer {
   clear: both;
   *zoom: 1;
-  padding-top: 50px;
+  padding: 25px 0;
 }
 /* line 22, ../../../../../../.rvm/gems/ruby-1.9.2-head@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #footer:after {
@@ -102,29 +179,29 @@ a:hover {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 7, ../../../../app/stylesheets/farora/_footer.sass */
+/* line 6, ../../../../app/stylesheets/farora/_footer.sass */
 #footer ul {
   float: left;
   width: 22%;
   margin-left: 20px;
   font-size: 0.9em;
 }
-/* line 15, ../../../../app/stylesheets/farora/_footer.sass */
+/* line 14, ../../../../app/stylesheets/farora/_footer.sass */
 #footer ul li {
   padding: 3px 0;
 }
-/* line 17, ../../../../app/stylesheets/farora/_footer.sass */
+/* line 16, ../../../../app/stylesheets/farora/_footer.sass */
 #footer ul h4 {
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-transform: uppercase;
   color: #ffb628;
   padding-bottom: 20px;
 }
-/* line 25, ../../../../app/stylesheets/farora/_footer.sass */
+/* line 24, ../../../../app/stylesheets/farora/_footer.sass */
 #footer a {
   color: white;
 }
-/* line 28, ../../../../app/stylesheets/farora/_footer.sass */
+/* line 27, ../../../../app/stylesheets/farora/_footer.sass */
 #footer a:hover {
   color: #999999;
 }
@@ -165,7 +242,7 @@ a:hover {
 #index-main {
   *zoom: 1;
   background: url(/images/farora/bg1.jpg) no-repeat top center;
-  height: 500px;
+  height: 550px;
 }
 /* line 22, ../../../../../../.rvm/gems/ruby-1.9.2-head@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #index-main:after {
@@ -183,28 +260,29 @@ a:hover {
   opacity: 0.9;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  padding: 25px 50px;
+  padding: 30px;
+  padding-bottom: 40px;
   float: right;
   width: 600px;
   margin-top: 80px;
 }
-/* line 16, ../../../../app/stylesheets/farora/_index.sass */
+/* line 17, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset h3 {
   font-size: 1.2em;
   font-weight: bold;
 }
-/* line 21, ../../../../app/stylesheets/farora/_index.sass */
+/* line 22, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset em {
   font-weight: normal;
   font-style: italic;
   font-size: 0.9em;
 }
-/* line 26, ../../../../app/stylesheets/farora/_index.sass */
+/* line 27, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset em a {
   color: #47a3ff;
   text-decoration: underline;
 }
-/* line 31, ../../../../app/stylesheets/farora/_index.sass */
+/* line 32, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol {
   *zoom: 1;
   background: #a6a6a6;
@@ -222,40 +300,86 @@ a:hover {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 40, ../../../../app/stylesheets/farora/_index.sass */
+/* line 41, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li {
   float: left;
   list-style-position: inside;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 48, ../../../../app/stylesheets/farora/_index.sass */
+/* line 49, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li:before {
   content: counter(item) ".";
   counter-increment: item;
 }
-/* line 52, ../../../../app/stylesheets/farora/_index.sass */
+/* line 53, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li.no-count {
   counter-increment: item -1;
   content: counter(item, " ");
 }
-/* line 56, ../../../../app/stylesheets/farora/_index.sass */
+/* line 57, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li.no-count:before {
   content: "";
 }
-/* line 58, ../../../../app/stylesheets/farora/_index.sass */
+/* line 59, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li.commit {
   padding-top: 20px;
   width: 100%;
   text-align: center;
 }
-/* line 65, ../../../../app/stylesheets/farora/_index.sass */
+/* line 66, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li .calendricalTimePopup {
+  background: white;
+  border: solid 1px #999999;
+  width: 110px;
+  height: 130px;
+  overflow: auto;
+}
+/* line 72, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li .calendricalTimePopup ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 75, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li .calendricalTimePopup ul li {
+  list-style: none;
+  margin: 0;
+}
+/* line 79, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li .calendricalTimePopup ul li:before {
+  content: "";
+}
+/* line 82, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li .calendricalTimePopup ul li a {
+  text-indent: 10px;
+  padding: 4px 5px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+/* line 88, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li .calendricalTimePopup ul li a:visited {
+  text-indent: 10px;
+  padding: 4px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+/* line 94, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li .calendricalTimePopup ul li a:hover {
+  background: #ccccff;
+}
+/* line 96, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li .calendricalTimePopup ul li.selected a {
+  background: #ccccff;
+}
+/* line 99, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li label {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 71, ../../../../app/stylesheets/farora/_index.sass */
+/* line 105, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li input {
   display: block;
   padding: 5px;
@@ -271,25 +395,25 @@ a:hover {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 83, ../../../../app/stylesheets/farora/_index.sass */
+/* line 117, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li input.salon {
   width: 250px;
 }
-/* line 85, ../../../../app/stylesheets/farora/_index.sass */
+/* line 119, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li input.price {
   width: 50px;
   height: 20px;
 }
-/* line 88, ../../../../app/stylesheets/farora/_index.sass */
+/* line 122, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li input.date {
   width: 150px;
 }
-/* line 90, ../../../../app/stylesheets/farora/_index.sass */
+/* line 124, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li input[disabled] {
   background: #b8b8b8;
   border: 1px solid #b8b8b8;
 }
-/* line 95, ../../../../app/stylesheets/farora/_index.sass */
+/* line 129, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li select {
   display: block;
   font-size: 1em;
@@ -300,9 +424,11 @@ a:hover {
   width: 200px;
   margin-top: 5px;
 }
-/* line 107, ../../../../app/stylesheets/farora/_index.sass */
+/* line 141, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li .submit {
   font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
   margin: 0 auto;
   border: none;
   color: white;
@@ -313,7 +439,7 @@ a:hover {
   overflow: hidden;
   background-position: 0px -64px;
 }
-/* line 117, ../../../../app/stylesheets/farora/_index.sass */
+/* line 154, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li .submit:hover {
   background-position: 0px -96px;
 }
@@ -322,30 +448,31 @@ a:hover {
 #nav {
   float: right;
   padding-top: 5px;
+  font-size: 0.9em;
 }
-/* line 6, ../../../../app/stylesheets/farora/_nav.sass */
+/* line 8, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul {
   width: 650px;
   margin: 0;
   padding: 0;
 }
-/* line 11, ../../../../app/stylesheets/farora/_nav.sass */
+/* line 13, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul li {
   text-align: right;
   margin-right: 0;
   display: inline;
   padding-left: 20px;
 }
-/* line 19, ../../../../app/stylesheets/farora/_nav.sass */
+/* line 21, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul li a {
   color: #9b9b9b;
   text-decoration: none;
 }
-/* line 24, ../../../../app/stylesheets/farora/_nav.sass */
+/* line 26, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul li a.invite-friends-link {
   color: #ffb431;
 }
-/* line 28, ../../../../app/stylesheets/farora/_nav.sass */
+/* line 30, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul li em a {
   color: #93c9ff;
 }

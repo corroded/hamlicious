@@ -25,6 +25,7 @@ begin
         replace = text.gsub("/stylesheets/compiled/#{project_name}", "stylesheets/#{project_name}")
         replace = replace.gsub('/stylesheets/compiled/', "stylesheets/#{project_name}")
         replace = replace.gsub("/images/#{project_name}/", "images/#{project_name}/")
+        replace = replace.gsub("/javascripts/", "javascripts/")
         File.open(file_name, "w") {|file| file.puts replace}
         
         
@@ -48,7 +49,6 @@ begin
         css_line = File.read(css_file)
         replace = css_line.gsub("/images/", "../../images/")
         File.open(css_file, "w") {|file| file.puts replace}
-        
 
           
         # doc = Nokogiri::HTML(open(url))

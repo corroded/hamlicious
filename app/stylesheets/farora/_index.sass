@@ -1,13 +1,14 @@
 #index-main
   +pie-clearfix
   background: url(/images/farora/bg1.jpg) no-repeat top center
-  height: 500px
+  height: 550px
   
   fieldset
     :background-color #303030
     :color #ffffff
     +opacity(.90)
-    :padding 25px 50px
+    :padding 30px
+      :bottom 40px
     :float right
     :width 600px
     :margin
@@ -60,7 +61,40 @@
             :top 20px
           :width 100%
           :text
-            :align center
+            :align center          
+            
+        .calendricalTimePopup
+          background: white
+          border: solid 1px #999999
+          width: 110px
+          height: 130px
+          overflow: auto
+          ul
+            margin: 0
+            padding: 0
+            li
+              list-style: none
+              margin: 0
+              
+              &:before
+                content: ""
+                
+              a
+                text-indent: 10px
+                padding: 4px 5px
+                display: block
+                color: black
+                text-decoration: none
+                &:visited
+                  text-indent: 10px
+                  padding: 4px
+                  display: block
+                  color: black
+                  text-decoration: none
+                &:hover
+                  background: #ccccff
+              &.selected a
+                background: #ccccff
           
         label
           :color #fff
@@ -107,6 +141,9 @@
         .submit
           :font
             :size 1em
+            :weight bold
+          :text
+            :transform uppercase
           :margin 0 auto
           :border none
           :color #fff
