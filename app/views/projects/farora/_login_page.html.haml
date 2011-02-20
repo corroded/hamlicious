@@ -7,28 +7,14 @@
     
       %ol
         %li
-          %label Location
-          %input{:size => 15, :value => "Boston, MA"}
+          %label 
+            Location
+          %input{:size => 20, :value => "Boston, MA"}
         %li
           %label Pick a Salon or Spa
-          %input{:size => 20, :value => "Type in Salon / Spa Name or Search All"}
+          %input{:size => 35, :value => "Type in Salon / Spa Name or Search All", :class => "salon"}
         %li
           %label Type of Service
-          %select
-            %option Any Service
-            %option Any Service
-            %option Any Service
-            %option Any Service
-          %select
-            %option Any Service
-            %option Any Service
-            %option Any Service
-            %option Any Service
-          %select
-            %option Any Service
-            %option Any Service
-            %option Any Service
-            %option Any Service
           %select
             %option Any Service
             %option Any Service
@@ -41,32 +27,17 @@
             %option Any Stylist
             %option Any Stylist
             %option Any Stylist
-          %select
-            %option Any Stylist
-            %option Any Stylist
-            %option Any Stylist
-            %option Any Stylist
-          %select
-            %option Any Stylist
-            %option Any Stylist
-            %option Any Stylist
-            %option Any Stylist
-          %select
-            %option Any Stylist
-            %option Any Stylist
-            %option Any Stylist
-            %option Any Stylist
+        %li.no-count
           %label Price
-          %input{:disabled => true}
-          %input{:disabled => true}
-          %input{:disabled => true}
-          %input{:disabled => true}
-        %li 
+          %input{:disabled => true, :class => "price", :size => 3}
+        %li.after-count
           %label Date
-          %input{:id => "date", :readonly => "readonly"}
+          %input{:id => "date", :readonly => "readonly", :class => "date"}
         %li
           %label Start Time
-          %input{:id => "start-time", :readonly => "readonly"}
+          %input{:id => "start-time", :readonly => "readonly", :class => "date"}
         %li
           %label End Time
-          %input{:id => "end-time", :readonly => "readonly"}
+          %input{:id => "end-time", :readonly => "readonly", :class => "date"}
+        %li.no-count.commit
+          %input{:type => "submit", :class => "submit", :value => "Show Available Bookings"}
