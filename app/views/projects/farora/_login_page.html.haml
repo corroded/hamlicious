@@ -12,7 +12,7 @@
           %input{:size => 20, :value => "Boston, MA"}
         %li
           %label Pick a Salon or Spa
-          %input{:size => 35, :value => "Type in Salon / Spa Name or Search All", :class => "salon"}
+          %input{:size => 35, :value => "Enter Spa Name or Search All", :class => "salon"}
         %li
           %label Type of Service
           %select
@@ -30,14 +30,46 @@
         %li.no-count
           %label Price
           %input{:disabled => true, :class => "price", :size => 3}
+        %li
+          %label Type of Service
+          %select
+            %option Any Service
+            %option Any Service
+            %option Any Service
+            %option Any Service
+        %li
+          %label Stylist
+          %select
+            %option Any Stylist
+            %option Any Stylist
+            %option Any Stylist
+            %option Any Stylist
+        %li.no-count
+          %label Price
+          %input{:disabled => true, :class => "price", :size => 3}
+        
         %li.after-count
           %label Date
-          %input{:id => "date", :readonly => "readonly", :class => "date"}
+          %input{:id => "date", :readonly => "readonly", :class => "date", :value => "Any Date"}
         %li
           %label Start Time
-          %input{:id => "start-time", :readonly => "readonly", :class => "date"}
+          %select{:id => "start-time", :class => "date"}
+            %option{:selected => true} Any Time
+            %option 08:00 AM
+            %option 08:15 AM
+            %option 08:30 AM
+            %option 08:45 AM
+            %option 09:00 AM
+          /%input{:id => "start-time", :readonly => "readonly", :class => "date"}
         %li
           %label End Time
-          %input{:id => "end-time", :readonly => "readonly", :class => "date"}
+          %select{:id => "end-time", :class => "date"}
+            %option Any Time
+            %option 09:00 PM
+            %option 09:15 PM
+            %option 09:30 PM
+            %option 09:45 PM
+            %option 09:00 PM
+          /%input{:id => "end-time", :readonly => "readonly", :class => "date"}
         %li.no-count.commit
           %input{:type => "submit", :class => "submit", :value => "Search"}
