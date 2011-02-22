@@ -7,17 +7,17 @@
 @import compass/utilities/sprites
 
 body
-  background: url(/images/farora/bg1.jpg) no-repeat top center
+  background: #131313 url(/images/farora/bg1.jpg) no-repeat top center
   :font
     :family Arial, sans-serif
     :size 14px
   :color #fff
   :width 100%
-  
     
 #container
   margin: 0 auto
-  
+  :overflow-x hidden 
+    
 ul
   :list-style-type none
 
@@ -28,6 +28,12 @@ a
     
   &:hover
     :color #999
+    
+.inner-container
+  :width 1024px
+  :margin 0 auto
+  
+
   
 @import calendrical
 @import footer

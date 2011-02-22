@@ -1,4 +1,4 @@
-#index-main
+#index-main.inner-container
   %form
     %fieldset
       %h3
@@ -13,40 +13,24 @@
         %li
           %label Pick a Salon or Spa
           %input{:size => 35, :value => "Enter Spa Name or Search All", :class => "salon"}
-        %li
+        %li.type-of-service
           %label Type of Service
           %select
             %option Any Service
             %option Any Service
             %option Any Service
             %option Any Service
-        %li
+          = link_to "Add another service", "#", :class => "add-service"
+        %li.stylist
           %label Stylist
           %select
             %option Any Stylist
             %option Any Stylist
             %option Any Stylist
             %option Any Stylist
-        %li.no-count
+        %li.no-count.price
           %label Price
-          %input{:disabled => true, :class => "price", :size => 3}
-        %li
-          %label Type of Service
-          %select
-            %option Any Service
-            %option Any Service
-            %option Any Service
-            %option Any Service
-        %li
-          %label Stylist
-          %select
-            %option Any Stylist
-            %option Any Stylist
-            %option Any Stylist
-            %option Any Stylist
-        %li.no-count
-          %label Price
-          %input{:disabled => true, :class => "price", :size => 3}
+          %input{:disabled => true, :size => 3}
         
         %li.after-count
           %label Date
