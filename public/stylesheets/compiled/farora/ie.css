@@ -1,0 +1,5 @@
+/* line 3, ../../../../app/stylesheets/farora/ie.sass */
+#nav ul li {
+  float: left;
+  border: 1px solid red;
+}

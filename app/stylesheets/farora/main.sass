@@ -6,13 +6,17 @@
 @import compass/reset/utilities
 @import compass/utilities/sprites
 
+$main-color: #47a3ff
+
 body
-  background: #131313 url(/images/farora/bg1.jpg) no-repeat top center
   :font
     :family Arial, sans-serif
     :size 14px
   :color #fff
   :width 100%
+  
+  &.index
+    background: #131313 url(/images/farora/bg1.jpg) no-repeat top center
     
 #container
   margin: 0 auto
@@ -40,3 +44,4 @@ a
 @import header
 @import index
 @import nav
+@import results

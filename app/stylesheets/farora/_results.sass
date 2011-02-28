@@ -1,0 +1,49 @@
+#results-main
+  min-height: 440px
+  color: #000
+  a
+    color: $main-color
+    
+  b
+    color: #000
+
+  > ul
+    padding:
+      left: 30px
+
+  .filters
+    margin: 30px
+      left: 15px
+    +pie-clearfix
+    
+    li
+      float: left
+      width: 300px
+      
+  label
+    float: left
+    display: block
+    padding: 10px
+    
+  select
+    :border 1px solid #000
+    +border-radius(5px)
+    :display block
+    :font
+      :size .9em
+    :padding 5px
+    :color #000
+    :background #fff
+    :height 30px
+    :width 194px
+    :margin
+      :top 5px  
+    
+  .results
+    +pie-clearfix
+    
+    > li
+      list-style-position: inside
+      float: left
+      width: 30%
+      margin: 15px

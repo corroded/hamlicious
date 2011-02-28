@@ -8,7 +8,7 @@ begin
       project_name = ENV["PROJECT_NAME"]
       actions = ENV["ACTIONS"].blank? || ENV["ACTIONS"].split(",").size < 2 ? ["index"] : ENV["ACTIONS"].split(",")
       actions.each do |action|
-        url = "http://localhost:3000/projects/#{project_name}/#{action}"
+        url = "http://localhost:3000/projects/#{project_name}/show/#{action}"
         puts "GENERATING...#{url}"
         FileUtils.mkdir_p "html/"
         file_name = ""
