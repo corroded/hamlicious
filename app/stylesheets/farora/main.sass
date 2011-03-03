@@ -12,8 +12,8 @@ body
   :font
     :family Arial, sans-serif
     :size 14px
-  :color #fff
   :width 100%
+  :background #f6f6f6
   
   &.index
     background: #131313 url(/images/farora/bg1.jpg) no-repeat top center
@@ -33,15 +33,37 @@ a
   &:hover
     :color #999
     
+h2
+  font:
+    size: 20px
+    weight: bold
+  padding:
+    bottom: 10px
+    
+select
+  +border-radius(5px)
+  :display block
+  :font
+    :size .9em
+  :padding 5px
+  :color #000
+  :background #fff
+  :border 0
+  :height 30px
+  :width 194px
+  :margin
+    :top 5px
+    
 .inner-container
   :width 1024px
-  :margin 0 auto
-  
-
+  :margin 0 auto  
   
 @import calendrical
 @import footer
 @import header
 @import index
+@import lists
 @import nav
 @import results
+@import review
+@import star_rating

@@ -1,0 +1,53 @@
+.filters
+  clear: both
+  margin: 30px
+    left: 15px
+  +pie-clearfix
+  margin:
+    bottom: 10px
+  
+  li
+    float: left
+    width: 330px
+    
+.results
+  +pie-clearfix
+  
+  > li
+    list-style-position: inside
+    float: left
+    width: 30%
+    margin: 15px
+    
+    li
+      margin:
+        bottom: 5px
+    
+    p
+      padding:
+        bottom: 10px
+        
+    
+    
+.tabs
+  clear: both
+  margin:
+    top: 20px
+    left: 15px
+  +pie-clearfix
+  
+  li
+    background: #c3c3c3
+    float: left
+    padding: 5px 10px
+    margin:
+      right: 3px
+    
+    &:hover
+      background: #000
+    
+    &.current
+      background: #000
+      
+    a
+      color: #fff

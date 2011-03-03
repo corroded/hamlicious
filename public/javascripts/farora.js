@@ -26,4 +26,6 @@ $(document).ready(function() {
     $(".after-count").before(cloneHtml);
     return false;
   });
+  
+  $('input.star').rating();
 });

@@ -1,1 +1,57 @@
-TEST
+#review.inner-container
+  %ul.tabs
+    %li= link_to "Info", "#"
+    %li= link_to "Services", "#"
+    %li= link_to "Staff", "#"
+    %li.current= link_to "Reviews", "#"
+    %li= link_to "FAQ", "#"
+    
+  %ul.filters
+    %li
+      %label Show Reviews of 
+      %select
+        %option{:selected => true} Salon/Spa
+        %option Spa
+        
+  %ul.review-results
+    %li
+      %h2 Best Asian Hair Stylist
+      .ratings
+        %form
+          %input.star{:name => "star1", :type => "radio"}/
+          %input.star{:name => "star1", :type => "radio"}/
+          %input.star{:name => "star1", :type => "radio"}/
+          %input.star{:name => "star1", :type => "radio"}/
+          %input.star{:name => "star1", :type => "radio"}/
+      %p 
+        Who, in your opinion, makes the Asian Hair in Boston? My friends and I all love a good burger and if we've missed any, want to know about Who, in your opinion, makes the Asian Hair in Boston? My friends and I all love a good burger and if we've missed any, want to know about ...
+        [
+        = link_to " read full review ", "#"
+        ]
+      %p.post-details
+        %span.author 
+          Posted by:
+          = link_to "Marisa O.", '#'
+        %span.date-posted
+          Date posted Mar. 23, 2006
+    %li
+      %h2 Best Asian Hair Stylist
+      .ratings
+        %form
+          %input.star{:name => "star1", :type => "radio"}/
+          %input.star{:name => "star1", :type => "radio"}/
+          %input.star{:name => "star1", :type => "radio"}/
+          %input.star{:name => "star1", :type => "radio"}/
+          %input.star{:name => "star1", :type => "radio"}/
+
+      %p 
+        Who, in your opinion, makes the Asian Hair in Boston? My friends and I all love a good burger and if we've missed any, want to know about Who, in your opinion, makes the Asian Hair in Boston? My friends and I all love a good burger and if we've missed any, want to know about ...
+        [
+        = link_to " read full review ", "#"
+        ]
+      %p.post-details
+        %span.author 
+          Posted by:
+          = link_to "Marisa O.", '#'
+        %span.date-posted
+          Date posted Mar. 23, 2006
