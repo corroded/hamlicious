@@ -1,5 +1,357 @@
-/* line 3, ../../../../app/stylesheets/farora/ie.sass */
-#nav ul li {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: "" "";
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+a img {
+  border: none;
+}
+
+.filters {
+  clear: both;
+  margin: 30px;
+  margin-left: 15px;
+  *zoom: 1;
+  margin-bottom: 10px;
+}
+.filters:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.filters li {
   float: left;
-  border: 1px solid red;
+  width: 330px;
+}
+
+.results {
+  *zoom: 1;
+}
+.results:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.results > li {
+  list-style-position: inside;
+  float: left;
+  width: 30%;
+  margin: 15px;
+}
+.results > li li {
+  margin-bottom: 5px;
+}
+.results > li p {
+  padding-bottom: 10px;
+}
+
+.tabs {
+  clear: both;
+  margin-top: 20px;
+  margin-left: 15px;
+  *zoom: 1;
+}
+.tabs:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.tabs li {
+  background: #c3c3c3;
+  float: left;
+  padding: 5px 10px;
+  margin-right: 3px;
+}
+.tabs li:hover {
+  background: black;
+}
+.tabs li.current {
+  background: black;
+}
+.tabs li a {
+  color: white;
+}
+
+#results-main {
+  min-height: 440px;
+  color: black;
+}
+#results-main a {
+  color: #47a3ff;
+}
+#results-main b {
+  color: black;
+}
+#results-main > ul {
+  padding-left: 30px;
+}
+#results-main label {
+  float: left;
+  display: block;
+  padding: 10px;
+}
+#results-main select {
+  border: 1px solid #96a6c5;
+}
+
+#review {
+  padding-left: 50px;
+}
+#review .review-results {
+  margin-left: 15px;
+}
+#review .review-results li {
+  border-bottom: 1px solid #cccccc;
+  padding: 0;
+  padding-top: 20px;
+}
+#review select {
+  border: 1px solid #96a6c5;
+}
+#review a {
+  color: #47a3ff;
+}
+#review .tabs a {
+  color: white;
+}
+#review p {
+  color: #666666;
+  margin-bottom: 20px;
+}
+#review p.post-details {
+  color: #999999;
+}
+#review label {
+  float: left;
+  display: block;
+  padding: 10px;
+}
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+.ratings {
+  clear: both;
+  *zoom: 1;
+  margin-left: -20px;
+  margin-bottom: 20px;
+}
+.ratings:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+div.rating-cancel, div.star-rating {
+  float: left;
+  width: 17px;
+  height: 15px;
+  text-indent: -999em;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  overflow: hidden;
+}
+div.rating-cancel {
+  background: url(/images/farora/delete.gif) no-repeat 0 -16px;
+}
+div.rating-cancel a {
+  background: url(/images/farora/delete.gif) no-repeat 0 -16px;
+}
+div.star-rating {
+  background: url(/images/farora/star.gif) no-repeat 0 0px;
+}
+div.star-rating a {
+  background: url(/images/farora/star.gif) no-repeat 0 0px;
+}
+div.rating-cancel a, div.star-rating a {
+  display: block;
+  width: 16px;
+  height: 100%;
+  background-position: 0 0px;
+  border: 0;
+}
+div.star-rating-on a {
+  background-position: 0 -16px !important;
+}
+div.star-rating-hover a {
+  background-position: 0 -32px;
+}
+div.star-rating-readonly a {
+  cursor: default !important;
+}
+div.star-rating {
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+/* Read Only CSS */
+/* Partial Star CSS */
+/* END jQuery.Rating Plugin CSS */
+/* NAV BAR STUFF */
+#nav ul {
+  float: right;
+}
+#nav ul li {
+  padding-left: 20px;
+  float: left;
+  display: block;
+}
+
+fieldset ol li {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+fieldset ol li label {
+  display: block;
+  color: white;
+  font-weight: bold;
+}
+fieldset ol li.after-count, fieldset ol li.additional-services {
+  clear: both;
+}
+fieldset ol li.after-count label {
+  margin-bottom: 2px;
+}
+fieldset ol li.additional-services {
+  clear: both;
+  float: left;
+}
+fieldset ol li.additional-services label {
+  clear: none;
+  display: inline;
+  float: left;
+  width: 150px;
+}
+fieldset ol .price {
+  margin-top: 5px;
+}
+fieldset ol .price input {
+  margin-bottom: 10px;
+}
+fieldset ol .stylist select {
+  margin-bottom: 15px;
+}
+fieldset ol .date {
+  width: 115px;
+}
+fieldset ol .time {
+  margin-top: -2px;
+  margin-left: 0;
+}
+fieldset ol .time label {
+  padding-top: 2px;
+  margin-bottom: -2px;
+}
+
+.filters {
+  clear: both;
+  margin: 30px;
+  margin-left: 15px;
+  *zoom: 1;
+  margin-bottom: 10px;
+}
+.filters:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.filters li {
+  float: left;
+  width: 330px;
+}
+
+.filters li {
+  float: left;
+  width: 400px;
+}
+.filters label {
+  padding-left: 0 !important;
+}
+.filters select {
+  margin-top: 8px;
+}
+
+#index-main .commit {
+  clear: both;
+  text-align: center;
+  width: 100%;
+}
+#index-main .submit {
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: url('/images/farora/buttons.png?1298224770') no-repeat;
+  width: 500;
+  height: 50;
+  overflow: hidden;
+  background-position: 0px -64px;
+}
+#index-main .submit:hover {
+  background-position: 0px -96px;
 }

@@ -1,5 +1,139 @@
+@import compass/reset
+@import blueprint/grid
+@import blueprint/fancy-type
+@import compass/utilities/general/clearfix
+@import compass/css3
+@import compass/reset/utilities
+@import compass/utilities/sprites
+
+$main-color: #47a3ff
+
+@import lists
+@import results
+@import review
+@import star_rating
+
+
+/* NAV BAR STUFF
 #nav
   ul
+    float: right
     li
+      :padding
+        :left 20px
       :float left
-      :border 1px solid #f00
+      :display block
+      
+fieldset
+  ol
+    li
+      +float-left
+      margin: 0
+
+      label
+        display: block
+        color: #fff
+        font-weight: bold
+        
+      &.after-count,
+      &.additional-services
+        clear: both
+        
+      &.after-count
+        label
+          margin:
+            bottom: 2px
+            
+        
+      &.additional-services
+        clear: both
+        float: left
+        
+        label
+          clear: none
+          display: inline
+          float: left
+          width: 150px
+        
+    .price
+      margin:
+        top: 5px
+      input
+        margin:
+          bottom: 10px
+
+    .stylist
+      select
+        margin:
+          bottom: 15px
+
+    .date
+      :width 115px
+      margin
+    
+    .time
+      label
+        padding:
+          top: 2px
+        margin:
+          bottom: -2px
+
+      :margin
+        :top -2px
+        left: 0
+        
+
+
+    
+.filters
+  clear: both
+  margin: 30px
+    left: 15px
+  +pie-clearfix
+  margin:
+    bottom: 10px
+  
+  li
+    float: left
+    width: 330px
+
+
+.filters
+  li
+    float: left
+    width: 400px
+  
+  label
+    padding: 
+      left: 0 !important
+      
+  select
+    margin:
+      top: 8px
+      
+#index-main
+  .commit
+    clear: both
+    text-align: center
+    width: 100%
+
+  .submit
+    margin:
+      top: 20px
+    :font
+      :size 1em
+      :weight bold
+    :width 120px
+    :height 30px
+    :text
+      :transform uppercase
+      :align center
+    :margin 0 auto
+    :border none
+    :color #fff
+    :cursor pointer
+    +sprite-background-rectangle("farora/buttons.png", 500, 50)
+    +sprite-row(3)
+  
+    &:hover
+      +sprite-row(4)
