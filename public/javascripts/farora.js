@@ -27,5 +27,20 @@ $(document).ready(function() {
     return false;
   });
   
-  $('input.star').rating();
+  if($('input.star').length) {
+    $('input.star').rating();
+  }
+  
+  if($("#salon_location").length) {
+    $("#salon_location").placeHolder({
+      "text"           : "Boston, MA"
+    });    
+  }
+  
+  if($("#salon_name").length) {
+    $("#salon_name").placeHolder({
+      "text"           : "Enter Spa Name or Search All"
+    });    
+  }
+  
 });
