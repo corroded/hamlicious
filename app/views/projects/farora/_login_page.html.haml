@@ -1,0 +1,59 @@
+#index-main.inner-container
+  %form
+    %fieldset
+      %h3
+        %span.city Farora Boston,
+        %em= link_to "not your city?", "/"
+    
+      %ol
+        %li
+          %label 
+            Location
+          %input{:size => 20, :id => "salon_location"}
+        %li
+          %label Pick a Salon or Spa
+          %input{:size => 35, :class => "salon", :id => "salon_name"}
+        %li.type-of-service
+          %label Type Service
+          %select
+            %option Any Service
+            %option Any Service
+            %option Any Service
+            %option Any Service
+          = link_to "Add another service", "#", :class => "add-service"
+        %li.stylist
+          %label Stylist
+          %select
+            %option Any Stylist
+            %option Any Stylist
+            %option Any Stylist
+            %option Any Stylist
+        %li.no-count.price
+          %label Price
+          %input{:disabled => true, :size => 3}
+        
+        %li.after-count
+          %label Date
+          %input{:id => "date", :readonly => "readonly", :class => "date", :value => "Any Date"}
+        %li.time
+          %label Start Time
+          %select{:id => "start-time", :class => "date"}
+            %option{:selected => true} Any Time
+            %option 08:00 AM
+            %option 08:15 AM
+            %option 08:30 AM
+            %option 08:45 AM
+            %option 09:00 AM
+          /%input{:id => "start-time", :readonly => "readonly", :class => "date"}
+        %li.time
+          %label End Time
+          %select{:id => "end-time", :class => "date"}
+            %option Any Time
+            %option 09:00 PM
+            %option 09:15 PM
+            %option 09:30 PM
+            %option 09:45 PM
+            %option 09:00 PM
+          /%input{:id => "end-time", :readonly => "readonly", :class => "date"}
+        %li.no-count.commit
+          %input{:type => "submit", :class => "submit", :value => "Search"}

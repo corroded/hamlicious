@@ -1,0 +1,160 @@
+#profile-page.inner-container
+  %ul.sub-nav
+    %li
+      %a{:href => ""}
+        = image_tag("/images/farora/mail.jpg", :width => "10px")
+        Msg me
+    %li
+      %a{:href => ""}
+        = image_tag("/images/farora/add-friend.jpg")
+        Add me
+    %li
+      %a{:href => ""}
+        = image_tag("/images/farora/refer.jpg")
+        Refer
+
+  .side-bar
+    .profile-pic
+      = image_tag("/images/farora/sample-profile.jpg")
+      %p
+        %strong Photos
+        %span.count (20)
+        %span.see-all
+          = link_to "see all", "#"
+          |
+        %span.edit-link
+          = link_to "add + edit"
+                
+    .friends
+      %h4
+        Friends
+        %span.count (128)
+        %span.see-all
+          = link_to "see all", "#"
+          |
+        %span.edit-link
+          = link_to "add + edit"
+      
+      %ul
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+        %li
+          %a
+            = image_tag("/images/farora/avatar.jpg", :class => "avatar-thumbnail")
+            Foaud Chebib
+
+    
+  .main-content
+    / %ul.tabs
+    /   %li= link_to "Info", "#"
+    /   %li= link_to "Services", "#"
+    /   %li= link_to "Staff", "#"
+    /   %li= link_to "Reviews", "#"
+    /   %li= link_to "FAQ", "#"
+
+    %h2
+      Marisa
+      %span.status-message needs caffeine to function, period.
+      
+    %h4
+      My Info
+      %span.edit-link
+        = link_to "edit", "/"
+    
+    %ul.profile-data
+      %li
+        %span Name:
+        Marissa Oge
+      %li
+        %span Occupation:
+        Student
+      %li
+        %span Location:
+        Boston, MA
+      %li
+        %span Birthday:
+        August 5, 1981
+        
+    .description
+      %p
+        My hair is my life.  I love how the sun lightens my hair in the summer.  Which is why I have to make sure that I can book appointments with my favorite colorist each month to maintain the my color and shine.  %br
+      %p
+        Everyone loves my hair.
+    
+    %h4
+      My 
+      = image_tag("farora/heart.png")
+      's
+      %em Ranked in order of preference
+      %span.edit-link
+        = link_to "edit", "/"
+
+      
+    %ul.pipes
+      %li.current
+        Salon
+        |
+      %li
+        = link_to "Stylist", "#" 
+        |
+      %li= link_to "Product", "#"
+      
+    %dl
+      %dt= link_to "James Joseph Salon", "/"
+      %dd &ndash; 312 Newbury St. Boston, MA
+      %dt= link_to "Marc Harris Salon", "/" 
+      %dd &ndash; 312 Newbury St. Boston, MA
+      %dt= link_to  "Acote Salon ", "/"
+      %dd &ndash; 312 Newbury St. Boston, MA
+      %dt= link_to  "Vidal Sasson Salon ", "/"
+      %dd &ndash; 312 Newbury St. Boston, MA
+      %dt= link_to  "Safar Salon ", "/"
+      %dd &ndash; 312 Newbury St. Boston, MA
+      
+    %h4
+      My Reviews
+      
+    %ul.pipes
+      %li.current
+        Salon
+        |
+      %li
+        = link_to "Stylist", "#" 
+        |
+      %li= link_to "Product", "#"
+      
+    = render :partial => "/projects/farora/review_results"

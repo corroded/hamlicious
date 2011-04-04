@@ -1,0 +1,258 @@
+#business-profile.main.inner-container
+  = render :partial => "projects/farora/result_description"
+  
+  .main-content
+    %h1 
+      Boston Salon n Spa
+      %span.salon-address
+        333 Mission Hill Main St. Boston, MA - 2728
+  
+    .ratings
+      %form
+        %input.star{:name => "star1", :type => "radio"}/
+        %input.star{:name => "star1", :type => "radio"}/
+        %input.star{:name => "star1", :type => "radio"}/
+        %input.star{:name => "star1", :type => "radio"}/
+        %input.star{:name => "star1", :type => "radio"}/
+      
+      %span
+        (
+        = link_to "2", "#"
+        )
+      
+      %span
+        = link_to "Review Salon", "#"
+        |
+        = link_to "Review Stylist", "#"
+      
+    
+      / AddThis Button BEGIN
+      .addthis_toolbox.addthis_default_style
+        %a.addthis_button_tweet
+        %a.addthis_button_facebook_like{"fb:like:layout" => "button_count"}
+        %a.addthis_button_email{:href => "http://www.addthis.com/bookmark.php"}
+          %img{:alt => "Email", :border => "0", :height => "16", :src => "http://s7.addthis.com/button1-email.gif", :width => "54"}/
+        %a{:href => "/", :class => "favorites-link empty-favorite"}
+          heart
+      :javascript
+        var addthis_config = {"data_track_clickback":true};
+      %script{:src => "http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d89697904d86376", :type => "text/javascript"}
+      / AddThis Button END
+    
+    .salon-images
+      = image_tag("farora/salon-image.jpg")
+      %ul.thumbs
+        %li= image_tag("farora/salon-image-thumb.jpg")
+        %li= image_tag("farora/salon-image-thumb.jpg")
+        %li= image_tag("farora/salon-image-thumb.jpg")
+        %li= image_tag("farora/salon-image-thumb.jpg")
+        %li= image_tag("farora/salon-image-thumb.jpg")
+  
+    = render :partial => "projects/farora/tabs"
+            
+  .search-sidebar
+    %h2 Search Results:
+    
+    %ul.filters
+      %li
+        %label Filters
+        %ul.search-filters
+          %li
+            %input{:type => "checkbox", :class => "checkbox", :value => "makeup"} 
+            %label.checkbox-label Makeup
+          %li
+            %input{:type => "checkbox", :class => "checkbox", :value => "haircut"} 
+            %label.checkbox-label Hair Cut
+          %li
+            %input{:type => "checkbox", :class => "checkbox", :value => "blowdry"} 
+            %label.checkbox-label Blow Dry
+            
+      %li
+        %label Sort By
+        %select 
+          %option{:selected => :true} Best Match
+    
+    %ul.search-results
+      %li.makeup
+        %h5 
+          Makeup
+          %span.service-cost $30.00
+        %p
+          with 
+          = link_to "Miller", "#"
+          %em Top Stylist
+        %p
+          Start:
+          %strong 6 AM
+          End
+          %strong 6:30 AM
+        .ratings
+          %form
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+          %span
+            (
+            = link_to "2", "#"  
+            )
+        %p.book-stylist
+          = link_to "Book", "#"
+      %li.haircut
+        %h5 
+          Hair Cut
+          %span.service-cost $30.00
+        %p
+          with 
+          = link_to "Miller", "#"
+          %em Top Stylist
+        %p
+          Start:
+          %strong 6 AM
+          End
+          %strong 6:30 AM
+        .ratings
+          %form
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+          %span
+            (
+            = link_to "2", "#"  
+            )
+        %p.book-stylist
+          = link_to "Book", "#"
+      %li.blowdry
+        %h5 
+          Blow Dry
+          %span.service-cost $30.00
+        %p
+          with 
+          = link_to "Miller", "#"
+          %em Top Stylist
+        %p
+          Start:
+          %strong 6 AM
+          End
+          %strong 6:30 AM
+        .ratings
+          %form
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+          %span
+            (
+            = link_to "2", "#"  
+            )
+        %p.book-stylist
+          = link_to "Book", "#"
+      %li.blowdry
+        %h5 
+          Blow Dry
+          %span.service-cost $30.00
+        %p
+          with 
+          = link_to "Miller", "#"
+          %em Top Stylist
+        %p
+          Start:
+          %strong 6 AM
+          End
+          %strong 6:30 AM
+        .ratings
+          %form
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+          %span
+            (
+            = link_to "2", "#"  
+            )
+        %p.book-stylist
+          = link_to "Book", "#"
+      %li.blowdry
+        %h5
+          Blowdry
+          %span.service-cost $30.00
+        %p
+          with 
+          = link_to "Miller", "#"
+          %em Top Stylist
+        %p
+          Start:
+          %strong 6 AM
+          End
+          %strong 6:30 AM
+        .ratings
+          %form
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+          %span
+            (
+            = link_to "2", "#"  
+            )
+        %p.book-stylist
+          = link_to "Book", "#"
+      %li.haircut
+        %h5 
+          Hair Cut
+          %span.service-cost $30.00
+        %p
+          with 
+          = link_to "Miller", "#"
+          %em Top Stylist
+        %p
+          Start:
+          %strong 6 AM
+          End
+          %strong 6:30 AM
+        .ratings
+          %form
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+          %span
+            (
+            = link_to "2", "#"  
+            )
+        %p.book-stylist
+          = link_to "Book", "#"
+      %li
+        %h5 
+          Makeup
+          %span.service-cost $30.00
+        %p
+          with 
+          = link_to "Miller", "#"
+          %em Top Stylist
+        %p
+          Start:
+          %strong 6 AM
+          End
+          %strong 6:30 AM
+        .ratings
+          %form
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+            %input.star{:name => "star1", :type => "radio"}/
+          %span
+            (
+            = link_to "2", "#"  
+            )
+        %p.book-stylist
+          = link_to "Book", "#"
+          

@@ -1,0 +1,146 @@
+#client-list.main.inner-container
+  %h1 Client List
+  
+  / %ul.filters
+  /   %li
+  /     %label Filters:
+  /     %select 
+  /       %option{:selected => :true} 
+  
+  #searchbox
+    %form
+      %input{:type => "text", :size => 20}
+      %select
+        %option Clients
+        %option Salons
+        %option Staff
+      %input{:type => "submit", :value => "Search"}
+  
+  %table#clients
+    %thead
+      %tr
+        %th Clients
+        %th Type
+        %th Discount/Perks
+        %th Last Booking
+    %tbody
+      %tr
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "Bembol Roco 1", "/"
+        %td VIP
+        %td 20% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 21, 2011
+      %tr.even
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "Bembol Roco 2", "/"
+        %td Preferred
+        %td 20% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 21, 2011
+      %tr
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "ABembol Roco", "/"
+        %td VIP
+        %td 20% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 21, 2011
+      %tr.even
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "CBembol Roco", "/"
+        %td Regular
+        %td 20% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 3, 2011
+      %tr
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "AABembol Roco", "/"
+        %td VIP
+        %td 30% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 11, 2011
+      %tr.even
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "Bembol ARoco", "/"
+        %td Regular
+        %td 30% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 21, 2011
+      %tr
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "Bembol AARoco", "/"
+        %td VIP
+        %td 20% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 21, 2011
+      %tr.even
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "Bembol Roco", "/"
+        %td Preferred
+        %td 60% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 22, 2011
+      %tr
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "Bembol Roco", "/"
+        %td VIP
+        %td 60% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 2, 2011
+      %tr.even
+        %td.client
+          = image_tag("farora/avatar.jpg")
+          = link_to "Bembol Roco", "/"
+        %td Preferred
+        %td 20% off on Hair Cut
+        %td
+          %strong
+            Haircut
+          on 
+          %strong
+          February 14, 2011

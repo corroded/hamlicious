@@ -1,0 +1,88 @@
+#client-page.main.inner-container
+  #searchbox
+    %form
+      %input{:type => "text", :size => 20}
+      %select
+        %option Clients
+        %option Salons
+        %option Staff
+      %input{:type => "submit", :value => "Search"}
+
+  .side-bar
+    .profile-pic
+      = image_tag("/images/farora/sample-profile.jpg")
+      %p
+        %strong Photos
+        %span.count (20)
+        %span.see-all
+          = link_to "see all", "#"
+          |
+        %span.edit-link
+          = link_to "add + edit"
+
+    
+  .main-content
+    .tabs
+      %ul
+        %li.current= link_to "Info", "#"
+        %li= link_to "Bookings", "#"
+        
+    #info
+
+      %h2
+        Marisa Oge
+      
+      %h4
+        My Info
+        %span.edit-link
+          = link_to "edit", "/"
+    
+      %ul.profile-data
+        %li
+          %span Name:
+          Marissa Oge
+        %li
+          %span Occupation:
+          Student
+        %li
+          %span Birthday:
+          August 5, 1981
+        %li
+          %span Relationship Status:
+          Married
+        %li
+          %span Email:
+          Marisa@hotmail.com
+        %li
+          %span Phone
+          617.333.9999
+        %li
+          %span Address
+          118 Riverway Apt 32 Boston, MA, USA
+        
+      .description
+        %p
+          My hair is my life.  I love how the sun lightens my hair in the summer.  Which is why I have to make sure that I can book appointments with my favorite colorist each month to maintain the my color and shine.  %br
+        %p
+          Everyone loves my hair.
+    
+      %h4
+        Type
+        %span.edit-link
+          = link_to "edit", "/"
+    
+      %ul.profile-data
+        %li
+          %span Type:
+          Preferred Client
+        %li
+          %span Discount:
+          30%
+        %li
+          %span Perks
+          Free Blow Dry
+    
+      %h4
+        Formulas
+        %span.edit-link
+          = link_to "edit", "/"

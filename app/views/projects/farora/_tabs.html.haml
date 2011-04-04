@@ -1,0 +1,69 @@
+.tabs    
+  %ul
+    %li.current= link_to "Info", "#info"
+    %li= link_to "Services", "#services"
+    %li= link_to "Staff", "#staff"
+    %li= link_to "Reviews", "#reviews"
+    %li= link_to "FAQ", "#faq"
+
+  #info
+    %ul
+      %li
+        %h2 About Boston Salon n Spa
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      %li
+        %h2 Hours of Operation
+        %ul.weekly-schedule
+          %li
+            %span.day Monday 
+            %span.hours 7 AM to 8 PM
+          %li
+            %span.day Tuesday 
+            %span.hours 7 AM to 8 PM
+          %li
+            %span.day Wednesday
+            %span.hours 7 AM to 8 PM
+          %li
+            %span.day Thursday
+            %span.hours 7 AM to 8 PM
+          %li
+            %span.day Friday
+            %span.hours 7 AM to 8 PM
+          %li
+            %span.day Saturday 
+            %span.hours 7 AM to 8 PM
+          %li
+            %span.day Sunday
+            %span.hours 7 AM to 8 PM
+        
+      %li
+        %h2 Accepted Payments
+        %p
+          Cash, Visa, Mastercard, Discover
+      
+      %li
+        %h2 Location
+        %p.address
+          Boston Salon N Spa
+          %br
+          30 Newburt Street
+          %br
+          Boston, MA
+        %p
+          = link_to "Click for Directions", "#"
+    
+        %div#map
+    
+  #services{:style => "display: none"}
+    %p PEW
+    
+  #reviews{:style => "display: none"}
+    %ul.filters
+      %li
+        %label Show Reviews of 
+        %select
+          %option{:selected => true} Salon/Spa
+          %option Spa
+        
+    = render :partial => "/projects/farora/review_results"
