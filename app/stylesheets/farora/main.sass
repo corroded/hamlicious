@@ -7,31 +7,32 @@
 @import compass/utilities/sprites
 
 $main-color: #47a3ff
+$highlight: #FFB628
 
 body
-  :font
-    :family Arial, sans-serif
-    :size 14px
-  :width 100%
-  :background #f6f6f6
+  font:
+    family: Arial, sans-serif
+    size: 14px
+  width: 100%
+  background: #f6f6f6
   
   &.index
     background: #131313 url(/images/farora/bg1.jpg) no-repeat top center
     
 #container
   margin: 0 auto
-  :overflow-x hidden 
+  overflow-x: hidden 
     
 ul
-  :list-style-type none
+  list-style-type: none
 
 a
-  :color #fff
-  :text
-    :decoration none
+  color: $main-color
+  text:
+    decoration: none
     
   &:hover
-    :color #999
+    color: #999
     
 h2
   font:
@@ -40,23 +41,85 @@ h2
   padding:
     bottom: 10px
     
+h4
+  padding: 5px
+  background: #eee
+  font: 
+    weight: bold
+  margin:
+    bottom: 20px
+  border: 
+    top: 1px solid #ccc
+    
+strong
+  font:
+    weight: bold
+    
+em
+  font:
+    style: italic
+        
 select
   +border-radius(5px)
-  :display block
-  :font
-    :size .9em
-  :padding 5px
-  :color #000
-  :background #fff
-  :border 0
-  :height 30px
-  :width 194px
-  :margin
-    :top 5px
+  display: block
+  font:
+    size: .9em
+  padding: 5px
+  color: #000
+  background: #fff
+  border: 0
+  height: 30px
+  width: 194px
+  margin:
+    top: 5px
+    
+p
+  color: #666
+
     
 .inner-container
-  :width 1024px
-  :margin 0 auto  
+  +pie-clearfix
+  width: 1024px
+  margin: 0 auto  
+  
+.addthis_toolbox
+  float: right
+  margin:
+    top: -4px
+    right: 10px
+  +pie-clearfix
+  a
+    float: right
+    
+    &.addthis_button_tweet
+      iframe
+        width: 100px !important
+    
+    iframe
+      width: 50px !important
+    
+  .addthis_button_email
+    float: left
+    padding:
+      top: 2px
+    
+  .favorites-link
+    padding: 
+      top: 2px
+      left: 5px
+      
+.favorite
+  background: url(/images/farora/heart.png) no-repeat 5px 5px
+  text-indent: -10000px
+  display: block
+  float: left
+  width: 15px
+  height: 15px
+  
+.empty-favorite
+  @extend .favorite
+  background: url(/images/farora/empty-heart.png) no-repeat 5px 5px
+  
   
 @import calendrical
 @import footer
@@ -65,5 +128,11 @@ select
 @import lists
 @import nav
 @import review
-@import results
 @import star_rating
+@import profile
+@import results
+@import pagination
+@import business_profile
+@import info
+@import sub_nav
+@import tables

@@ -1,0 +1,45 @@
+//PAGINATION
+.pagination-section 
+  :font
+    :size .9em
+    :weight bold
+  :color #999
+  :border
+    :top 0px solid #999
+  :padding 5px
+  margin:
+    bottom: 30px
+  
+  .small-caps
+    :font-weight normal
+    
+.pagination 
+  
+  a 
+    :font
+      :weight normal
+    :text
+      :decoration none
+    :border 1px solid #999
+    :margin 0
+    :padding 1px 5px
+
+    &:hover, 
+    &:active
+      :color #fff
+      background: #000
+      
+  span.current
+    :font
+      :weight bold
+    :color $highlight
+    :background #000
+    :border 1px solid #999
+    :margin 0 2px
+    :padding 1px 5px
+    
+  span.disabled 
+    :color #ddd
+    :border 1px solid #eee
+    :margin 0 2px
+    :padding 1px 5px

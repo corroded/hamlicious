@@ -1,36 +1,63 @@
 #nav
-  :float right
-  :padding
-    :top 5px
-  :font
-    :size .9em
-  :margin
-    :right 60px
+  float: right
+  padding:
+    top: 5px
+  font:
+    size: .9em
+  margin:
+    right: 60px
+    bottom: 15px
   
   ul
-    :width 650px
-    :margin 0 
-    :padding 0
+    width: 650px
+    margin: 0 
+    padding: 0
     
     li
-      :text-align right
-      :margin
-        :right 0
-      :display inline
-      :padding
-        :left 20px
+      text-align: right
+      margin:
+        right: 0
+      display: inline
+      padding:
+        left: 20px
 
       a
-        :color #fff
-        :text
-          :decoration none
+        color: #fff
+        text:
+          decoration: none
         &:hover
-          :color #9b9b9b
+          color: #9b9b9b
 
         &.invite-friends-link
-          :color #ffb431
+          color: #ffb431
           
       em
         a
-          :color #93C9FF
+          color: #93C9FF
       
+.sub-nav
+  float: right
+  padding:
+    right: 85px
+  
+  li
+    margin:
+      left: 5px
+    width: 85px
+    float: left
+    img
+      width: 15px
+    a
+      border: 1px solid #d1d1d1
+      +border-radius(5px)
+      background: #fff
+      display: block
+      padding: 5px 10px
+      color: #000
+      text:
+        transform: uppercase
+      font:
+        size: 11px
+      
+      &:hover
+        background: #efefef

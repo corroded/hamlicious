@@ -53,7 +53,8 @@ a img {
 .filters {
   clear: both;
   margin: 30px;
-  margin-left: 15px;
+  margin-left: 0;
+  margin-top: 20px;
   *zoom: 1;
   margin-bottom: 10px;
 }
@@ -65,9 +66,12 @@ a img {
   overflow: hidden;
   visibility: hidden;
 }
-.filters li {
+.filters > ul > li {
   float: left;
   width: 330px;
+}
+.filters > ul select {
+  margin-top: 0;
 }
 
 .results {
@@ -94,13 +98,12 @@ a img {
   padding-bottom: 10px;
 }
 
-.tabs {
+.tabs > ul {
   clear: both;
   margin-top: 20px;
-  margin-left: 15px;
   *zoom: 1;
 }
-.tabs:after {
+.tabs > ul:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -108,20 +111,186 @@ a img {
   overflow: hidden;
   visibility: hidden;
 }
-.tabs li {
+.tabs > ul > li {
   background: #c3c3c3;
   float: left;
-  padding: 5px 10px;
   margin-right: 3px;
 }
-.tabs li:hover {
+.tabs > ul > li:hover {
   background: black;
 }
-.tabs li.current {
+.tabs > ul > li.current {
   background: black;
 }
-.tabs li a {
+.tabs > ul > li.current a {
   color: white;
+}
+.tabs > ul > li a {
+  display: block;
+  color: #666666;
+  padding: 5px 10px;
+}
+.tabs > ul > li a:hover {
+  color: white;
+}
+
+.pipes {
+  clear: both;
+  *zoom: 1;
+  color: #999999;
+  margin-bottom: 10px;
+}
+.pipes:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.pipes li {
+  display: inline;
+}
+.pipes li.current {
+  color: #666666;
+}
+
+dl {
+  *zoom: 1;
+}
+dl:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+dl dt {
+  float: left;
+  clear: both;
+}
+dl dd {
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.result-grid {
+  *zoom: 1;
+  padding-top: 20px;
+}
+.result-grid:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.result-grid li {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background: white;
+  width: 200px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.result-grid li img {
+  margin: auto;
+  width: 200px;
+}
+.result-grid li .result-overlay {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  width: 180px;
+  padding: 10px;
+}
+.result-grid li .result-overlay strong {
+  color: #ffb628;
+  font-weight: 100;
+  font-size: 14px;
+}
+.result-grid li p {
+  font-size: 12px;
+  color: white;
+}
+.result-grid li p.rating-count {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.thumbs {
+  *zoom: 1;
+}
+.thumbs:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.thumbs li {
+  float: left;
+  margin-right: 10px;
+}
+.thumbs li:last-child {
+  margin-right: 0;
+}
+.thumbs li img {
+  width: 105px;
+}
+
+.weekly-schedule {
+  width: 200px;
+}
+.weekly-schedule li {
+  margin-bottom: 5px;
+  *zoom: 1;
+}
+.weekly-schedule li:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.weekly-schedule li .day {
+  float: left;
+  width: 80px;
+}
+.weekly-schedule li .hours {
+  float: right;
+}
+
+.search-filters li {
+  *zoom: 1;
+  clear: both;
+  padding: 0;
+  padding-bottom: 0;
+}
+.search-filters li:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.search-filters li .checkbox-label {
+  display: inline;
+  padding: 0;
+  padding-left: 10px;
+}
+.search-filters li .checkbox {
+  display: inline;
+  padding: 0;
+  margin: 0;
 }
 
 #results-main {
@@ -146,37 +315,74 @@ a img {
   border: 1px solid #96a6c5;
 }
 
-#review {
-  padding-left: 50px;
+.main {
+  clear: both;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  width: 930px;
 }
-#review .review-results {
-  margin-left: 15px;
+.main h1 {
+  font-size: 20px;
+  margin: 20px 0;
 }
-#review .review-results li {
+.main select {
+  border: 1px solid #96a6c5;
+}
+.main a {
+  color: #47a3ff;
+}
+.main label {
+  float: left;
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+}
+.main input, .main select, .main textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.main input {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #96a6c5;
+  padding: 3px;
+  float: left;
+  margin: 5px;
+  background: #efefef;
+}
+.main select {
+  float: left;
+  padding: 2px;
+  width: auto;
+  height: auto;
+}
+
+.review-results li {
   border-bottom: 1px solid #cccccc;
   padding: 0;
   padding-top: 20px;
 }
-#review select {
-  border: 1px solid #96a6c5;
-}
-#review a {
-  color: #47a3ff;
-}
-#review .tabs a {
-  color: white;
-}
-#review p {
-  color: #666666;
+.review-results p {
   margin-bottom: 20px;
 }
-#review p.post-details {
+.review-results p.post-details {
   color: #999999;
 }
-#review label {
-  float: left;
-  display: block;
+
+.result-description {
+  background: #cccccc;
   padding: 10px;
+  width: 900px;
+  text-align: center;
+  margin: 20px 0;
+}
+.result-description p {
+  color: black;
 }
 
 /* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
@@ -241,6 +447,145 @@ div.star-rating {
 /* Read Only CSS */
 /* Partial Star CSS */
 /* END jQuery.Rating Plugin CSS */
+#profile-page, #client-page {
+  padding-top: 20px;
+  width: 970px;
+}
+#profile-page .side-bar, #client-page .side-bar {
+  clear: both;
+  float: left;
+  width: 220px;
+  border: 1px solid #d1d1d1;
+  background: white;
+}
+#profile-page .side-bar .profile-pic, #client-page .side-bar .profile-pic {
+  padding: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d1d1d1;
+}
+#profile-page .side-bar p, #client-page .side-bar p {
+  margin: 5px;
+  color: black;
+}
+#profile-page .side-bar span, #client-page .side-bar span {
+  font-size: 12px;
+  font-weight: 100;
+}
+#profile-page .side-bar span.count, #client-page .side-bar span.count {
+  color: #4d4d4d;
+}
+#profile-page .side-bar h4, #client-page .side-bar h4 {
+  padding: 5px 10px;
+  padding-left: 15px;
+  border-top: 0;
+}
+#profile-page .side-bar .friends, #client-page .side-bar .friends {
+  padding-bottom: 20px;
+}
+#profile-page .side-bar .friends ul, #client-page .side-bar .friends ul {
+  margin: 0 5px;
+  *zoom: 1;
+}
+#profile-page .side-bar .friends ul:after, #client-page .side-bar .friends ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#profile-page .side-bar .friends ul li, #client-page .side-bar .friends ul li {
+  float: left;
+  width: 50px;
+  margin: 5px 10px;
+  font-size: 11px;
+}
+#profile-page .main-content, #client-page .main-content {
+  float: left;
+  width: 600px;
+  padding: 10px;
+  margin-left: 50px;
+}
+#profile-page .main-content h2, #client-page .main-content h2 {
+  color: #ffa200;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+#profile-page .main-content h2 span, #client-page .main-content h2 span {
+  color: black;
+  font-size: 0.7em;
+}
+#profile-page .main-content h4, #client-page .main-content h4 {
+  margin-top: 20px;
+  position: relative;
+}
+#profile-page .main-content h4 em, #client-page .main-content h4 em {
+  padding-left: 10px;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666666;
+}
+#profile-page .main-content h4 span.edit-link, #client-page .main-content h4 span.edit-link {
+  float: right;
+  font-weight: 100;
+}
+#profile-page .main-content h4 span.edit-link a, #client-page .main-content h4 span.edit-link a {
+  color: #cccccc;
+}
+#profile-page .main-content p, #client-page .main-content p {
+  margin-bottom: 15px;
+}
+#profile-page .main-content .profile-data, #client-page .main-content .profile-data {
+  margin-bottom: 20px;
+}
+#profile-page .main-content .profile-data li, #client-page .main-content .profile-data li {
+  font-weight: bold;
+  margin-bottom: 3px;
+  *zoom: 1;
+}
+#profile-page .main-content .profile-data li:after, #client-page .main-content .profile-data li:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#profile-page .main-content .profile-data li span, #client-page .main-content .profile-data li span {
+  color: #999999;
+  display: block;
+  float: left;
+  width: 130px;
+}
+#profile-page .main-content .description, #client-page .main-content .description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#profile-page .main-content .review-results, #client-page .main-content .review-results {
+  margin: 0;
+}
+#profile-page .main-content .review-results h2, #client-page .main-content .review-results h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0;
+}
+
+#client-page {
+  width: 930px;
+}
+#client-page #main-content {
+  width: 630px;
+}
+#client-page #searchbox {
+  margin-right: 35px;
+}
+#client-page .tabs ul {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 /* NAV BAR STUFF */
 #nav ul {
   float: right;

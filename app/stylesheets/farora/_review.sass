@@ -1,36 +1,66 @@
-#review
+.main
+  clear: both
   padding:
-    left: 50px
-    
-  .review-results
-    margin:
-      left: 15px
-      
-    li
-      border:
-        bottom: 1px solid #ccc
-      padding: 0
-        top: 20px
+    right: 50px
+    bottom: 20px
+  width: 930px
         
+  h1
+    font:
+      size: 20px
+    margin: 20px 0
+    
   select
     border: 1px solid #96A6C5
       
   a
     color: $main-color
     
-  .tabs
-    a
-      color: #fff
+  label
+    float: left
+    display: block
+    padding: 10px
+      left: 0
+      
+  input, select, textarea
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+      
+  input
+    +border-radius(5px)
+    border: 1px solid #96A6C5
+    padding: 3px
+    float: left
+    margin: 5px
+    background: #efefef
+    
+  select
+    float: left
+    padding: 2px
+    width: auto
+    height: auto
+    
+.review-results
+  li
+    border:
+      bottom: 1px solid #ccc
+    padding: 0
+      top: 20px
   
   p
-    color: #666
     margin:
       bottom: 20px
         
     &.post-details
       color: #999
       
-  label
-    float: left
-    display: block
-    padding: 10px
+.result-description
+  background: #ccc
+  padding: 10px
+  width: 900px
+  text-align: center
+  margin: 20px 0
+  
+  p
+    color: #000

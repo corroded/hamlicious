@@ -8,7 +8,7 @@
 		var eo = this;
 		var settings = {
 			'text'		  : 'Placeholder',
-			'placeholder' : '#999',
+			'placeholder' : '#666',
 			'active' 	  : '#000'
 		};
 		return this.each(function() {        

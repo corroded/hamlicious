@@ -1,0 +1,30 @@
+#quick-links
+  @extend #header
+  background: #262626
+  padding:
+    top: 0
+  font:
+    size: 12px
+
+  li
+    display: block
+    float: left
+    
+    &:first-child
+      a
+        padding:
+          left: 0
+          
+    &.current
+      a 
+        text-decoration: underline
+    
+    a
+      display: block
+      padding: 10px 15px
+      
+      &:hover
+        background: #333
+        color: #fff
+        
+    

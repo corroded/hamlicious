@@ -1,14 +1,19 @@
 .filters
   clear: both
   margin: 30px
-    left: 15px
+    left: 0
+    top: 20px
   +pie-clearfix
   margin:
     bottom: 10px
-  
-  li
-    float: left
-    width: 330px
+  > ul 
+    > li
+      float: left
+      width: 330px
+    
+    select
+      margin:
+        top: 0
     
 .results
   +pie-clearfix
@@ -26,28 +31,138 @@
     p
       padding:
         bottom: 10px
-        
-    
     
 .tabs
+  > ul
+    clear: both
+    margin:
+      top: 20px
+    +pie-clearfix  
+    > li
+      background: #c3c3c3
+      float: left
+      margin:
+        right: 3px
+    
+      &:hover
+        background: #000
+    
+      &.current
+        background: #000
+        
+        a
+          color: #fff
+      
+      a
+        display: block
+        color: #666
+        padding: 5px 10px
+        
+        &:hover
+          color: #fff
+
+.pipes
   clear: both
-  margin:
-    top: 20px
-    left: 15px
   +pie-clearfix
+  color: #999
+  margin:
+    bottom: 10px
   
   li
-    background: #c3c3c3
-    float: left
-    padding: 5px 10px
-    margin:
-      right: 3px
-    
-    &:hover
-      background: #000
-    
+    display: inline
     &.current
-      background: #000
+      color: #666
       
-    a
+dl
+  +pie-clearfix
+  dt
+    float: left
+    clear: both
+  dd
+    float: left
+    margin:
+      left: 5px
+      bottom: 5px
+      
+.result-grid
+  +pie-clearfix
+  padding:
+    top: 20px
+  li
+    padding: 10px
+    border: 1px solid #ccc
+    background: #fff
+    width: 200px
+    position: relative
+    float: left
+    margin:
+      right: 10px
+      bottom: 20px
+    
+    img
+      margin: auto
+      width: 200px
+      
+    .result-overlay
+      position: absolute
+      bottom: 10px
+      background: rgba(#000,0.9)
+      width: 180px
+      padding: 10px
+      
+      strong
+        color: $highlight
+        font:
+          weight: 100
+          size: 14px
+        
+    p
+      font:
+        size: 12px
       color: #fff
+        
+      &.rating-count
+        margin:
+          top: 3px
+          bottom: 10px
+          
+.thumbs
+  +pie-clearfix
+  li
+    float: left
+    margin:
+      right: 10px
+    &:last-child
+      margin:
+        right: 0
+        
+    img
+      width: 105px
+        
+.weekly-schedule
+  width: 200px
+  li
+    margin:
+      bottom: 5px
+    +pie-clearfix
+    .day
+      float: left
+      width: 80px 
+    .hours
+      float: right
+  
+  
+.search-filters
+  li
+    +pie-clearfix
+    clear: both
+    padding: 0
+      bottom: 0
+    .checkbox-label
+      display: inline
+      padding: 0
+        left: 10px
+    .checkbox
+      display: inline
+      padding: 0
+      margin: 0
