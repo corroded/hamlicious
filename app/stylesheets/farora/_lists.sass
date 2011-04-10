@@ -1,19 +1,15 @@
 .filters
   clear: both
-  margin: 30px
-    left: 0
-    top: 20px
   +pie-clearfix
   margin:
     bottom: 10px
-  > ul 
-    > li
-      float: left
-      width: 330px
-    
-    select
-      margin:
-        top: 0
+  > li
+    float: left
+    width: 330px
+  
+  select
+    margin:
+      top: 5px
     
 .results
   +pie-clearfix
@@ -60,6 +56,9 @@
         
         &:hover
           color: #fff
+  > div
+    padding:
+      top: 20px
 
 .pipes
   clear: both
@@ -137,7 +136,7 @@ dl
         right: 0
         
     img
-      width: 105px
+      width: 111px
         
 .weekly-schedule
   width: 200px
@@ -153,16 +152,54 @@ dl
   
   
 .search-filters
+  @extend .tabs
+  margin:
+    bottom: 20px
+  a
+    float: left
+    padding: 5px
+      right: 0 !important
+  .close-tab
+    width: 10px
+    float: left
+    padding:
+      right: 5px !important
+  
+  #add-new-filter
+    padding: 5px !important
+  
+    
+.q-and-a
+  h3
+    margin:
+      bottom: 10px
+    font:
+      weight: bold
   li
-    +pie-clearfix
-    clear: both
-    padding: 0
-      bottom: 0
-    .checkbox-label
-      display: inline
-      padding: 0
-        left: 10px
-    .checkbox
-      display: inline
-      padding: 0
-      margin: 0
+    margin:
+      bottom: 10px
+      
+.main
+  ol
+    list-style:
+      type: decimal
+      position: outside
+    margin: 
+      left: 20px
+    li
+      margin:
+        bottom: 20px
+        
+      h3
+        font:
+          weight: bold
+    
+      
+.bulleted
+  list-style:
+    type: disc
+    position: inside
+  li
+    margin:
+      bottom: 10px
+    

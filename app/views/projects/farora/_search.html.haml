@@ -1,0 +1,10 @@
+#fancybox-content
+  .main
+    - form_for "search" do |f| 
+      %fieldset
+        %ul
+          %li
+            %label What do you want to Search for? 
+            = f.text_field :search
+          %li.commit
+            = f.submit "Search", :class => "submit"

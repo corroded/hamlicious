@@ -55,17 +55,19 @@
     
     %ul.filters
       %li
-        %label Filters
-        %ul.search-filters
-          %li
-            %input{:type => "checkbox", :class => "checkbox", :value => "makeup"} 
-            %label.checkbox-label Makeup
-          %li
-            %input{:type => "checkbox", :class => "checkbox", :value => "haircut"} 
-            %label.checkbox-label Hair Cut
-          %li
-            %input{:type => "checkbox", :class => "checkbox", :value => "blowdry"} 
-            %label.checkbox-label Blow Dry
+        .search-filters
+          %ul
+            %li.current
+              %a#makeup{:href => "#"} Makeup
+              = link_to "x", "#", :class => "close-tab"
+            %li
+              %a#haircut{:href => "#"} Hair Cut
+              = link_to "x", "#", :class => "close-tab"
+            %li
+              %a#blowdry{:href => "#"} Blow Dry
+              = link_to "x", "#", :class => "close-tab"
+            %li
+              %a#add-new-filter{:href => "#"} +
             
       %li
         %label Sort By
@@ -98,7 +100,7 @@
             = link_to "2", "#"  
             )
         %p.book-stylist
-          = link_to "Book", "#"
+          = link_to('Select &raquo;'.html_safe,'/')
       %li.haircut
         %h5 
           Hair Cut
@@ -124,7 +126,7 @@
             = link_to "2", "#"  
             )
         %p.book-stylist
-          = link_to "Book", "#"
+          = link_to('Select &raquo;'.html_safe,'/')
       %li.blowdry
         %h5 
           Blow Dry
@@ -150,7 +152,7 @@
             = link_to "2", "#"  
             )
         %p.book-stylist
-          = link_to "Book", "#"
+          = link_to('Select &raquo;'.html_safe,'/')
       %li.blowdry
         %h5 
           Blow Dry
@@ -176,7 +178,7 @@
             = link_to "2", "#"  
             )
         %p.book-stylist
-          = link_to "Book", "#"
+          = link_to('Select &raquo;'.html_safe,'/')
       %li.blowdry
         %h5
           Blowdry
@@ -202,7 +204,7 @@
             = link_to "2", "#"  
             )
         %p.book-stylist
-          = link_to "Book", "#"
+          = link_to('Select &raquo;'.html_safe,'/')
       %li.haircut
         %h5 
           Hair Cut
@@ -228,7 +230,7 @@
             = link_to "2", "#"  
             )
         %p.book-stylist
-          = link_to "Book", "#"
+          = link_to('Select &raquo;'.html_safe,'/')
       %li
         %h5 
           Makeup
@@ -254,5 +256,5 @@
             = link_to "2", "#"  
             )
         %p.book-stylist
-          = link_to "Book", "#"
+          = link_to('Select &raquo;'.html_safe,'/')
           

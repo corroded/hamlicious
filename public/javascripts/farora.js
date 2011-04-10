@@ -45,15 +45,16 @@ $(document).ready(function() {
   
   $(".tabs ul > li > a").live("click", function(){
     var tabToOpen = $(this).attr("href");
-    $(".tabs div").hide();
+    $(".tabs > div").hide();
     $(".tabs ul > li").removeClass("current");
     $(tabToOpen).show();
     $(this).parent("li").addClass("current");
+    
     return false;
   })
   
   $.tablesorter.defaults.widgets = ['zebra']; 
-  $("#clients").tablesorter();
+  $(".main table").tablesorter();
   
   $(".empty-favorite").live("click", function(){
     $(this).removeClass("empty-favorite");
@@ -67,15 +68,20 @@ $(document).ready(function() {
     return false;
   });
   
-  $(".search-filters input:checkbox").live("click", function(){
-    var resultType = "."+$(this).val();
-    if($(this).attr("checked")) {
-      $(this).parents(".search-sidebar").find(".search-results li").hide();
-      $(this).parents(".search-sidebar").find(".search-results").find(resultType).show();
-    } else {
-      $(this).parents(".search-sidebar").find(".search-results li").slideDown();
-    }
+  // $(".search-filters a").live("click", function(){
+  //   var resultType = "."+$(this).val();
+  //   if($(this).attr("checked")) {
+  //     $(this).parents(".search-sidebar").find(".search-results li").hide();
+  //     $(this).parents(".search-sidebar").find(".search-results").find(resultType).show();
+  //   } else {
+  //     $(this).parents(".search-sidebar").find(".search-results li").slideDown();
+  //   }
+  //   return false;
+  // })
+
+  $(".close-tab").live("click", function(){
+    $(this).parent().remove();
+    return false;
   })
-  
   
 });

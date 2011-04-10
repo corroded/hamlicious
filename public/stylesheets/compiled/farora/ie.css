@@ -52,9 +52,6 @@ a img {
 
 .filters {
   clear: both;
-  margin: 30px;
-  margin-left: 0;
-  margin-top: 20px;
   *zoom: 1;
   margin-bottom: 10px;
 }
@@ -66,12 +63,12 @@ a img {
   overflow: hidden;
   visibility: hidden;
 }
-.filters > ul > li {
+.filters > li {
   float: left;
   width: 330px;
 }
-.filters > ul select {
-  margin-top: 0;
+.filters select {
+  margin-top: 5px;
 }
 
 .results {
@@ -98,12 +95,12 @@ a img {
   padding-bottom: 10px;
 }
 
-.tabs > ul {
+.tabs > ul, .search-filters > ul {
   clear: both;
   margin-top: 20px;
   *zoom: 1;
 }
-.tabs > ul:after {
+.tabs > ul:after, .search-filters > ul:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -111,27 +108,30 @@ a img {
   overflow: hidden;
   visibility: hidden;
 }
-.tabs > ul > li {
+.tabs > ul > li, .search-filters > ul > li {
   background: #c3c3c3;
   float: left;
   margin-right: 3px;
 }
-.tabs > ul > li:hover {
+.tabs > ul > li:hover, .search-filters > ul > li:hover {
   background: black;
 }
-.tabs > ul > li.current {
+.tabs > ul > li.current, .search-filters > ul > li.current {
   background: black;
 }
-.tabs > ul > li.current a {
+.tabs > ul > li.current a, .search-filters > ul > li.current a {
   color: white;
 }
-.tabs > ul > li a {
+.tabs > ul > li a, .search-filters > ul > li a {
   display: block;
   color: #666666;
   padding: 5px 10px;
 }
-.tabs > ul > li a:hover {
+.tabs > ul > li a:hover, .search-filters > ul > li a:hover {
   color: white;
+}
+.tabs > div, .search-filters > div {
+  padding-top: 20px;
 }
 
 .pipes {
@@ -242,7 +242,7 @@ dl dd {
   margin-right: 0;
 }
 .thumbs li img {
-  width: 105px;
+  width: 111px;
 }
 
 .weekly-schedule {
@@ -268,29 +268,49 @@ dl dd {
   float: right;
 }
 
-.search-filters li {
-  *zoom: 1;
-  clear: both;
-  padding: 0;
-  padding-bottom: 0;
+.search-filters {
+  margin-bottom: 20px;
 }
-.search-filters li:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
+.search-filters a {
+  float: left;
+  padding: 5px;
+  padding-right: 0 !important;
 }
-.search-filters li .checkbox-label {
-  display: inline;
-  padding: 0;
-  padding-left: 10px;
+.search-filters .close-tab {
+  width: 10px;
+  float: left;
+  padding-right: 5px !important;
 }
-.search-filters li .checkbox {
-  display: inline;
-  padding: 0;
-  margin: 0;
+.search-filters #add-new-filter {
+  padding: 5px !important;
+}
+
+.q-and-a h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.q-and-a li {
+  margin-bottom: 10px;
+}
+
+.main ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+.main ol li {
+  margin-bottom: 20px;
+}
+.main ol li h3 {
+  font-weight: bold;
+}
+
+.bulleted {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.bulleted li {
+  margin-bottom: 10px;
 }
 
 #results-main {
@@ -315,53 +335,6 @@ dl dd {
   border: 1px solid #96a6c5;
 }
 
-.main {
-  clear: both;
-  padding-right: 50px;
-  padding-bottom: 20px;
-  width: 930px;
-}
-.main h1 {
-  font-size: 20px;
-  margin: 20px 0;
-}
-.main select {
-  border: 1px solid #96a6c5;
-}
-.main a {
-  color: #47a3ff;
-}
-.main label {
-  float: left;
-  display: block;
-  padding: 10px;
-  padding-left: 0;
-}
-.main input, .main select, .main textarea {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-.main input {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #96a6c5;
-  padding: 3px;
-  float: left;
-  margin: 5px;
-  background: #efefef;
-}
-.main select {
-  float: left;
-  padding: 2px;
-  width: auto;
-  height: auto;
-}
-
 .review-results li {
   border-bottom: 1px solid #cccccc;
   padding: 0;
@@ -377,7 +350,6 @@ dl dd {
 .result-description {
   background: #cccccc;
   padding: 10px;
-  width: 900px;
   text-align: center;
   margin: 20px 0;
 }
@@ -389,10 +361,25 @@ dl dd {
 .ratings {
   clear: both;
   *zoom: 1;
+  margin-top: 5px;
   margin-left: -20px;
   margin-bottom: 20px;
+  font-size: 12px;
 }
 .ratings:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.ratings form {
+  *zoom: 1;
+  float: left;
+  margin-top: -3px;
+}
+.ratings form:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -581,7 +568,7 @@ div.star-rating {
 #client-page #searchbox {
   margin-right: 35px;
 }
-#client-page .tabs ul {
+#client-page .tabs ul, #client-page .search-filters ul {
   margin-top: 0;
   margin-bottom: 20px;
 }

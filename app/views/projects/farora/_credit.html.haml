@@ -1,13 +1,40 @@
 .main.inner-container
-  %form
+  %h2 Share Farora, Earn Credit!
+  
+  %p 
+    Get $5 in Farora Credit for each invited friend that completes their first online booking.  Use your credit towards your next salon/spa appointment booked through Farora.
+  
+  %p 
+    There are three ways to send your Personal Invite Link: Manually enter email addresses (Left), invite friends using your address book (Top Right), or copy and paste your Personal Invite Link into your Email, Facebook, Tweet, Blog, and more (Bottom Right).
+    
+  %form.message-form
     %fieldset
       %ul
         %li
           %label From:
           %input{:type => "text", :value => "Marissa Oge"}
         %li
-          %label From:
+          %label To:
           %textarea{:rows => 2, :cols => 50}
+          %p.reminder
+            (use commas to separate emails)
         %li
-          %label From:
+          %label Message:
           %textarea{:rows => 2, :cols => 50}
+          %p.reminder#character-count
+            Characters left: 184
+        %li.commit
+          %input{:type => "submit", :class => "submit", :value => "Submit"}
+          
+  .sub-content
+    .farora-credits
+      %h3 
+        You have $20 in Farora Credit.
+        %span= link_to "How do I use my credit?", "/"
+        
+    %p
+      To invite friends from your address book
+      = link_to "click here", "/"
+
+    .import-address-books
+      = image_tag("farora/import.jpg", :title => "aol, gmail, plaxo, yahoo, outlook", :alt => "aol, gmail, plaxo, yahoo, outlook", :width => 400)

@@ -1,0 +1,28 @@
+#fancybox-content
+  #user_signin.main
+    %h2 Welcome Back!
+    
+    %p Sign in and access your profile.
+    
+    %form
+      %fieldset
+        %ul 
+          %li
+            %label Email Address
+            %input{:type => "text"}
+          %li
+            %label Password
+            %input{:type => "password"}
+          %li.commit
+            %p= link_to "Forgot your password?", "/"
+            %input{:type => "submit", :class => "submit", :value => "Go"}
+    
+    %p Or sign in using Facebook Connect
+    
+    %fb:login-button.fb_login_not_logged_in.FB_login_button{:onlogin => "OnRequestPermission();"}
+      %a#RES_ID_fb_login.fbconnect_login_button
+        %img#RES_ID_fb_login_image{:alt => "Connect", :src => "http://static.ak.fbcdn.net/rsrc.php/v1/yq/r/RwaZQIP0ALn.gif"}/
+   	
+    %h3 Hey good looking, not a member?
+   
+    %p= link_to "Sign up", "/signup"

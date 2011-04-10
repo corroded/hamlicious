@@ -2,7 +2,7 @@
   +pie-clearfix
   .main-content
     float: left
-    width: 570px
+    width: 610px
     padding: 10px
       left: 0
 
@@ -15,7 +15,7 @@
     margin:
       bottom: 30px
     > img
-      width: 565px
+      width: 595px
       margin:
         bottom: 10px
 
@@ -27,6 +27,14 @@
       top: 30px
     background: #efefef
     padding: 10px
+    
+    .commit
+      +pie-clearfix
+      text-align: center
+      
+      .submit
+        float: none
+        margin: 0 auto
 
     li
       +pie-clearfix
@@ -70,6 +78,8 @@
       text:
         transform: uppercase
         align: center
+      font:
+        size: 12px
   
   .address
     margin:
@@ -94,3 +104,22 @@
     
   select
     float: left
+
+.submit
+  font:
+    size: 1em
+    weight: bold
+  width: 120px
+  height: 30px
+  text:
+    transform: uppercase
+  margin: 0 auto
+  border: none
+  color: #fff
+  cursor: pointer
+  +sprite-background-rectangle("farora/buttons.png", 500, 50)
+  +sprite-row(3)
+  +border-radius(5px)
+
+  &:hover
+    +sprite-row(4)

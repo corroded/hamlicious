@@ -1,12 +1,12 @@
 .tabs    
   %ul
-    %li.current= link_to "Info", "#info"
+    %li= link_to "Info", "#info"
     %li= link_to "Services", "#services"
-    %li= link_to "Staff", "#staff"
+    %li.current= link_to "Staff", "#staff"
     %li= link_to "Reviews", "#reviews"
     %li= link_to "FAQ", "#faq"
 
-  #info
+  #info{:style => "display: none"}
     %ul
       %li
         %h2 About Boston Salon n Spa
@@ -56,14 +56,232 @@
         %div#map
     
   #services{:style => "display: none"}
-    %p PEW
+    %table
+      %thead
+        %tr
+          %th Services
+          %th Stylist
+          %th Senior Stylist
+          %th Top Stylist
+          %th Creative Director
+      %tbody
+        %tr
+          %td Makeup
+          %td $50
+          %td $100
+          %td $150
+          %td $200
+        %tr.even
+          %td Makeup
+          %td $50
+          %td $100
+          %td $150
+          %td $200
+        %tr
+          %td Makeup
+          %td $50
+          %td $100
+          %td $150
+          %td $200
+        %tr.even
+          %td Makeup
+          %td $50
+          %td $100
+          %td $150
+          %td $200
+        %tr
+          %td Makeup
+          %td $50
+          %td $100
+          %td $150
+          %td $200
+        %tr.even
+          %td Makeup
+          %td $50
+          %td $100
+          %td $150
+          %td $200
+        %tr
+          %td Makeup
+          %td $50
+          %td $100
+          %td $150
+          %td $200
+        %tr.even
+          %td Makeup
+          %td $50
+          %td $100
+          %td $150
+          %td $200
+          
+  #staff
+    %ul
+      %li
+        = image_tag("/images/farora/sample-profile.jpg", :class => "staff-pic")
+        .staff-details
+          %p.staff-name
+            = link_to "Marisa Oge", "/"
+            %span.staff-title Head Stylist
+          %p
+            %a{:href => "/", :class => "favorites-link empty-favorite"}
+              heart
+
+          .ratings
+            %form
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+            %span
+              (
+              = link_to "2", "#"  
+              )
+          %p.staff-status I love my clients!
+          %p.view-work= link_to "View my work", "/"
+      %li.even
+        = image_tag("/images/farora/sample-profile.jpg", :class => "staff-pic")
+        .staff-details
+          %p.staff-name
+            = link_to "Marisa Oge", "/"
+            %span.staff-title Head Stylist
+          %p
+            %a{:href => "/", :class => "favorites-link empty-favorite"}
+              heart
+
+          .ratings
+            %form
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+            %span
+              (
+              = link_to "2", "#"  
+              )
+          %p.staff-status I love my clients!
+          %p.view-work= link_to "View my work", "/"
+      %li
+        = image_tag("/images/farora/sample-profile.jpg", :class => "staff-pic")
+        .staff-details
+          %p.staff-name
+            = link_to "Marisa Oge", "/"
+            %span.staff-title Head Stylist
+          %p
+            %a{:href => "/", :class => "favorites-link empty-favorite"}
+              heart
+
+          .ratings
+            %form
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+            %span
+              (
+              = link_to "2", "#"  
+              )
+          %p.staff-status I love my clients!
+          %p.view-work= link_to "View my work", "/"
+      %li.even
+        = image_tag("/images/farora/sample-profile.jpg", :class => "staff-pic")
+        .staff-details
+          %p.staff-name
+            = link_to "Marisa Oge", "/"
+            %span.staff-title Head Stylist
+          %p
+            %a{:href => "/", :class => "favorites-link empty-favorite"}
+              heart
+
+          .ratings
+            %form
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+            %span
+              (
+              = link_to "2", "#"  
+              )
+          %p.staff-status I love my clients!
+          %p.view-work= link_to "View my work", "/"
+      %li
+        = image_tag("/images/farora/sample-profile.jpg", :class => "staff-pic")
+        .staff-details
+          %p.staff-name
+            = link_to "Marisa Oge", "/"
+            %span.staff-title Head Stylist
+          %p
+            %a{:href => "/", :class => "favorites-link empty-favorite"}
+              heart
+
+          .ratings
+            %form
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+            %span
+              (
+              = link_to "2", "#"  
+              )
+          %p.staff-status I love my clients!
+          %p.view-work= link_to "View my work", "/"
+      %li.even
+        = image_tag("/images/farora/sample-profile.jpg", :class => "staff-pic")
+        .staff-details
+          %p.staff-name
+            = link_to "Marisa Oge", "/"
+            %span.staff-title Head Stylist
+          %p
+            %a{:href => "/", :class => "favorites-link empty-favorite"}
+              heart
+
+          .ratings
+            %form
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+              %input.star{:name => "star1", :type => "radio"}/
+            %span
+              (
+              = link_to "2", "#"  
+              )
+          %p.staff-status I love my clients!
+          %p.view-work= link_to "View my work", "/"
     
+          
   #reviews{:style => "display: none"}
     %ul.filters
       %li
         %label Show Reviews of 
         %select
           %option{:selected => true} Salon/Spa
-          %option Spa
+          %option Stylist
         
     = render :partial => "/projects/farora/review_results"
+    
+  #faq{:style => "display: none"}
+    %h2 Frequently Asked Questions
+    %ul.q-and-a
+      %li
+        %h3 Question 1?
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      %li
+        %h3 Question 2?
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      %li
+        %form
+          %fieldset
+            %h3 Don't be shy, ask us anything.
+            %ul
+              %li
+                %textarea{:rows => 5, :cols => 50}
+              %li.commit
+                %input{:type => "submit", :class => "submit", :value => "Submit"}
+              %li
