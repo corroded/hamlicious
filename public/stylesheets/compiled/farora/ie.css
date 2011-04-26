@@ -323,13 +323,14 @@ dl dd {
 #results-main b {
   color: black;
 }
-#results-main > ul {
-  padding-left: 30px;
+#results-main li {
+  margin-left: 0;
 }
 #results-main label {
   float: left;
   display: block;
   padding: 10px;
+  padding-left: 0;
 }
 #results-main select {
   border: 1px solid #96a6c5;

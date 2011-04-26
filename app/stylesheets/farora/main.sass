@@ -193,14 +193,6 @@ textarea
           size: 11px
           weight: bold
           
-        
-        
-  .message-form
-    float: left
-    width: 470px
-    padding:
-      right: 10px
-
   .radios
     +pie-clearfix
     li
@@ -262,20 +254,24 @@ textarea
     height: 300px
     width: 450px
     
-    .import-address-books
-      width: 450px
-      text-align: center
+    > div
       background: #fff
       border: 1px solid #ccc
-    
-    .farora-credits
-      background: #fff
-      padding: 10px
       text-align: center
       width: 430px
-      border: 1px solid #ccc
+      +pie-clearfix
       margin:
         bottom: 30px
+      padding: 10px
+        
+      > ul
+        margin:
+          top: 10px
+        +pie-clearfix
+          
+    
+    .farora-credits
+      width: 430px
       
       h3
         font:
@@ -285,7 +281,7 @@ textarea
           font:
             weight: normal
             size: 12px
-        
+            
 
   
 @import calendrical
@@ -305,3 +301,4 @@ textarea
 @import tables
 @import staff
 @import fancybox
+@import credit

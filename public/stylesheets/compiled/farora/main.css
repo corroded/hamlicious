@@ -298,11 +298,6 @@ textarea {
   font-size: 11px;
   font-weight: bold;
 }
-.main .message-form {
-  float: left;
-  width: 470px;
-  padding-right: 10px;
-}
 .main .radios {
   *zoom: 1;
 }
@@ -375,19 +370,37 @@ textarea {
   height: 300px;
   width: 450px;
 }
-.main .sub-content .import-address-books {
-  width: 450px;
-  text-align: center;
+.main .sub-content > div {
   background: white;
   border: 1px solid #cccccc;
-}
-.main .sub-content .farora-credits {
-  background: white;
-  padding: 10px;
   text-align: center;
   width: 430px;
-  border: 1px solid #cccccc;
+  *zoom: 1;
   margin-bottom: 30px;
+  padding: 10px;
+}
+.main .sub-content > div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.main .sub-content > div > ul {
+  margin-top: 10px;
+  *zoom: 1;
+}
+.main .sub-content > div > ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.main .sub-content .farora-credits {
+  width: 430px;
 }
 .main .sub-content .farora-credits h3 {
   font-weight: bold;
@@ -1320,13 +1333,14 @@ div.star-rating {
 #results-main b {
   color: black;
 }
-#results-main > ul {
-  padding-left: 30px;
+#results-main li {
+  margin-left: 0;
 }
 #results-main label {
   float: left;
   display: block;
   padding: 10px;
+  padding-left: 0;
 }
 #results-main select {
   border: 1px solid #96a6c5;
@@ -1477,7 +1491,7 @@ div.star-rating {
 
 #searchbox {
   float: right;
-  width: 300px;
+  width: 375px;
   margin-bottom: 20px;
 }
 #searchbox form {
@@ -1494,6 +1508,7 @@ div.star-rating {
 #searchbox input {
   float: left;
   margin: 5px;
+  height: 25px;
 }
 #searchbox input[type=text] {
   width: 150px;
@@ -1501,6 +1516,7 @@ div.star-rating {
 }
 #searchbox select {
   float: left;
+  height: 25px;
 }
 
 .submit {
@@ -1541,6 +1557,8 @@ div.star-rating {
 }
 
 #quick-links {
+  clear: both;
+  float: left;
   background: #262626;
   padding-top: 0;
   font-size: 12px;
@@ -1669,4 +1687,36 @@ div.star-rating {
 }
 #fancybox-content .main input {
   clear: both;
+}
+
+#credit h2 {
+  margin-bottom: 30px;
+}
+#credit .message-form {
+  float: left;
+  width: 470px;
+  padding-right: 10px;
+}
+#credit .message-form p {
+  margin-bottom: 20px;
+}
+#credit .trackable-code li {
+  float: left;
+}
+#credit .share-links {
+  clear: both;
+  margin-top: 10px;
+}
+#credit .share-links li {
+  float: left;
+  width: 40%;
+}
+#credit .share-links li img {
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+#credit input[type=text] {
+  padding: 5px;
+  width: 280px;
 }

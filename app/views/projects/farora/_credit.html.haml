@@ -1,14 +1,12 @@
-.main.inner-container
+#credit.main.inner-container
   %h2 Share Farora, Earn Credit!
   
-  %p 
+  %p
     Get $5 in Farora Credit for each invited friend that completes their first online booking.  Use your credit towards your next salon/spa appointment booked through Farora.
-  
-  %p 
-    There are three ways to send your Personal Invite Link: Manually enter email addresses (Left), invite friends using your address book (Top Right), or copy and paste your Personal Invite Link into your Email, Facebook, Tweet, Blog, and more (Bottom Right).
     
   %form.message-form
     %fieldset
+      %p Send your friends a trackable invitation code right to their email.
       %ul
         %li
           %label From:
@@ -38,3 +36,17 @@
 
     .import-address-books
       = image_tag("farora/import.jpg", :title => "aol, gmail, plaxo, yahoo, outlook", :alt => "aol, gmail, plaxo, yahoo, outlook", :width => 400)
+      
+    %p 
+      Your Invite Link: Copy and Paste it into your Email, Facebook, Tweet, and more!
+    
+    .trackable-code
+      %ul
+        %li
+          %input{:type => "text", :readonly => true, :value => "http://www.farora.com/invite/enriqueflorendo"}
+        %li
+          %input{:type => "submit", :class => "submit", :value => "Search"}
+      
+      %ul.share-links
+        %li= link_to image_tag("farora/fb-icon.jpg") + "Share on Facebook", "http://www.facebook.com/pages/Farora/177253782311505"
+        %li= link_to image_tag("farora/twitter-icon.jpg") + "Tweet Invite", "http://twitter.com/Faroratweet"
