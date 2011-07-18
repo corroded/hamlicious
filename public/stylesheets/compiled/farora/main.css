@@ -481,7 +481,8 @@ textarea {
   margin: auto;
   background: #131313;
   bottom: 0;
-  position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 #footer:after {
   content: "\0020";
@@ -591,6 +592,10 @@ textarea {
 #index-main fieldset h3 {
   font-size: 1.2em;
   font-weight: bold;
+}
+#index-main fieldset > p {
+  margin-top: 10px;
+  color: white;
 }
 #index-main fieldset em {
   font-weight: normal;
@@ -1491,7 +1496,7 @@ div.star-rating {
 
 #searchbox {
   float: right;
-  width: 300px;
+  width: 375px;
   margin-bottom: 20px;
 }
 #searchbox form {
@@ -1508,6 +1513,7 @@ div.star-rating {
 #searchbox input {
   float: left;
   margin: 5px;
+  height: 25px;
 }
 #searchbox input[type=text] {
   width: 150px;
@@ -1515,6 +1521,7 @@ div.star-rating {
 }
 #searchbox select {
   float: left;
+  height: 25px;
 }
 
 .submit {
@@ -1555,9 +1562,13 @@ div.star-rating {
 }
 
 #quick-links {
-  background: #262626;
+  clear: both;
+  float: left;
   padding-top: 0;
   font-size: 12px;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px dashed #cccccc;
 }
 #quick-links li {
   display: block;
@@ -1574,8 +1585,7 @@ div.star-rating {
   padding: 10px 15px;
 }
 #quick-links li a:hover {
-  background: #333333;
-  color: white;
+  background: #efefef;
 }
 
 .main table {
