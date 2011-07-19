@@ -4,3 +4,4 @@ config/database.yml
 .sass-cache/
 tmp/
 html/
+*.swp
