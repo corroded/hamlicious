@@ -1,0 +1,655 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+.filters {
+  clear: both;
+  *zoom: 1;
+  margin-bottom: 10px;
+}
+.filters:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.filters > li {
+  float: left;
+  width: 330px;
+}
+.filters select {
+  margin-top: 5px;
+}
+
+.results {
+  *zoom: 1;
+}
+.results:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.results > li {
+  list-style-position: inside;
+  float: left;
+  width: 30%;
+  margin: 15px;
+}
+.results > li li {
+  margin-bottom: 5px;
+}
+.results > li p {
+  padding-bottom: 10px;
+}
+
+.tabs > ul, .search-filters > ul {
+  clear: both;
+  margin-top: 20px;
+  *zoom: 1;
+}
+.tabs > ul:after, .search-filters > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tabs > ul > li, .search-filters > ul > li {
+  background: #c3c3c3;
+  float: left;
+  margin-right: 3px;
+}
+.tabs > ul > li:hover, .search-filters > ul > li:hover {
+  background: black;
+}
+.tabs > ul > li.current, .search-filters > ul > li.current {
+  background: black;
+}
+.tabs > ul > li.current a, .search-filters > ul > li.current a {
+  color: white;
+}
+.tabs > ul > li a, .search-filters > ul > li a {
+  display: block;
+  color: #666666;
+  padding: 5px 10px;
+}
+.tabs > ul > li a:hover, .search-filters > ul > li a:hover {
+  color: white;
+}
+.tabs > div, .search-filters > div {
+  padding-top: 20px;
+}
+
+.pipes {
+  clear: both;
+  *zoom: 1;
+  color: #999999;
+  margin-bottom: 10px;
+}
+.pipes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pipes li {
+  display: inline;
+}
+.pipes li.current {
+  color: #666666;
+}
+
+dl {
+  *zoom: 1;
+}
+dl:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+dl dt {
+  float: left;
+  clear: both;
+}
+dl dd {
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.result-grid {
+  *zoom: 1;
+  padding-top: 20px;
+}
+.result-grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.result-grid li {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background: white;
+  width: 200px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.result-grid li img {
+  margin: auto;
+  width: 200px;
+}
+.result-grid li .result-overlay {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  width: 180px;
+  padding: 10px;
+}
+.result-grid li .result-overlay strong {
+  color: #ffb628;
+  font-weight: 100;
+  font-size: 14px;
+}
+.result-grid li p {
+  font-size: 12px;
+  color: white;
+}
+.result-grid li p.rating-count {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.thumbs {
+  *zoom: 1;
+}
+.thumbs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.thumbs li {
+  float: left;
+  margin-right: 10px;
+}
+.thumbs li:last-child {
+  margin-right: 0;
+}
+.thumbs li img {
+  width: 111px;
+}
+
+.weekly-schedule {
+  width: 200px;
+}
+.weekly-schedule li {
+  margin-bottom: 5px;
+  *zoom: 1;
+}
+.weekly-schedule li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.weekly-schedule li .day {
+  float: left;
+  width: 80px;
+}
+.weekly-schedule li .hours {
+  float: right;
+}
+
+.search-filters {
+  margin-bottom: 20px;
+}
+.search-filters a {
+  float: left;
+  padding: 5px;
+  padding-right: 0 !important;
+}
+.search-filters .close-tab {
+  width: 10px;
+  float: left;
+  padding-right: 5px !important;
+}
+.search-filters #add-new-filter {
+  padding: 5px !important;
+}
+
+.q-and-a h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.q-and-a li {
+  margin-bottom: 10px;
+}
+
+.main ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+.main ol li {
+  margin-bottom: 20px;
+}
+.main ol li h3 {
+  font-weight: bold;
+}
+
+.bulleted {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.bulleted li {
+  margin-bottom: 10px;
+}
+
+#results-main {
+  min-height: 440px;
+  color: black;
+}
+#results-main a {
+  color: #47a3ff;
+}
+#results-main b {
+  color: black;
+}
+#results-main li {
+  margin-left: 0;
+}
+#results-main label {
+  float: left;
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+}
+#results-main select {
+  border: 1px solid #96a6c5;
+}
+
+.review-results li {
+  border-bottom: 1px solid #cccccc;
+  padding: 0;
+  padding-top: 20px;
+}
+.review-results p {
+  margin-bottom: 20px;
+}
+.review-results p.post-details {
+  color: #999999;
+}
+
+.result-description {
+  background: #cccccc;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0;
+}
+.result-description p {
+  color: black;
+}
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+.ratings {
+  clear: both;
+  *zoom: 1;
+  margin-top: 5px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.ratings:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ratings form {
+  *zoom: 1;
+  float: left;
+  margin-top: -3px;
+}
+.ratings form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.rating-cancel, div.star-rating {
+  float: left;
+  width: 17px;
+  height: 15px;
+  text-indent: -999em;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  overflow: hidden;
+}
+div.rating-cancel {
+  background: url(/images/farora/delete.gif) no-repeat 0 -16px;
+}
+div.rating-cancel a {
+  background: url(/images/farora/delete.gif) no-repeat 0 -16px;
+}
+div.star-rating {
+  background: url(/images/farora/star.gif) no-repeat 0 0px;
+}
+div.star-rating a {
+  background: url(/images/farora/star.gif) no-repeat 0 0px;
+}
+div.rating-cancel a, div.star-rating a {
+  display: block;
+  width: 16px;
+  height: 100%;
+  background-position: 0 0px;
+  border: 0;
+}
+div.star-rating-on a {
+  background-position: 0 -16px !important;
+}
+div.star-rating-hover a {
+  background-position: 0 -32px;
+}
+div.star-rating-readonly a {
+  cursor: default !important;
+}
+div.star-rating {
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+/* Read Only CSS */
+/* Partial Star CSS */
+/* END jQuery.Rating Plugin CSS */
+#profile-page, #client-page {
+  padding-top: 20px;
+  width: 970px;
+}
+#profile-page .side-bar, #client-page .side-bar {
+  clear: both;
+  float: left;
+  width: 220px;
+  border: 1px solid #d1d1d1;
+  background: white;
+}
+#profile-page .side-bar .profile-pic, #client-page .side-bar .profile-pic {
+  padding: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d1d1d1;
+}
+#profile-page .side-bar p, #client-page .side-bar p {
+  margin: 5px;
+  color: black;
+}
+#profile-page .side-bar span, #client-page .side-bar span {
+  font-size: 12px;
+  font-weight: 100;
+}
+#profile-page .side-bar span.count, #client-page .side-bar span.count {
+  color: #4d4d4d;
+}
+#profile-page .side-bar h4, #client-page .side-bar h4 {
+  padding: 5px 10px;
+  padding-left: 15px;
+  border-top: 0;
+}
+#profile-page .side-bar .friends, #client-page .side-bar .friends {
+  padding-bottom: 20px;
+}
+#profile-page .side-bar .friends ul, #client-page .side-bar .friends ul {
+  margin: 0 5px;
+  *zoom: 1;
+}
+#profile-page .side-bar .friends ul:after, #client-page .side-bar .friends ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#profile-page .side-bar .friends ul li, #client-page .side-bar .friends ul li {
+  float: left;
+  width: 50px;
+  margin: 5px 10px;
+  font-size: 11px;
+}
+#profile-page .main-content, #client-page .main-content {
+  float: left;
+  width: 600px;
+  padding: 10px;
+  margin-left: 50px;
+}
+#profile-page .main-content h2, #client-page .main-content h2 {
+  color: #ffa200;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+#profile-page .main-content h2 span, #client-page .main-content h2 span {
+  color: black;
+  font-size: 0.7em;
+}
+#profile-page .main-content h4, #client-page .main-content h4 {
+  margin-top: 20px;
+  position: relative;
+}
+#profile-page .main-content h4 em, #client-page .main-content h4 em {
+  padding-left: 10px;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666666;
+}
+#profile-page .main-content h4 span.edit-link, #client-page .main-content h4 span.edit-link {
+  float: right;
+  font-weight: 100;
+}
+#profile-page .main-content h4 span.edit-link a, #client-page .main-content h4 span.edit-link a {
+  color: #cccccc;
+}
+#profile-page .main-content p, #client-page .main-content p {
+  margin-bottom: 15px;
+}
+#profile-page .main-content .profile-data, #client-page .main-content .profile-data {
+  margin-bottom: 20px;
+}
+#profile-page .main-content .profile-data li, #client-page .main-content .profile-data li {
+  font-weight: bold;
+  margin-bottom: 3px;
+  *zoom: 1;
+}
+#profile-page .main-content .profile-data li:after, #client-page .main-content .profile-data li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#profile-page .main-content .profile-data li span, #client-page .main-content .profile-data li span {
+  color: #999999;
+  display: block;
+  float: left;
+  width: 130px;
+}
+#profile-page .main-content .description, #client-page .main-content .description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#profile-page .main-content .review-results, #client-page .main-content .review-results {
+  margin: 0;
+}
+#profile-page .main-content .review-results h2, #client-page .main-content .review-results h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0;
+}
+
+#client-page {
+  width: 930px;
+}
+#client-page #main-content {
+  width: 630px;
+}
+#client-page #searchbox {
+  margin-right: 35px;
+}
+#client-page .tabs ul, #client-page .search-filters ul {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* NAV BAR STUFF */
+#nav ul {
+  float: right;
+}
+#nav ul li {
+  padding-left: 20px;
+  float: left;
+  display: block;
+}
+
+fieldset ol li {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+fieldset ol li label {
+  display: block;
+  color: white;
+  font-weight: bold;
+}
+fieldset ol li.after-count, fieldset ol li.additional-services {
+  clear: both;
+}
+fieldset ol li.after-count label {
+  margin-bottom: 2px;
+}
+fieldset ol li.additional-services {
+  clear: both;
+  float: left;
+}
+fieldset ol li.additional-services label {
+  clear: none;
+  display: inline;
+  float: left;
+  width: 150px;
+}
+fieldset ol .price {
+  margin-top: 5px;
+}
+fieldset ol .price input {
+  margin-bottom: 10px;
+}
+fieldset ol .stylist select {
+  margin-bottom: 15px;
+}
+fieldset ol .date {
+  width: 115px;
+}
+fieldset ol .time {
+  margin-top: -2px;
+  margin-left: 0;
+}
+fieldset ol .time label {
+  padding-top: 2px;
+  margin-bottom: -2px;
+}
+
+.filters {
+  clear: both;
+  margin: 30px;
+  margin-left: 15px;
+  *zoom: 1;
+  margin-bottom: 10px;
+}
+.filters:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.filters li {
+  float: left;
+  width: 330px;
+}
+
+.filters li {
+  float: left;
+  width: 400px;
+}
+.filters label {
+  padding-left: 0 !important;
+}
+.filters select {
+  margin-top: 8px;
+}
+
+#index-main .commit {
+  clear: both;
+  text-align: center;
+  width: 100%;
+}
+#index-main .submit {
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: url('/public/images/farora/buttons.png?1298224770') no-repeat;
+  width: 500;
+  height: 50;
+  overflow: hidden;
+  background-position: 0px -64px;
+}
+#index-main .submit:hover {
+  background-position: 0px -96px;
+}

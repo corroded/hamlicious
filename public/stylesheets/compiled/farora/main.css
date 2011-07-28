@@ -1,160 +1,523 @@
-@charset "UTF-8";
-/* line 14, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
   font-size: 100%;
-  font-family: inherit;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
-  color: black;
-  background: white;
 }
 
-/* line 19, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
-  vertical-align: middle;
 }
 
-/* line 23, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: "" "";
+  quotes: none;
 }
-/* line 96, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
+  content: none;
 }
 
-/* line 27, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 9, ../../../../app/stylesheets/farora/main.sass */
-body {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
   background: #131313;
+}
+
+body {
   font-family: Arial, sans-serif;
   font-size: 14px;
-  color: white;
+  width: 100%;
+  background: #f6f6f6;
+  border-top: 50px solid #131313;
+}
+body.index {
+  background: #131313 url(/images/farora/bg1.jpg) no-repeat top center;
 }
 
-/* line 17, ../../../../app/stylesheets/farora/main.sass */
 #container {
-  width: 90%;
+  width: 960px;
+  *zoom: 1;
   margin: 0 auto;
+  position: relative;
+}
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* line 21, ../../../../app/stylesheets/farora/main.sass */
 ul {
   list-style-type: none;
 }
 
-/* line 24, ../../../../app/stylesheets/farora/main.sass */
 a {
-  color: white;
+  color: #47a3ff;
   text-decoration: none;
 }
-/* line 29, ../../../../app/stylesheets/farora/main.sass */
 a:hover {
   color: #999999;
 }
 
-/* line 1, ../../../../app/stylesheets/farora/_footer.sass */
-#footer {
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+h4 {
+  padding: 5px;
+  background: #eeeeee;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-top: 1px solid #cccccc;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+select {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  font-size: 0.9em;
+  padding: 5px;
+  color: black;
+  background: white;
+  border: 0;
+  height: 30px;
+  width: 194px;
+  margin-top: 5px;
+}
+
+p {
+  color: #666666;
+}
+
+form {
+  *zoom: 1;
+}
+form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.inner-container {
+  *zoom: 1;
+}
+.inner-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.addthis_toolbox {
+  float: right;
+  margin-top: -4px;
+  margin-right: 10px;
+  *zoom: 1;
+}
+.addthis_toolbox:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.addthis_toolbox a {
+  float: right;
+}
+.addthis_toolbox a.addthis_button_tweet iframe {
+  width: 100px !important;
+}
+.addthis_toolbox a iframe {
+  width: 50px !important;
+}
+.addthis_toolbox .addthis_button_email {
+  float: left;
+  padding-top: 2px;
+}
+.addthis_toolbox .favorites-link {
+  float: left;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.favorite, .empty-favorite {
+  background: url(/images/farora/heart.png) no-repeat 5px 5px;
+  text-indent: -10000px;
+  display: block;
+  float: left;
+  width: 15px;
+  height: 15px;
+}
+
+.empty-favorite {
+  background: url(/images/farora/empty-heart.png) no-repeat 5px 5px;
+}
+
+textarea {
+  padding: 5px;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 11px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #96a6c5;
+  background: #efefef;
+  margin-top: 10px;
+}
+
+.main {
+  clear: both;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  *zoom: 1;
+}
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main h1 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.main select {
+  border: 1px solid #96a6c5;
+}
+.main a {
+  color: #47a3ff;
+}
+.main p {
+  margin-bottom: 10px;
+}
+.main form {
+  margin-top: 20px;
+}
+.main form fieldset {
+  *zoom: 1;
+}
+.main form fieldset:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main form fieldset ul {
+  *zoom: 1;
+}
+.main form fieldset ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main form fieldset ul > li {
   clear: both;
   *zoom: 1;
-  padding-top: 50px;
+  margin-bottom: 10px;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#footer:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+.main form fieldset ul > li:after {
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 7, ../../../../app/stylesheets/farora/_footer.sass */
-#footer ul {
+.main form fieldset ul input {
+  padding: 4px;
+  margin-left: 0;
+}
+.main form fieldset .reminder {
+  float: right;
+  padding-top: 5px;
+  padding-right: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.main .radios {
+  *zoom: 1;
+}
+.main .radios:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main .radios li {
   float: left;
-  width: 22%;
-  margin-left: 20px;
-  font-size: 0.9em;
+  clear: none;
+  padding-top: 10px;
 }
-/* line 15, ../../../../app/stylesheets/farora/_footer.sass */
+.main .radios .radio {
+  margin-top: 0;
+  display: inline;
+}
+.main .radios label {
+  display: inline;
+  padding: 0;
+  width: 120px;
+  margin: 0;
+}
+.main label {
+  float: left;
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+  width: 80px;
+}
+.main input, .main select, .main textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.main input {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  float: left;
+  margin: 5px;
+}
+.main input[type=text], .main input[type=password] {
+  border: 1px solid #96a6c5;
+  background: #efefef;
+}
+.main select {
+  float: left;
+  padding: 2px;
+  width: auto;
+  height: auto;
+}
+.main .founders {
+  float: left;
+  margin-right: 20px;
+}
+.main .founders img {
+  width: 300px;
+}
+.main .sub-content {
+  border-left: 1px solid #cccccc;
+  padding: 10px;
+  float: left;
+  height: 300px;
+  width: 450px;
+}
+.main .sub-content > div {
+  background: white;
+  border: 1px solid #cccccc;
+  text-align: center;
+  width: 430px;
+  *zoom: 1;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.main .sub-content > div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main .sub-content > div > ul {
+  margin-top: 10px;
+  *zoom: 1;
+}
+.main .sub-content > div > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main .sub-content .farora-credits {
+  width: 430px;
+}
+.main .sub-content .farora-credits h3 {
+  font-weight: bold;
+  font-size: 14px;
+}
+.main .sub-content .farora-credits h3 span {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.calendricalDatePopup {
+  background: white;
+  border: solid 1px #999999;
+  padding: 2px;
+  text-align: center;
+  width: 160px;
+}
+.calendricalDatePopup table {
+  border-collapse: collapse;
+  width: 160px;
+}
+.calendricalDatePopup table .monthCell {
+  padding: 2px 0;
+}
+.calendricalDatePopup table .monthCell a {
+  display: block;
+  float: left;
+  line-height: 20px;
+}
+.calendricalDatePopup table .monthCell .prevMonth, .calendricalDatePopup table .monthCell .nextMoth {
+  width: 24px;
+}
+.calendricalDatePopup table .monthCell .monthName {
+  width: 110px;
+}
+.calendricalDatePopup table a {
+  text-decoration: none;
+}
+.calendricalDatePopup table td {
+  text-align: center;
+  font-size: 12px;
+  padding: 0;
+}
+.calendricalDatePopup table td a {
+  display: block;
+  color: black;
+  padding: 2px 3px;
+}
+.calendricalDatePopup table td a:hover {
+  background: #ccccff;
+  border: none;
+  padding: 2px 3px;
+}
+.calendricalDatePopup table td.today a {
+  background: #eeeebb;
+}
+.calendricalDatePopup table td.selected a {
+  background: #ccccff;
+}
+.calendricalDatePopup table td.today_selected a {
+  background: #eeeebb;
+  border: solid 1px #dddd66;
+  padding: 1px 2px;
+}
+.calendricalDatePopup table td.nonMonth a {
+  color: #999999;
+}
+
+.calendricalEndTimePopup {
+  width: 160px;
+}
+
+#footer {
+  *zoom: 1;
+  clear: both;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  margin: auto;
+  background: #131313;
+  bottom: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+#footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#footer ul {
+  width: 960px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+#footer ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 #footer ul li {
-  padding: 3px 0;
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  font-size: 13px;
 }
-/* line 17, ../../../../app/stylesheets/farora/_footer.sass */
-#footer ul h4 {
-  font-size: 0.8em;
+#footer ul li ul li {
+  padding: 3px 0;
+  float: none;
+}
+#footer ul li ul h4 {
+  border: 0;
+  background: none;
+  font-size: 12px;
   text-transform: uppercase;
   color: #ffb628;
-  padding-bottom: 20px;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 10px;
 }
-/* line 25, ../../../../app/stylesheets/farora/_footer.sass */
 #footer a {
   color: white;
 }
-/* line 28, ../../../../app/stylesheets/farora/_footer.sass */
 #footer a:hover {
   color: #999999;
 }
 
-/* line 1, ../../../../app/stylesheets/farora/_header.sass */
-#header {
-  padding: 15px;
+#header, #quick-links {
+  padding: 15px 0;
   height: 20px;
   *zoom: 1;
+  color: white;
+  margin: auto;
+  margin-top: -50px;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#header:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+#header:after, #quick-links:after {
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 6, ../../../../app/stylesheets/farora/_header.sass */
-#header h1 {
+#header h1, #quick-links h1 {
   text-indent: -10000px;
   background: url(/images/farora/logo.png) no-repeat;
   width: 108px;
   height: 18px;
   float: left;
 }
-/* line 14, ../../../../app/stylesheets/farora/_header.sass */
-#header .tagline {
+#header .tagline, #quick-links .tagline {
   color: #6e6e6e;
   font-style: italic;
   padding-left: 5px;
@@ -162,109 +525,121 @@ a:hover {
   float: left;
 }
 
-/* line 1, ../../../../app/stylesheets/farora/_index.sass */
 #index-main {
   *zoom: 1;
-  background: url(/images/farora/bg1.jpg) no-repeat top center;
-  height: 500px;
+  color: white;
+  margin: 30px 0;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #index-main:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 6, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset {
   background-color: #303030;
   color: white;
-  opacity: 0.9;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  padding: 25px 50px;
+  opacity: 0.9;
+  padding: 30px;
+  padding-top: 20px;
   float: right;
-  width: 600px;
-  margin-top: 80px;
+  width: 570px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-/* line 16, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset h3 {
   font-size: 1.2em;
   font-weight: bold;
 }
-/* line 21, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset > p {
+  margin-top: 10px;
+  color: white;
+}
 #index-main fieldset em {
   font-weight: normal;
   font-style: italic;
   font-size: 0.9em;
 }
-/* line 26, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset em a {
   color: #47a3ff;
   text-decoration: underline;
 }
-/* line 31, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol {
   *zoom: 1;
   background: #a6a6a6;
-  padding: 30px;
+  padding: 40px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 40px;
   color: black;
-  margin-top: 30px;
+  margin-top: 15px;
   counter-reset: item;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #index-main fieldset ol:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 40, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li {
   float: left;
   list-style-position: inside;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-bottom: 20px;
 }
-/* line 48, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li:before {
   content: counter(item) ".";
   counter-increment: item;
 }
-/* line 52, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li.no-count {
   counter-increment: item -1;
   content: counter(item, " ");
 }
-/* line 56, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li.no-count:before {
   content: "";
 }
-/* line 58, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li.commit {
   padding-top: 20px;
+  margin-right: 0 !important;
   width: 100%;
   text-align: center;
 }
-/* line 65, ../../../../app/stylesheets/farora/_index.sass */
+#index-main fieldset ol li.commit p {
+  padding-top: 20px;
+}
+#index-main fieldset ol li.commit p a {
+  color: #444444;
+}
+#index-main fieldset ol li.after-count, #index-main fieldset ol li.type-of-service, #index-main fieldset ol li.additional-services {
+  clear: both;
+}
+#index-main fieldset ol li.type-of-service select {
+  margin-bottom: 5px;
+}
+#index-main fieldset ol li.price input {
+  width: 50px;
+  height: 18px;
+}
+#index-main fieldset ol li .date {
+  width: 115px;
+  margin-right: 20px;
+}
+#index-main fieldset ol li .add-service {
+  color: #47a3ff;
+}
 #index-main fieldset ol li label {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 71, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li input {
   display: block;
   padding: 5px;
   font-size: 0.9em;
   border: 1px solid #cccccc;
-  color: #444444;
-  width: 190px;
+  color: black;
+  width: 180px;
   margin-top: 5px;
+  height: 20px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
@@ -272,81 +647,986 @@ a:hover {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 83, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li input.salon {
-  width: 250px;
+  width: 260px;
 }
-/* line 85, ../../../../app/stylesheets/farora/_index.sass */
-#index-main fieldset ol li input.price {
-  width: 50px;
-  height: 20px;
-}
-/* line 88, ../../../../app/stylesheets/farora/_index.sass */
-#index-main fieldset ol li input.date {
-  width: 150px;
-}
-/* line 90, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li input[disabled] {
   background: #b8b8b8;
   border: 1px solid #b8b8b8;
 }
-/* line 95, ../../../../app/stylesheets/farora/_index.sass */
-#index-main fieldset ol li select {
-  display: block;
-  font-size: 1em;
-  padding: 5px;
-  background: white;
-  border: 0;
-  height: 30px;
-  width: 200px;
-  margin-top: 5px;
-}
-/* line 107, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li .submit {
   font-size: 1em;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  text-transform: uppercase;
   margin: 0 auto;
   border: none;
   color: white;
   cursor: pointer;
-  background: url('/images/farora/buttons.png?1297890712') no-repeat;
+  background: url('/public/images/farora/buttons.png?1298224770') no-repeat;
   width: 500;
   height: 50;
   overflow: hidden;
   background-position: 0px -64px;
 }
-/* line 117, ../../../../app/stylesheets/farora/_index.sass */
 #index-main fieldset ol li .submit:hover {
   background-position: 0px -96px;
 }
+#index-main fieldset ol li .simple_captcha_field input {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -ms-border-top-left-radius: 5px;
+  -khtml-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -o-border-top-right-radius: 5px;
+  -ms-border-top-right-radius: 5px;
+  -khtml-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -o-border-bottom-left-radius: 0;
+  -ms-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -o-border-bottom-right-radius: 0;
+  -ms-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#index-main fieldset ol li .simple_captcha_image {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  -khtml-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  -khtml-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-width: 1px;
+  text-align: center;
+  width: 171px;
+  background: white;
+  padding: 0 10px;
+}
 
-/* line 1, ../../../../app/stylesheets/farora/_nav.sass */
+.filters {
+  clear: both;
+  *zoom: 1;
+  margin-bottom: 10px;
+}
+.filters:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.filters > li {
+  float: left;
+  width: 330px;
+}
+.filters select {
+  margin-top: 5px;
+}
+
+.results {
+  *zoom: 1;
+}
+.results:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.results > li {
+  list-style-position: inside;
+  float: left;
+  width: 30%;
+  margin: 15px;
+}
+.results > li li {
+  margin-bottom: 5px;
+}
+.results > li p {
+  padding-bottom: 10px;
+}
+
+.tabs > ul, .search-filters > ul {
+  clear: both;
+  margin-top: 20px;
+  *zoom: 1;
+}
+.tabs > ul:after, .search-filters > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tabs > ul > li, .search-filters > ul > li {
+  background: #c3c3c3;
+  float: left;
+  margin-right: 3px;
+}
+.tabs > ul > li:hover, .search-filters > ul > li:hover {
+  background: black;
+}
+.tabs > ul > li.current, .search-filters > ul > li.current {
+  background: black;
+}
+.tabs > ul > li.current a, .search-filters > ul > li.current a {
+  color: white;
+}
+.tabs > ul > li a, .search-filters > ul > li a {
+  display: block;
+  color: #666666;
+  padding: 5px 10px;
+}
+.tabs > ul > li a:hover, .search-filters > ul > li a:hover {
+  color: white;
+}
+.tabs > div, .search-filters > div {
+  padding-top: 20px;
+}
+
+.pipes {
+  clear: both;
+  *zoom: 1;
+  color: #999999;
+  margin-bottom: 10px;
+}
+.pipes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pipes li {
+  display: inline;
+}
+.pipes li.current {
+  color: #666666;
+}
+
+dl {
+  *zoom: 1;
+}
+dl:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+dl dt {
+  float: left;
+  clear: both;
+}
+dl dd {
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.result-grid {
+  *zoom: 1;
+  padding-top: 20px;
+}
+.result-grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.result-grid li {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  background: white;
+  width: 200px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.result-grid li img {
+  margin: auto;
+  width: 200px;
+}
+.result-grid li .result-overlay {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  width: 180px;
+  padding: 10px;
+}
+.result-grid li .result-overlay strong {
+  color: #ffb628;
+  font-weight: 100;
+  font-size: 14px;
+}
+.result-grid li p {
+  font-size: 12px;
+  color: white;
+}
+.result-grid li p.rating-count {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.thumbs {
+  *zoom: 1;
+}
+.thumbs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.thumbs li {
+  float: left;
+  margin-right: 10px;
+}
+.thumbs li:last-child {
+  margin-right: 0;
+}
+.thumbs li img {
+  width: 111px;
+}
+
+.weekly-schedule {
+  width: 200px;
+}
+.weekly-schedule li {
+  margin-bottom: 5px;
+  *zoom: 1;
+}
+.weekly-schedule li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.weekly-schedule li .day {
+  float: left;
+  width: 80px;
+}
+.weekly-schedule li .hours {
+  float: right;
+}
+
+.search-filters {
+  margin-bottom: 20px;
+}
+.search-filters a {
+  float: left;
+  padding: 5px;
+  padding-right: 0 !important;
+}
+.search-filters .close-tab {
+  width: 10px;
+  float: left;
+  padding-right: 5px !important;
+}
+.search-filters #add-new-filter {
+  padding: 5px !important;
+}
+
+.q-and-a h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.q-and-a li {
+  margin-bottom: 10px;
+}
+
+.main ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 20px;
+}
+.main ol li {
+  margin-bottom: 20px;
+}
+.main ol li h3 {
+  font-weight: bold;
+}
+
+.bulleted {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.bulleted li {
+  margin-bottom: 10px;
+}
+
 #nav {
   float: right;
   padding-top: 5px;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  text-align: right;
 }
-/* line 6, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul {
   width: 650px;
   margin: 0;
   padding: 0;
 }
-/* line 11, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul li {
   text-align: right;
   margin-right: 0;
   display: inline;
   padding-left: 20px;
 }
-/* line 19, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul li a {
-  color: #9b9b9b;
+  color: white;
   text-decoration: none;
 }
-/* line 24, ../../../../app/stylesheets/farora/_nav.sass */
+#nav ul li a:hover {
+  color: #9b9b9b;
+}
 #nav ul li a.invite-friends-link {
   color: #ffb431;
 }
-/* line 28, ../../../../app/stylesheets/farora/_nav.sass */
 #nav ul li em a {
   color: #93c9ff;
+}
+
+.sub-nav {
+  float: right;
+  padding-right: 85px;
+}
+.sub-nav li {
+  margin-left: 5px;
+  width: 85px;
+  float: left;
+}
+.sub-nav li img {
+  width: 15px;
+}
+.sub-nav li a {
+  border: 1px solid #d1d1d1;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  display: block;
+  padding: 5px 10px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.sub-nav li a:hover {
+  background: #efefef;
+}
+
+.review-results li {
+  border-bottom: 1px solid #cccccc;
+  padding: 0;
+  padding-top: 20px;
+}
+.review-results p {
+  margin-bottom: 20px;
+}
+.review-results p.post-details {
+  color: #999999;
+}
+
+.result-description {
+  background: #cccccc;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0;
+}
+.result-description p {
+  color: black;
+}
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+.ratings {
+  clear: both;
+  *zoom: 1;
+  margin-top: 5px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.ratings:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ratings form {
+  *zoom: 1;
+  float: left;
+  margin-top: -3px;
+}
+.ratings form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.rating-cancel, div.star-rating {
+  float: left;
+  width: 17px;
+  height: 15px;
+  text-indent: -999em;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  overflow: hidden;
+}
+div.rating-cancel {
+  background: url(/images/farora/delete.gif) no-repeat 0 -16px;
+}
+div.rating-cancel a {
+  background: url(/images/farora/delete.gif) no-repeat 0 -16px;
+}
+div.star-rating {
+  background: url(/images/farora/star.gif) no-repeat 0 0px;
+}
+div.star-rating a {
+  background: url(/images/farora/star.gif) no-repeat 0 0px;
+}
+div.rating-cancel a, div.star-rating a {
+  display: block;
+  width: 16px;
+  height: 100%;
+  background-position: 0 0px;
+  border: 0;
+}
+div.star-rating-on a {
+  background-position: 0 -16px !important;
+}
+div.star-rating-hover a {
+  background-position: 0 -32px;
+}
+div.star-rating-readonly a {
+  cursor: default !important;
+}
+div.star-rating {
+  background: transparent !important;
+  overflow: hidden !important;
+}
+
+/* Read Only CSS */
+/* Partial Star CSS */
+/* END jQuery.Rating Plugin CSS */
+#profile-page, #client-page {
+  padding-top: 20px;
+  width: 970px;
+}
+#profile-page .side-bar, #client-page .side-bar {
+  clear: both;
+  float: left;
+  width: 220px;
+  border: 1px solid #d1d1d1;
+  background: white;
+}
+#profile-page .side-bar .profile-pic, #client-page .side-bar .profile-pic {
+  padding: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d1d1d1;
+}
+#profile-page .side-bar p, #client-page .side-bar p {
+  margin: 5px;
+  color: black;
+}
+#profile-page .side-bar span, #client-page .side-bar span {
+  font-size: 12px;
+  font-weight: 100;
+}
+#profile-page .side-bar span.count, #client-page .side-bar span.count {
+  color: #4d4d4d;
+}
+#profile-page .side-bar h4, #client-page .side-bar h4 {
+  padding: 5px 10px;
+  padding-left: 15px;
+  border-top: 0;
+}
+#profile-page .side-bar .friends, #client-page .side-bar .friends {
+  padding-bottom: 20px;
+}
+#profile-page .side-bar .friends ul, #client-page .side-bar .friends ul {
+  margin: 0 5px;
+  *zoom: 1;
+}
+#profile-page .side-bar .friends ul:after, #client-page .side-bar .friends ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#profile-page .side-bar .friends ul li, #client-page .side-bar .friends ul li {
+  float: left;
+  width: 50px;
+  margin: 5px 10px;
+  font-size: 11px;
+}
+#profile-page .main-content, #client-page .main-content {
+  float: left;
+  width: 600px;
+  padding: 10px;
+  margin-left: 50px;
+}
+#profile-page .main-content h2, #client-page .main-content h2 {
+  color: #ffa200;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+#profile-page .main-content h2 span, #client-page .main-content h2 span {
+  color: black;
+  font-size: 0.7em;
+}
+#profile-page .main-content h4, #client-page .main-content h4 {
+  margin-top: 20px;
+  position: relative;
+}
+#profile-page .main-content h4 em, #client-page .main-content h4 em {
+  padding-left: 10px;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666666;
+}
+#profile-page .main-content h4 span.edit-link, #client-page .main-content h4 span.edit-link {
+  float: right;
+  font-weight: 100;
+}
+#profile-page .main-content h4 span.edit-link a, #client-page .main-content h4 span.edit-link a {
+  color: #cccccc;
+}
+#profile-page .main-content p, #client-page .main-content p {
+  margin-bottom: 15px;
+}
+#profile-page .main-content .profile-data, #client-page .main-content .profile-data {
+  margin-bottom: 20px;
+}
+#profile-page .main-content .profile-data li, #client-page .main-content .profile-data li {
+  font-weight: bold;
+  margin-bottom: 3px;
+  *zoom: 1;
+}
+#profile-page .main-content .profile-data li:after, #client-page .main-content .profile-data li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#profile-page .main-content .profile-data li span, #client-page .main-content .profile-data li span {
+  color: #999999;
+  display: block;
+  float: left;
+  width: 130px;
+}
+#profile-page .main-content .description, #client-page .main-content .description {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#profile-page .main-content .review-results, #client-page .main-content .review-results {
+  margin: 0;
+}
+#profile-page .main-content .review-results h2, #client-page .main-content .review-results h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0;
+}
+
+#client-page {
+  width: 930px;
+}
+#client-page #main-content {
+  width: 630px;
+}
+#client-page #searchbox {
+  margin-right: 35px;
+}
+#client-page .tabs ul, #client-page .search-filters ul {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#results-main {
+  min-height: 440px;
+  color: black;
+}
+#results-main a {
+  color: #47a3ff;
+}
+#results-main b {
+  color: black;
+}
+#results-main li {
+  margin-left: 0;
+}
+#results-main label {
+  float: left;
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+}
+#results-main select {
+  border: 1px solid #96a6c5;
+}
+
+.pagination-section {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #999999;
+  border-top: 0px solid #999999;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+.pagination-section .small-caps {
+  font-weight: normal;
+}
+
+.pagination a {
+  font-weight: normal;
+  text-decoration: none;
+  border: 1px solid #999999;
+  margin: 0;
+  padding: 1px 5px;
+}
+.pagination a:hover, .pagination a:active {
+  color: white;
+  background: black;
+}
+.pagination span.current {
+  font-weight: bold;
+  color: #ffb628;
+  background: black;
+  border: 1px solid #999999;
+  margin: 0 2px;
+  padding: 1px 5px;
+}
+.pagination span.disabled {
+  color: #dddddd;
+  border: 1px solid #eeeeee;
+  margin: 0 2px;
+  padding: 1px 5px;
+}
+
+#business-profile {
+  *zoom: 1;
+}
+#business-profile:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#business-profile .main-content {
+  float: left;
+  width: 610px;
+  padding: 10px;
+  padding-left: 0;
+}
+#business-profile h1 .salon-address {
+  font-size: 14px;
+}
+#business-profile .salon-images {
+  margin-bottom: 30px;
+}
+#business-profile .salon-images > img {
+  width: 595px;
+  margin-bottom: 10px;
+}
+#business-profile .search-sidebar {
+  float: left;
+  width: 310px;
+  margin-left: 10px;
+  margin-top: 30px;
+  background: #efefef;
+  padding: 10px;
+}
+#business-profile .search-sidebar .commit {
+  *zoom: 1;
+  text-align: center;
+}
+#business-profile .search-sidebar .commit:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#business-profile .search-sidebar .commit .submit {
+  float: none;
+  margin: 0 auto;
+}
+#business-profile .search-sidebar li {
+  *zoom: 1;
+  padding-bottom: 10px;
+}
+#business-profile .search-sidebar li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#business-profile .search-sidebar .tabs li, #business-profile .search-sidebar .search-filters li {
+  padding-bottom: 0;
+}
+#business-profile .search-sidebar h5 {
+  background: #dedede;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 5px;
+}
+#business-profile .search-sidebar h5 .service-cost {
+  float: right;
+}
+#business-profile .search-sidebar p {
+  padding-left: 5px;
+}
+#business-profile .search-sidebar .ratings {
+  padding-left: 5px;
+}
+#business-profile .book-stylist {
+  float: right;
+}
+#business-profile .book-stylist a {
+  background: black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+}
+#business-profile .address {
+  margin-bottom: 10px;
+}
+
+#searchbox {
+  float: right;
+  width: 375px;
+  margin-bottom: 20px;
+}
+#searchbox form {
+  *zoom: 1;
+}
+#searchbox form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#searchbox input {
+  float: left;
+  margin: 5px;
+  height: 25px;
+}
+#searchbox input[type=text] {
+  width: 150px;
+  padding: 3px;
+}
+#searchbox select {
+  float: left;
+  height: 25px;
+}
+
+.submit {
+  font-size: 1em;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: url('/public/images/farora/buttons.png?1298224770') no-repeat;
+  width: 500;
+  height: 50;
+  overflow: hidden;
+  background-position: 0px -64px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+.submit:hover {
+  background-position: 0px -96px;
+}
+
+#info li {
+  color: #666666;
+  margin-bottom: 20px;
+}
+#info li h2 {
+  color: black;
+}
+#info li li {
+  margin-bottom: 5px;
+}
+
+#quick-links {
+  clear: both;
+  float: left;
+  padding-top: 0;
+  font-size: 12px;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px dashed #cccccc;
+}
+#quick-links li {
+  display: block;
+  float: left;
+}
+#quick-links li:first-child a {
+  padding-left: 0;
+}
+#quick-links li.current a {
+  text-decoration: underline;
+}
+#quick-links li a {
+  display: block;
+  padding: 10px 15px;
+}
+#quick-links li a:hover {
+  background: #efefef;
+}
+
+.main table {
+  width: 100%;
+}
+.main table td, .main table th {
+  padding: 2px;
+  border-bottom: 1px solid #cccccc;
+}
+.main table td img, .main table th img {
+  float: left;
+  margin: 3px;
+  width: 30px;
+  height: 30px;
+}
+.main table .client a {
+  float: left;
+  padding: 10px 5px;
+  display: block;
+}
+.main table th {
+  background: #999999;
+  border: 1px solid #444444;
+  border-left: 0;
+  color: white;
+  padding: 5px 3px;
+}
+.main table th:first-child {
+  border-left: 1px solid #444444;
+}
+.main table .even {
+  background: #efefef;
+}
+.main table tr:hover {
+  background: #cccccc;
+}
+.main table thead tr .header {
+  background-image: url(/images/farora/tablesorter/bg.gif);
+  background-repeat: no-repeat;
+  background-position: center right;
+  cursor: pointer;
+}
+.main table thead tr .headerSortUp {
+  background-image: url(/images/farora/tablesorter/asc.gif);
+}
+.main table thead tr .headerSortDown {
+  background-image: url(/images/farora/tablesorter/desc.gif);
+}
+
+#staff li {
+  background: #eeeeee;
+  width: 585px;
+  *zoom: 1;
+  padding: 5px;
+  padding-left: 0;
+}
+#staff li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#staff li.even {
+  background: #dedede;
+}
+#staff li p {
+  margin-bottom: 10px;
+}
+#staff .staff-title {
+  font-style: italic;
+}
+#staff .staff-pic {
+  float: left;
+  width: 100px;
+}
+#staff .staff-details {
+  float: left;
+  margin-left: 10px;
+  position: relative;
+  width: 470px;
+}
+#staff .staff-status {
+  font-style: italic;
+}
+#staff .favorites-link {
+  padding-left: 5px;
+  padding-top: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#staff .ratings {
+  margin-top: 10px;
+}
+
+#fancybox-content h3 {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+#fancybox-content .main label {
+  width: 100%;
+  padding-bottom: 0;
+}
+#fancybox-content .main input {
+  clear: both;
+}
+
+#credit h2 {
+  margin-bottom: 30px;
+}
+#credit .message-form {
+  float: left;
+  width: 470px;
+  padding-right: 10px;
+}
+#credit .message-form p {
+  margin-bottom: 20px;
+}
+#credit .trackable-code li {
+  float: left;
+}
+#credit .share-links {
+  clear: both;
+  margin-top: 10px;
+}
+#credit .share-links li {
+  float: left;
+  width: 40%;
+}
+#credit .share-links li img {
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+#credit input[type=text] {
+  padding: 5px;
+  width: 280px;
 }

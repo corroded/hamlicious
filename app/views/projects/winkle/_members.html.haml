@@ -1,0 +1,299 @@
+%form#members-directory-form.dir-form{:action => "", :method => "post"}
+  %h3 Members Directory
+  #members-dir-search.dir-search{:role => "search"}
+    %form#search-members-form{:action => "", :method => "get"}
+      %label
+        %input#members_search{:name => "s", :type => "text", :value => "a"}/
+      %input#members_search_submit{:name => "members_search_submit", :type => "submit", :value => "Search"}/
+  / #members-dir-search
+  .item-list-tabs{:role => "navigation"}
+    %ul
+      %li#members-all.selected
+        %a{:href => "http://testbp.org/members/"}
+          All Members
+          %span 28,799
+  / .item-list-tabs
+  #subnav.item-list-tabs{:role => "navigation"}
+    %ul
+      %li#members-order-select.last.filter
+        %label{:for => "members-order-by"} Order By:
+        %select#members-order-by
+          %option{:value => "active"} Last Active
+          %option{:value => "newest"} Newest Registered
+          %option{:value => "alphabetical"} Alphabetical
+  #members-dir-list.members.dir-list
+    #pag-top.pagination
+      #member-dir-count-top.pag-count
+        Viewing member 1 to 20 (of 22,704 active members)
+      #member-dir-pag-top.pagination-links
+        %span.page-numbers.current 1
+        %a.page-numbers{:href => "/members/?s=a&upage=2"} 2
+        %span.page-numbers.dots ...
+        %a.page-numbers{:href => "/members/?s=a&upage=1136"} 1,136
+        %a.next.page-numbers{:href => "/members/?s=a&upage=2"} →
+    %ul#members-list.item-list{:role => "main"}
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/xeqta/"}
+            %img.avatar.user-35557-avatar{:alt => "Profile picture of xeqta", :height => "50", :src => "/avatar/fdb4c15fabf60796ad6540e93b836cf2?d=wavatar&s=50", :title => "xeqta", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/xeqta/"} xeqta
+          .item-meta
+            %span.activity active 40 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/hhhoh/"}
+            %img.avatar.user-34278-avatar{:alt => "Profile picture of hoho", :height => "50", :src => "/avatar/902e65d801c0e25344c4e50a57b9ffd8?d=wavatar&s=50", :title => "hoho", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/hhhoh/"} hoho
+            %span.update
+              \- "@johnjamesjacoby […]"
+              %a{:href => "http://testbp.org/activity/p/102789"} View
+          .item-meta
+            %span.activity active 46 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/pippero/"}
+            %img.avatar.user-35929-avatar{:alt => "Profile picture of pippo pippero", :height => "50", :src => "/avatar/b9882e1ea6462a757405f12044f123d4?d=wavatar&s=50", :title => "pippo pippero", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/pippero/"} pippo pippero
+            %span.update
+              \- "Hello"
+              %a{:href => "http://testbp.org/activity/p/105493"} View
+          .item-meta
+            %span.activity active 1 hour, 45 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/tyrant23/"}
+            %img.avatar.user-16556-avatar{:alt => "Profile picture of Alien", :height => "50", :src => "/avatar/88d0d6719c64a75a7896b350922430cd?d=wavatar&s=50", :title => "Alien", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/tyrant23/"} Alien
+            %span.update
+              \- "why"
+              %a{:href => "http://testbp.org/activity/p/101337"} View
+          .item-meta
+            %span.activity active 1 hour, 52 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/shirl/"}
+            %img.avatar.user-32837-avatar{:alt => "Profile picture of Shirl", :height => "50", :src => "/avatar/662ed374fe417a027d4d4d560dd368ce?d=wavatar&s=50", :title => "Shirl", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/shirl/"} Shirl
+            %span.update
+              \- "Status update […]"
+              %a{:href => "http://testbp.org/activity/p/99266"} View
+          .item-meta
+            %span.activity active 2 hours, 32 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/janniecox/"}
+            %img.avatar.user-35456-avatar{:alt => "Profile picture of janniecox", :height => "50", :src => "/avatar/4c74c36b575a22a4996ee109cb755eb4?d=wavatar&s=50", :title => "janniecox", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/janniecox/"} janniecox
+          .item-meta
+            %span.activity active 4 hours, 8 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/luccame/"}
+            %img.avatar.user-15055-avatar{:alt => "Profile picture of luccame", :height => "50", :src => "/avatar/78039d5a00bd53f495efabb90f94cb07?d=wavatar&s=50", :title => "luccame", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/luccame/"} luccame
+            %span.update
+              \- "test
+              test
+              test"
+              %a{:href => "http://testbp.org/activity/p/105031"} View
+          .item-meta
+            %span.activity active 4 hours, 31 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/djpaul/"}
+            %img.avatar.user-5869-avatar{:alt => "Profile picture of Paul Gibbs", :height => "50", :src => "/avatar/3bc9ab796299d67ce83dceb9554f75df?d=wavatar&s=50", :title => "Paul Gibbs", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/djpaul/"} Paul Gibbs
+            %span.update
+              \- "@boonebgorges […]"
+              %a{:href => "http://testbp.org/activity/p/105486"} View
+          .item-meta
+            %span.activity active 5 hours, 1 minute ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/prabhleen/"}
+            %img.avatar.user-35925-avatar{:alt => "Profile picture of prabhleen", :height => "50", :src => "/avatar/16a80f609d073f00745e15ddc35fff6e?d=wavatar&s=50", :title => "prabhleen", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/prabhleen/"} prabhleen
+          .item-meta
+            %span.activity active 5 hours, 58 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/fakhar/"}
+            %img.avatar.user-35923-avatar{:alt => "Profile picture of iman fakhar", :height => "50", :src => "/avatar/7869548a00259781a20f45e8f0e1a3e9?d=wavatar&s=50", :title => "iman fakhar", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/fakhar/"} iman fakhar
+          .item-meta
+            %span.activity active 6 hours, 33 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/dennissmolek/"}
+            %img.avatar.user-16823-avatar{:alt => "Profile picture of Dennis Smolek", :height => "50", :src => "/avatar/015eeb0cebb40f949d0f317e2dfe66c3?d=wavatar&s=50", :title => "Dennis Smolek", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/dennissmolek/"} Dennis Smolek
+            %span.update
+              \- "Update!"
+              %a{:href => "http://testbp.org/activity/p/105458"} View
+          .item-meta
+            %span.activity active 7 hours, 1 minute ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/acted/"}
+            %img.avatar.user-35922-avatar{:alt => "Profile picture of acted", :height => "50", :src => "/avatar/391e52be4e75f5f37e347a4378f3c8d6?d=wavatar&s=50", :title => "acted", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/acted/"} acted
+          .item-meta
+            %span.activity active 7 hours, 50 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/slaffik/"}
+            %img.avatar.user-1703-avatar{:alt => "Profile picture of slaFFik", :height => "50", :src => "/avatar/61fb07ede3247b63f19015f200b3eb2c?d=wavatar&s=50", :title => "slaFFik", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/slaffik/"} slaFFik
+            %span.update
+              \- "BP Group Tasks […]"
+              %a{:href => "http://testbp.org/activity/p/87135"} View
+          .item-meta
+            %span.activity active 8 hours, 3 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/pande/"}
+            %img.avatar.user-35921-avatar{:alt => "Profile picture of antim", :height => "50", :src => "/avatar/11117c7ea6284c6d36b4ac67bf2617f3?d=wavatar&s=50", :title => "antim", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/pande/"} antim
+          .item-meta
+            %span.activity active 8 hours, 5 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/sionie/"}
+            %img.avatar.user-35920-avatar{:alt => "Profile picture of Lindsey", :height => "50", :src => "/avatar/48a0bddfbd343183b4a3d3078434e7c2?d=wavatar&s=50", :title => "Lindsey", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/sionie/"} Lindsey
+          .item-meta
+            %span.activity active 8 hours, 9 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/tester101a/"}
+            %img.avatar.user-35919-avatar{:alt => "Profile picture of Nonoy Bautisa", :height => "50", :src => "/avatar/3f5f14f9fe94f16acc714dfb156032fd?d=wavatar&s=50", :title => "Nonoy Bautisa", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/tester101a/"} Nonoy Bautisa
+          .item-meta
+            %span.activity active 8 hours, 42 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/webmaster77/"}
+            %img.avatar.user-35918-avatar{:alt => "Profile picture of webmaster77", :height => "50", :src => "/avatar/2c7299c3ae66c7552db83263f9afd73b?d=wavatar&s=50", :title => "webmaster77", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/webmaster77/"} webmaster77
+            %span.update
+              \- "[…]"
+              %a{:href => "http://testbp.org/activity/p/105482"} View
+          .item-meta
+            %span.activity active 8 hours, 53 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/djjimba/"}
+            %img.avatar.user-35917-avatar{:alt => "Profile picture of Koji Jimba", :height => "50", :src => "/avatar/8a5ec195556a15716877e8b288caa528?d=wavatar&s=50", :title => "Koji Jimba", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/djjimba/"} Koji Jimba
+          .item-meta
+            %span.activity active 9 hours, 13 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/micheal/"}
+            %img.avatar.user-34875-avatar{:alt => "Profile picture of Mike Kennedy", :height => "50", :src => "/avatar/d59a06716e26bef46e04b0eabe30aeb7?d=wavatar&s=50", :title => "Mike Kennedy", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/micheal/"} Mike Kennedy
+            %span.update
+              \- "@shayatik What […]"
+              %a{:href => "http://testbp.org/activity/p/105301"} View
+          .item-meta
+            %span.activity active 10 hours, 10 minutes ago
+        .action
+        .clear
+      %li
+        .item-avatar
+          %a{:href => "http://testbp.org/members/sc2gmlessons/"}
+            %img.avatar.user-35916-avatar{:alt => "Profile picture of Derek", :height => "50", :src => "/avatar/d556f8e60ad110ce22337b9444be2b4d?d=wavatar&s=50", :title => "Derek", :width => "50"}/
+        .item
+          .item-title
+            %a{:href => "http://testbp.org/members/sc2gmlessons/"} Derek
+          .item-meta
+            %span.activity active 10 hours, 12 minutes ago
+        .action
+        .clear
+    %input#search_terms{:name => "search_terms", :type => "hidden", :value => "a"}/
+    #pag-bottom.pagination
+      #member-dir-count-bottom.pag-count
+        Viewing member 1 to 20 (of 22,704 active members)
+      #member-dir-pag-bottom.pagination-links
+        %span.page-numbers.current 1
+        %a.page-numbers{:href => "/members/?s=a&upage=2"} 2
+        %span.page-numbers.dots ...
+        %a.page-numbers{:href => "/members/?s=a&upage=1136"} 1,136
+        %a.next.page-numbers{:href => "/members/?s=a&upage=2"} →
+  / #members-dir-list
+  %input#_wpnonce-member-filter{:name => "_wpnonce-member-filter", :type => "hidden", :value => "b8bcfa6693"}/
+  %input{:name => "_wp_http_referer", :type => "hidden", :value => "/members/?s=a"}/

@@ -1,0 +1,39 @@
+#menu
+  +pie-clearfix
+  width: 487px
+  float: right
+  margin:
+    top: 50px
+  right: 0
+
+  ul
+    float: left
+    margin:
+      bottom: 0
+    +inline-block-list
+
+    li
+      margin: 0
+        right: -5px
+      background: url(/images/winkle/menu-bg.jpg) repeat-x
+
+      a
+        color: #ccc
+        height: 35px
+        font:
+          family: Verdana, sans-serif
+          size: 12px
+          weight: normal
+        display: block
+        padding: 5px 20px
+        text-transform: uppercase
+
+        &:hover
+          color: #cccc99
+
+      &:first-child
+        background: url(/images/winkle/menu-bg-left.png) no-repeat
+
+      &:last-child
+        background: url(/images/winkle/menu-bg-right.png) no-repeat
+        width: 100px

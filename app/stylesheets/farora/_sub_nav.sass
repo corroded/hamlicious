@@ -1,0 +1,33 @@
+#quick-links
+  clear: both
+  float: left
+  @extend #header
+  padding:
+    top: 0
+  font:
+    size: 12px
+  margin: 0
+  width: 100%
+  border-bottom: 1px dashed #ccc
+
+  li
+    display: block
+    float: left
+    
+    &:first-child
+      a
+        padding:
+          left: 0
+          
+    &.current
+      a 
+        text-decoration: underline
+    
+    a
+      display: block
+      padding: 10px 15px
+      
+      &:hover
+        background: #efefef
+        
+    

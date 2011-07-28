@@ -1,0 +1,53 @@
+.main
+  table
+    width: 100%
+    
+    td, th
+      padding: 2px
+      border: 
+        bottom: 1px solid #ccc
+      
+      img
+        float: left
+        margin: 3px
+        width: 30px
+        height: 30px
+    
+    .client
+      a
+        float: left
+        padding: 10px 5px
+        display: block
+    
+
+    th
+      background: #999
+      border: 1px solid #444
+        left: 0
+      color: #fff
+      padding: 5px 3px
+    
+      &:first-child
+        border:
+          left: 1px solid #444
+    
+    .even
+      background: #efefef
+      
+    tr
+      &:hover
+        background: #ccc
+  
+    thead tr .header
+      background-image: url(/images/farora/tablesorter/bg.gif)
+      background-repeat: no-repeat
+      background-position: center right
+      cursor: pointer
+      
+    thead tr
+      .headerSortUp
+        background-image: url(/images/farora/tablesorter/asc.gif)
+      .headerSortDown
+        background-image: url(/images/farora/tablesorter/desc.gif)
+    
+  

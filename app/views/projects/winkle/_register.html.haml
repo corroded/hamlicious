@@ -1,0 +1,37 @@
+#register-page.page
+  %form#signup_form.standard-form{:action => "", :enctype => "multipart/form-data", :method => "post", :name => "signup_form"}
+    %h2 Create an Account
+    %p Registering for this site is easy, just fill in the fields below and we'll get a new account set up for you in no time.
+
+    #basic-details-section.register-section
+      %h4 Account Details
+      %label{:for => "signup_username"} Username (required)
+      %input#signup_username{:name => "signup_username", :type => "text", :value => ""}
+        %label{:for => "signup_email"} Email Address (required)
+        %input#signup_email{:name => "signup_email", :type => "text", :value => ""}
+          %label{:for => "signup_password"} Choose a Password (required)
+          %input#signup_password{:name => "signup_password", :type => "password", :value => ""}
+            %label{:for => "signup_password_confirm"} Confirm Password (required)
+            %input#signup_password_confirm{:name => "signup_password_confirm", :type => "password", :value => ""}
+
+    #profile-details-section.register-section
+      %h4 Profile Details
+      .editfield
+        %label{:for => "field_1"} Name (required)
+        %input#field_1{:name => "field_1", :type => "text", :value => ""}
+          %p.description
+      .editfield
+        %label{:for => "field_2"} Contact Number (required)
+        %input#field_2{:name => "field_2", :type => "text", :value => ""}
+          %p.description Please supply a landline or mobile number where we can reach you.
+      .editfield
+        %label{:for => "field_3"} What makes you proud of who you are? (required)
+        %textarea#field_3{:cols => "40", :name => "field_3", :rows => "5"}
+        %p.description Give a brief explanation of what makes you prod of who you are.  This will help us know a bit more about you.
+      %input#signup_profile_field_ids{:name => "signup_profile_field_ids", :type => "hidden", :value => "1,2,3"}
+    / #profile-details-section
+    .submit
+      %input#signup_submit{:name => "signup_submit", :type => "submit", :value => "Complete Sign Up →"}
+    %input#_wpnonce{:name => "_wpnonce", :type => "hidden", :value => "336f8c3e9a"}
+      %input{:name => "_wp_http_referer", :type => "hidden", :value => "/winkle/register"}
+/ .padder

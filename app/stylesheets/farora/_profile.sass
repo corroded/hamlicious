@@ -1,0 +1,144 @@
+#profile-page
+  padding:
+    top: 20px
+  width: 970px
+    
+  .side-bar
+    clear: both
+    float: left
+    width: 220px
+    border: 1px solid #d1d1d1
+    background: #fff
+    
+    .profile-pic
+      padding: 10px
+        bottom: 20px
+      border:
+        bottom: 1px solid #d1d1d1
+    
+    p
+      margin: 5px 
+      color: #000
+      
+    span
+      font:
+        size: 12px
+        weight: 100
+        
+      &.count
+        color: #4d4d4d
+        
+          
+    h4
+      padding: 5px 10px
+        left: 15px
+      border:
+        top: 0
+        
+    .friends
+      padding:
+        bottom: 20px
+      ul
+        margin: 0 5px
+        +pie-clearfix
+        li
+          float: left
+          width: 50px
+          margin: 5px 10px
+            
+          font:
+            size: 11px
+    
+  .main-content
+    float: left
+    width: 600px
+    padding: 10px
+    margin:
+      left: 50px
+    
+    h2
+      color: #ffa200
+      font:
+        weight: 100
+      margin:
+        bottom: 20px
+      
+      span
+        color: #000
+        font:
+          size: .7em
+          
+    h4
+      margin:
+        top: 20px
+      position: relative
+
+      em
+        padding:
+          left: 10px
+        font:
+          weight: 100
+          style: italic
+          size: .9em
+        color: #666
+      
+      span.edit-link
+        float: right
+        font:
+          weight: 100
+        a
+          color: #ccc
+        
+        
+    p
+      margin:
+        bottom: 15px
+    
+    .profile-data
+      margin:
+        bottom: 20px
+        
+      li
+        font:
+          weight: bold
+        margin:
+          bottom: 3px
+        +pie-clearfix
+        span
+          color: #999
+          display: block
+          float: left
+          width: 130px
+
+    .description
+      font:
+        size: 14px
+      margin:
+        bottom: 20px
+        
+    .review-results
+      margin: 0
+      
+      h2
+        font:
+          size: 18px
+          weight: bold
+        color: #000
+        margin: 
+          bottom: 0
+
+#client-page
+  @extend #profile-page
+  width: 930px
+  
+  #main-content
+    width: 630px
+    
+  #searchbox
+    margin-right: 35px
+    
+  .tabs
+    ul
+      margin:
+        top: 0
+        bottom: 20px

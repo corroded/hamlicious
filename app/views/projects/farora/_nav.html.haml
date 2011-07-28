@@ -1,7 +1,7 @@
 #nav
   %ul
     %li
-      %a.sign-in-link
+      %a.sign-in-link{:href => "/"}
         %strong sign in
         or
       [
@@ -11,9 +11,13 @@
       = link_to "account", "/"
     %li
       = link_to "+ invite friends", "/", :class => "invite-friends-link"
-    %li= link_to "my #{image_tag("farora/heart.png")}'s", "/", :class => "favorites-link"
+    %li
+      %a{:href => "/", :class => "favorites-link"}
+        = "my "
+        =  image_tag("farora/heart.png")
+        = "'s"
     %li= link_to "help", "/help"
     %li
       %em= link_to "search", "/search"
     %li
-      = link_to "Bookings [0]", ""
+      = link_to "Bookings [0]", "#"

@@ -1,0 +1,41 @@
+@import compass/reset
+@import 960/grid
+@import 960/text
+@import compass/css3
+@import compass/typography/lists
+
++grid-system-complete(24)
++text
+
+$ninesixty-columns: 24
+$main-color: #996699
+$secondary-color: #e99937
+
+@import fonts
+@import forms
+
+body
+  background: #969 url(/images/winkle/body-bg.png) repeat-x
+
+#bp-default
+  +grid-system(24)
+  +pie-clearfix
+
+a
+  color: $main-color
+  text-decoration: none
+
+em
+  font-style: italic
+
+.icon
+  display: block !important
+  text-indent: -10000px
+
+@import header
+@import menu
+@import page
+@import about
+@import members
+@import register
+@import footer

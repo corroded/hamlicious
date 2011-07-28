@@ -1,3 +1,5 @@
-# Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+  def controller_action_class
+    "#{controller.controller_name}-pages"
+  end
 end

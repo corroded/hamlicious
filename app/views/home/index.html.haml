@@ -1,0 +1,21 @@
+%head
+  %meta{"http-equiv" => "content-type", :content => "text/html;charset=UTF-8"}
+  %title hamlicious home!
+  = stylesheet_link_tag 'reset'
+
+  %body
+    #container
+    
+      #header
+        %h1 HAMLICIOUS!
+        
+      #menu
+        %ul
+          - @files.each do |file|
+            %li= link_to file, "/projects/#{file}"
+      
+      #main
+        
+      
+      #footer 
+          

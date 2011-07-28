@@ -6,30 +6,298 @@
 @import compass/reset/utilities
 @import compass/utilities/sprites
 
+$main-color: #47a3ff
+$highlight: #FFB628
+
+$footer-height: 200px
+$header-height: 50px
+
+html
+  overflow-x: hidden
+  background: #131313
+
 body
-  :background #131313
-  :font
-    :family Arial, sans-serif
-    :size 14px
-  :color #fff
+  font:
+    family: Arial, sans-serif
+    size: 14px
+  width: 100%
+  background: #f6f6f6
+  border:
+    top: $header-height solid #131313
   
+  &.index
+    background: #131313 url(/images/farora/bg1.jpg) no-repeat top center
     
 #container
-  width: 90%
+  width: 960px
+  +pie-clearfix
   margin: 0 auto
-  
+  position: relative
+    
 ul
-  :list-style-type none
+  list-style-type: none
 
 a
-  :color #fff
-  :text
-    :decoration none
+  color: $main-color
+  text:
+    decoration: none
     
   &:hover
-    :color #999
+    color: #999
+    
+h2
+  font:
+    size: 20px
+    weight: bold
+  padding:
+    bottom: 10px
+    
+h4
+  padding: 5px
+  background: #eee
+  font: 
+    weight: bold
+  margin:
+    bottom: 20px
+  border: 
+    top: 1px solid #ccc
+    
+strong
+  font:
+    weight: bold
+    
+em
+  font:
+    style: italic
+        
+select
+  +border-radius(5px)
+  display: block
+  font:
+    size: .9em
+  padding: 5px
+  color: #000
+  background: #fff
+  border: 0
+  height: 30px
+  width: 194px
+  margin:
+    top: 5px
+    
+p
+  color: #666
   
+form
+  +pie-clearfix
+
+    
+.inner-container
+  +pie-clearfix
+  
+.addthis_toolbox
+  float: right
+  margin:
+    top: -4px
+    right: 10px
+  +pie-clearfix
+  a
+    float: right
+    
+    &.addthis_button_tweet
+      iframe
+        width: 100px !important
+    
+    iframe
+      width: 50px !important
+    
+  .addthis_button_email
+    float: left
+    padding:
+      top: 2px
+    
+  .favorites-link
+    float: left
+    padding: 
+      top: 2px
+      left: 5px
+      
+.favorite
+  background: url(/images/farora/heart.png) no-repeat 5px 5px
+  text-indent: -10000px
+  display: block
+  float: left
+  width: 15px
+  height: 15px
+  
+.empty-favorite
+  @extend .favorite
+  background: url(/images/farora/empty-heart.png) no-repeat 5px 5px
+  
+textarea
+  padding: 5px
+  font:
+    family: "Lucida Grande", sans-serif
+    size: 11px
+  +border-radius(5px)
+  border: 1px solid #96A6C5
+  background: #efefef
+  margin:
+    top: 10px
+  
+.main
+  clear: both
+  padding:
+    top: 50px
+    bottom: 50px
+  +pie-clearfix
+        
+  h1
+    font:
+      size: 20px
+    margin: 20px 0
+    
+  select
+    border: 1px solid #96A6C5
+      
+  a
+    color: $main-color
+    
+  p
+    margin:
+      bottom: 10px
+    
+  form
+    margin:
+      top: 20px
+    fieldset
+      +pie-clearfix
+      ul
+        +pie-clearfix
+        > li
+          clear: both
+          +pie-clearfix
+          margin:
+            bottom: 10px
+          
+        input
+          padding: 4px
+          margin: 
+            left: 0
+            
+      .reminder
+        float: right
+        padding:
+          top: 5px
+          right: 5px
+        font:
+          size: 11px
+          weight: bold
+          
+  .radios
+    +pie-clearfix
+    li
+      float: left
+      clear: none
+      padding:
+        top: 10px
+    .radio
+      margin:
+        top: 0
+      display: inline
+    label
+      display: inline
+      padding: 0
+      width: 120px
+      margin: 0
+    
+  label
+    float: left
+    display: block
+    padding: 10px
+      left: 0
+    width: 80px
+    
+  input, select, textarea
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+      
+  input
+    +border-radius(5px)
+    float: left
+    margin: 5px
+    
+    &[type=text],
+    &[type=password]
+      border: 1px solid #96A6C5
+      background: #efefef
+    
+  select
+    float: left
+    padding: 2px
+    width: auto
+    height: auto
+    
+  .founders
+    float: left
+    margin:
+      right: 20px
+
+    img
+      width: 300px
+    
+  .sub-content
+    border:
+      left: 1px solid #ccc
+    padding: 10px
+    float: left
+    height: 300px
+    width: 450px
+    
+    > div
+      background: #fff
+      border: 1px solid #ccc
+      text-align: center
+      width: 430px
+      +pie-clearfix
+      margin:
+        bottom: 30px
+      padding: 10px
+        
+      > ul
+        margin:
+          top: 10px
+        +pie-clearfix
+          
+    
+    .farora-credits
+      width: 430px
+      
+      h3
+        font:
+          weight: bold
+          size: 14px
+        span
+          font:
+            weight: normal
+            size: 12px
+
+  
+@import calendrical
 @import footer
 @import header
 @import index
+@import lists
 @import nav
+@import review
+@import star_rating
+@import profile
+@import results
+@import pagination
+@import business_profile
+@import info
+@import sub_nav
+@import tables
+@import staff
+@import fancybox
+@import credit

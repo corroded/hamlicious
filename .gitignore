@@ -1,5 +1,7 @@
 .DS_Store
-tmp/
 log/
-doc/
-*.bak
+config/database.yml
+.sass-cache/
+tmp/
+html/
+*.swp

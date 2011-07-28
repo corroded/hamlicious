@@ -1,0 +1,19 @@
+#sidebar
+  .padder
+    %p#login-text
+      To start connecting please log in first.
+    %form#sidebar-login-form.standard-form{:action => "http://winkle.sweetperceptions.com/winkle/wp-login.php", :method => "post", :name => "login-form"}
+      %label
+        Username
+        %br/
+        %input{:type => "text", :name => "log", :id => "sidebar-user-login", :class => "input", :value => "", :tabindex => "97"}
+      %label
+        Password
+        %br/
+        %input#sidebar-user-pass.input{:name => "pwd", :tabindex => "98", :type => "password", :value => ""}/
+      %p.forgetmenot
+        %label
+          %input#sidebar-rememberme{:name => "rememberme", :tabindex => "99", :type => "checkbox", :value => "forever"}/
+          Remember Me
+      %input#sidebar-wp-submit{:name => "wp-submit", :tabindex => "100", :type => "submit", :value => "Log In"}/
+      %input{:name => "testcookie", :type => "hidden", :value => "1"}/

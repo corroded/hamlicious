@@ -1,0 +1,109 @@
+#members-directory-form
+  +grid(15)
+  +pie-clearfix
+  +alpha
+
+  h3
+    +grid(7)
+    +alpha
+
+  ul
+    list-style-type: none
+
+  #members-dir-search
+    +grid(8)
+    +omega
+
+    label
+      float: left
+      margin: 0
+
+    input
+      float: left
+      margin:
+        right: 10px
+
+      &[type=text]
+        padding: 4px
+
+  .item-list-tabs
+    clear: both
+    +grid(8)
+    +alpha
+
+    ul
+      margin:
+        top: 10px
+      li
+        margin:
+          left: 0
+
+  #subnav
+    +grid(6)
+    +omega
+    +grid-push(1)
+    clear: none
+
+    ul
+      margin:
+        top: 0
+
+    label
+      float: left
+      margin:
+        top: 7px
+
+    select
+      float: left
+      margin:
+        top: 5px
+        left: 5px
+
+  #members-dir-list
+    clear: both
+    +grid(15)
+    +alpha
+
+    .pagination
+      +pie-clearfix
+      background: #D7B6EA
+      padding: 5px 10px
+
+    .pag-count
+      float: left
+
+    #member-dir-pag-top
+      float: right
+
+    #members-list
+      li
+        +pie-clearfix
+        margin:
+          left: 0
+        padding: 10px
+        border:
+          bottom: 1px dotted #444
+
+      .avatar
+        float: left
+        width: 50px
+        +single-box-shadow
+        margin:
+          right: 10px
+
+      .item
+        float: left
+
+        .item-title
+          padding:
+            bottom: 5px
+
+        .item-meta
+          +border-radius(3px)
+          display: inline
+          background: #F2EAB5
+          border: 1px solid $secondary-color
+          padding: 3px 5px
+          color: #444
+          font:
+            size: 11px

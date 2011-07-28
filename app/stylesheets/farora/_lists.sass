@@ -1,0 +1,205 @@
+.filters
+  clear: both
+  +pie-clearfix
+  margin:
+    bottom: 10px
+  > li
+    float: left
+    width: 330px
+  
+  select
+    margin:
+      top: 5px
+    
+.results
+  +pie-clearfix
+  
+  > li
+    list-style-position: inside
+    float: left
+    width: 30%
+    margin: 15px
+    
+    li
+      margin:
+        bottom: 5px
+    
+    p
+      padding:
+        bottom: 10px
+    
+.tabs
+  > ul
+    clear: both
+    margin:
+      top: 20px
+    +pie-clearfix  
+    > li
+      background: #c3c3c3
+      float: left
+      margin:
+        right: 3px
+    
+      &:hover
+        background: #000
+    
+      &.current
+        background: #000
+        
+        a
+          color: #fff
+      
+      a
+        display: block
+        color: #666
+        padding: 5px 10px
+        
+        &:hover
+          color: #fff
+  > div
+    padding:
+      top: 20px
+
+.pipes
+  clear: both
+  +pie-clearfix
+  color: #999
+  margin:
+    bottom: 10px
+  
+  li
+    display: inline
+    &.current
+      color: #666
+      
+dl
+  +pie-clearfix
+  dt
+    float: left
+    clear: both
+  dd
+    float: left
+    margin:
+      left: 5px
+      bottom: 5px
+      
+.result-grid
+  +pie-clearfix
+  padding:
+    top: 20px
+  li
+    padding: 10px
+    border: 1px solid #ccc
+    background: #fff
+    width: 200px
+    position: relative
+    float: left
+    margin:
+      right: 10px
+      bottom: 20px
+    
+    img
+      margin: auto
+      width: 200px
+      
+    .result-overlay
+      position: absolute
+      bottom: 10px
+      background: rgba(#000,0.9)
+      width: 180px
+      padding: 10px
+      
+      strong
+        color: $highlight
+        font:
+          weight: 100
+          size: 14px
+        
+    p
+      font:
+        size: 12px
+      color: #fff
+        
+      &.rating-count
+        margin:
+          top: 3px
+          bottom: 10px
+          
+.thumbs
+  +pie-clearfix
+  li
+    float: left
+    margin:
+      right: 10px
+    &:last-child
+      margin:
+        right: 0
+        
+    img
+      width: 111px
+        
+.weekly-schedule
+  width: 200px
+  li
+    margin:
+      bottom: 5px
+    +pie-clearfix
+    .day
+      float: left
+      width: 80px 
+    .hours
+      float: right
+  
+  
+.search-filters
+  @extend .tabs
+  margin:
+    bottom: 20px
+  a
+    float: left
+    padding: 5px
+      right: 0 !important
+  .close-tab
+    width: 10px
+    float: left
+    padding:
+      right: 5px !important
+  
+  #add-new-filter
+    padding: 5px !important
+  
+    
+.q-and-a
+  h3
+    margin:
+      bottom: 10px
+    font:
+      weight: bold
+  li
+    margin:
+      bottom: 10px
+      
+.main
+  ol
+    list-style:
+      type: decimal
+      position: outside
+    margin: 
+      left: 20px
+    li
+      margin:
+        bottom: 20px
+        
+      h3
+        font:
+          weight: bold
+    
+      
+.bulleted
+  list-style:
+    type: disc
+    position: inside
+  li
+    margin:
+      bottom: 10px
+    
