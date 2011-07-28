@@ -1,0 +1,72 @@
+#container
+  +grid-container
+  +border-radius(5px)
+  +pie-clearfix
+  clear: both
+  background: #fff
+  padding:
+    bottom: 20px
+    top: 35px
+
+  #splash
+    +border-radius(3px)
+    +single-box-shadow
+    height: 320px
+    border: 1px solid #dedede
+    margin: 35px
+      top: 0
+    width: 890px
+    float: left
+    background: #efefef
+
+  #content
+    +grid-push(1)
+    +grid(15)
+    +alpha
+    clear: both
+    border:
+      top: 1px dotted #444
+    padding: 20px 0
+
+    h1, h2, h3, h4, h5, h6
+      font:
+        family: 'DiavloMedium'
+      color: $secondary-color
+      margin:
+        bottom: 10px
+
+    .author-box
+      width: 55px
+      float: right
+      margin:
+        left: 15px
+
+      p
+        margin:
+          bottom: 0
+
+    .post-content
+      +pie-clearfix
+      position: relative
+      border:
+        bottom: 1px dotted #444
+      p
+        text-align: justify
+
+    .date
+      font:
+        size: 11px
+      color: #444
+      float: right
+
+    .postmetadata
+      float: left
+
+  #sidebar
+    +omega
+    +grid-push(2)
+    +grid(6)
+    +border-radius(3px)
+    +single-box-shadow
+    border: 1px solid #dedede
+    padding: 10px

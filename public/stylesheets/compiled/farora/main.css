@@ -1,26 +1,26 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
   font-size: 100%;
-  font-family: inherit;
+  font: inherit;
   vertical-align: baseline;
 }
 
 body {
   line-height: 1;
-  color: black;
-  background: white;
 }
 
 ol, ul {
@@ -28,9 +28,8 @@ ol, ul {
 }
 
 table {
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
-  vertical-align: middle;
 }
 
 caption, th, td {
@@ -40,14 +39,19 @@ caption, th, td {
 }
 
 q, blockquote {
-  quotes: "" "";
+  quotes: none;
 }
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
+  content: none;
 }
 
 a img {
   border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
 }
 
 html {
@@ -73,12 +77,9 @@ body.index {
   position: relative;
 }
 #container:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 
 ul {
@@ -141,24 +142,18 @@ form {
   *zoom: 1;
 }
 form:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 
 .inner-container {
   *zoom: 1;
 }
 .inner-container:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 
 .addthis_toolbox {
@@ -168,12 +163,9 @@ form:after {
   *zoom: 1;
 }
 .addthis_toolbox:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .addthis_toolbox a {
   float: right;
@@ -229,12 +221,9 @@ textarea {
   *zoom: 1;
 }
 .main:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .main h1 {
   font-size: 20px;
@@ -256,23 +245,17 @@ textarea {
   *zoom: 1;
 }
 .main form fieldset:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .main form fieldset ul {
   *zoom: 1;
 }
 .main form fieldset ul:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .main form fieldset ul > li {
   clear: both;
@@ -280,12 +263,9 @@ textarea {
   margin-bottom: 10px;
 }
 .main form fieldset ul > li:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .main form fieldset ul input {
   padding: 4px;
@@ -302,12 +282,9 @@ textarea {
   *zoom: 1;
 }
 .main .radios:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .main .radios li {
   float: left;
@@ -380,24 +357,18 @@ textarea {
   padding: 10px;
 }
 .main .sub-content > div:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .main .sub-content > div > ul {
   margin-top: 10px;
   *zoom: 1;
 }
 .main .sub-content > div > ul:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .main .sub-content .farora-credits {
   width: 430px;
@@ -485,12 +456,9 @@ textarea {
   overflow-x: hidden;
 }
 #footer:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #footer ul {
   width: 960px;
@@ -498,12 +466,9 @@ textarea {
   *zoom: 1;
 }
 #footer ul:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #footer ul li {
   float: left;
@@ -541,12 +506,9 @@ textarea {
   margin-top: -50px;
 }
 #header:after, #quick-links:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #header h1, #quick-links h1 {
   text-indent: -10000px;
@@ -569,19 +531,15 @@ textarea {
   margin: 30px 0;
 }
 #index-main:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #index-main fieldset {
   background-color: #303030;
   color: white;
-  opacity: 0.9;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
   padding: 30px;
   padding-top: 20px;
   float: right;
@@ -618,12 +576,9 @@ textarea {
   counter-reset: item;
 }
 #index-main fieldset ol:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #index-main fieldset ol li {
   float: left;
@@ -709,7 +664,7 @@ textarea {
   border: none;
   color: white;
   cursor: pointer;
-  background: url('/images/farora/buttons.png?1298224770') no-repeat;
+  background: url('/public/images/farora/buttons.png?1298224770') no-repeat;
   width: 500;
   height: 50;
   overflow: hidden;
@@ -770,12 +725,9 @@ textarea {
   margin-bottom: 10px;
 }
 .filters:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .filters > li {
   float: left;
@@ -789,12 +741,9 @@ textarea {
   *zoom: 1;
 }
 .results:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .results > li {
   list-style-position: inside;
@@ -815,12 +764,9 @@ textarea {
   *zoom: 1;
 }
 .tabs > ul:after, .search-filters > ul:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .tabs > ul > li, .search-filters > ul > li {
   background: #c3c3c3;
@@ -855,12 +801,9 @@ textarea {
   margin-bottom: 10px;
 }
 .pipes:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .pipes li {
   display: inline;
@@ -873,12 +816,9 @@ dl {
   *zoom: 1;
 }
 dl:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 dl dt {
   float: left;
@@ -895,12 +835,9 @@ dl dd {
   padding-top: 20px;
 }
 .result-grid:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .result-grid li {
   padding: 10px;
@@ -941,12 +878,9 @@ dl dd {
   *zoom: 1;
 }
 .thumbs:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .thumbs li {
   float: left;
@@ -967,12 +901,9 @@ dl dd {
   *zoom: 1;
 }
 .weekly-schedule li:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .weekly-schedule li .day {
   float: left;
@@ -1122,12 +1053,9 @@ dl dd {
   font-size: 12px;
 }
 .ratings:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 .ratings form {
   *zoom: 1;
@@ -1135,12 +1063,9 @@ dl dd {
   margin-top: -3px;
 }
 .ratings form:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 
 div.rating-cancel, div.star-rating {
@@ -1229,12 +1154,9 @@ div.star-rating {
   *zoom: 1;
 }
 #profile-page .side-bar .friends ul:after, #client-page .side-bar .friends ul:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #profile-page .side-bar .friends ul li, #client-page .side-bar .friends ul li {
   float: left;
@@ -1287,12 +1209,9 @@ div.star-rating {
   *zoom: 1;
 }
 #profile-page .main-content .profile-data li:after, #client-page .main-content .profile-data li:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #profile-page .main-content .profile-data li span, #client-page .main-content .profile-data li span {
   color: #999999;
@@ -1393,12 +1312,9 @@ div.star-rating {
   *zoom: 1;
 }
 #business-profile:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #business-profile .main-content {
   float: left;
@@ -1429,12 +1345,9 @@ div.star-rating {
   text-align: center;
 }
 #business-profile .search-sidebar .commit:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #business-profile .search-sidebar .commit .submit {
   float: none;
@@ -1445,12 +1358,9 @@ div.star-rating {
   padding-bottom: 10px;
 }
 #business-profile .search-sidebar li:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #business-profile .search-sidebar .tabs li, #business-profile .search-sidebar .search-filters li {
   padding-bottom: 0;
@@ -1503,12 +1413,9 @@ div.star-rating {
   *zoom: 1;
 }
 #searchbox form:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #searchbox input {
   float: left;
@@ -1534,7 +1441,7 @@ div.star-rating {
   border: none;
   color: white;
   cursor: pointer;
-  background: url('/images/farora/buttons.png?1298224770') no-repeat;
+  background: url('/public/images/farora/buttons.png?1298224770') no-repeat;
   width: 500;
   height: 50;
   overflow: hidden;
@@ -1643,12 +1550,9 @@ div.star-rating {
   padding-left: 0;
 }
 #staff li:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 #staff li.even {
   background: #dedede;

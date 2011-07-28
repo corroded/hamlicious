@@ -1,0 +1,18 @@
+= content_for(:head) do
+  %title Winkle Hat Society
+  = stylesheet_link_tag 'compiled/winkle/main.css', :media => 'screen, projection'
+  /[if lt IE 8]
+    = stylesheet_link_tag 'compiled/winkle/ie.css', :media => 'screen, projection'
+
+%body#bp-default.home-page
+  = render :partial => "projects/winkle/header"
+  = render :partial => "projects/winkle/menu"
+
+  #container
+    #content
+      .padder
+        = render :partial => "projects/winkle/#{@myaction}"
+    = render :partial => "projects/winkle/sidebar"
+
+  = render :partial => "projects/winkle/footer"
+

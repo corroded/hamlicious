@@ -4,12 +4,18 @@
   /[if lt IE 8]
     = stylesheet_link_tag 'compiled/winkle/ie.css', :media => 'screen, projection'
 
-#container
+%body#bp-default.home-page
   = render :partial => "projects/winkle/header"
   = render :partial => "projects/winkle/menu"
 
-  #main
-    //= render :partial => "projects/winkle/sidebar"
-    //= render :partial => "projects/winkle/content"
+  #container
 
-  //= render :partial => "projects/winkle/footer"
+    = render :partial => "projects/winkle/content"
+    = render :partial => "projects/winkle/sidebar"
+
+  = render :partial => "projects/winkle/footer"
+
+- # #main{:class => controller_action_class}
+- #   #splash
+- #     = image_tag("winkle/splash1.jpg")
+

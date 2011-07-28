@@ -1,7 +1,9 @@
-#menu
-  %ul
-    %li= link_to "Home", '/'
-    %li= link_to "Members", '/'
-    %li= link_to "About", '/'
-    %li= link_to "Contact Us", '/'
-    %li= link_to "Login", '/'
+%ul#nav
+  %li.selected
+    %a{:href => "http://winkle.sweetperceptions.com/winkle", :title => "Home"} Home
+  %li
+    %a{:href => "http://winkle.sweetperceptions.com/winkle/members/", :title => "Members"} Members
+  %li.page_item.page-item-2
+    %a{:href => "http://winkle.sweetperceptions.com/winkle/sample-page/", :title => "About"} About
+  %li.page_item.page-item-9
+    %a{:href => "http://winkle.sweetperceptions.com/winkle/contact-us/", :title => "Contact Us"} Contact Us

@@ -23,6 +23,7 @@ gem 'haml'
 gem "haml-rails"
 gem "rails3-generators"
 gem 'compass'
+gem 'compass-960-plugin'
 gem 'jquery-rails', '>= 0.2.6'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
