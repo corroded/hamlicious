@@ -1,0 +1,72 @@
+%h3 Site Activity
+.item-list-tabs.activity-type-tabs
+  %ul
+    %li#activity-all.selected
+      %a{:href => "activity/", :title => "The public activity for everyone on this site."} All Members (2)
+/ .item-list-tabs
+#subnav.item-list-tabs.no-ajax
+  %ul
+    %li.feed
+      %a{:href => "http://winkle.sweetperceptions.com/winkle/activity/feed/", :title => "RSS Feed"} RSS
+    %li#activity-filter-select.last
+      %select
+        %option{:value => "-1"} No Filter
+        %option{:value => "activity_update"} Show Updates
+        %option{:value => "new_blog_post"} Show Blog Posts
+        %option{:value => "new_blog_comment"} Show Blog Comments
+        %option{:value => "new_member"} Show New Members
+/ .item-list-tabs
+.activity
+  %noscript
+    .pagination
+      .pag-count
+        Viewing item 1 to 2 (of 2 items)  
+        %span.ajax-loader
+      .pagination-links
+  %ul#activity-stream.activity-list.item-list
+    %li#activity-2.activity.activity_update.has-comments
+      .activity-avatar
+        %a{:href => "http://winkle.sweetperceptions.com/winkle/members/admin/"}
+          %img.avatar.user-1-avatar{:alt => "Avatar", :height => "100", :src => "http://www.gravatar.com/avatar/85547df40f13a1cc8d0c53018fd8ab81?d=wavatar&s=100", :width => "100"}
+      .activity-content
+        .activity-header
+          %p
+            %a{:href => "http://winkle.sweetperceptions.com/winkle/members/admin/", :title => "admin"} admin
+            posted an update:
+            %span.time-since   4 weeks, 1 day ago
+            ·
+            %a.view{:href => "http://winkle.sweetperceptions.com/winkle/activity/p/2/", :title => "View Thread / Permalink"} View
+        .activity-inner
+          %p hi, this is a test
+        .activity-meta
+      .activity-comments
+        %ul
+          %li#acomment-3
+            .acomment-avatar
+              %a{:href => "http://winkle.sweetperceptions.com/winkle/members/admin/"}
+                %img.avatar.user-1-avatar{:alt => "Avatar Image", :height => "20", :src => "http://www.gravatar.com/avatar/85547df40f13a1cc8d0c53018fd8ab81?d=wavatar&s=20", :width => "20"}/
+            .acomment-meta
+              %a{:href => "http://winkle.sweetperceptions.com/winkle/members/admin/"} admin
+              · 1 day, 2 hours ago
+            .acomment-content
+              %p abc
+    %li#activity-1.blogs.new_blog_post
+      .activity-avatar
+        %a{:href => "http://winkle.sweetperceptions.com/winkle/members/admin/"}
+          %img.avatar.user-1-avatar{:alt => "Avatar", :height => "100", :src => "http://www.gravatar.com/avatar/85547df40f13a1cc8d0c53018fd8ab81?d=wavatar&s=100", :width => "100"}
+      .activity-content
+        .activity-header
+          %p
+            %a{:href => "http://winkle.sweetperceptions.com/winkle/members/admin/", :title => "admin"} admin
+            wrote a new blog post:
+            %a{:href => "http://winkle.sweetperceptions.com/winkle/2011/07/04/hello-world/"} Hello world!
+            %span.time-since   4 weeks, 1 day ago
+            ·
+            %a.view{:href => "http://winkle.sweetperceptions.com/winkle/2011/07/04/hello-world/", :title => "View Thread / Permalink"} View
+        .activity-inner
+          %p Welcome to Winkle Events. This is your first post. Edit or delete it, then start blogging!
+        .activity-meta
+  %form#activity-loop-form{:action => "", :method => "post", :name => "activity-loop-form"}
+    %input#_wpnonce_activity_filter{:name => "_wpnonce_activity_filter", :type => "hidden", :value => "2b4087b38d"}
+      %input{:name => "_wp_http_referer", :type => "hidden", :value => "/winkle/activity/"}/
+/ .activity

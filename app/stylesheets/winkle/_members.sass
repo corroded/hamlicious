@@ -66,13 +66,13 @@
 
     .pagination
       +pie-clearfix
-      background: #D7B6EA
+      background: $light-main-background
       padding: 5px 10px
 
     .pag-count
       float: left
 
-    #member-dir-pag-top
+    .pagination-links
       float: right
 
     #members-list
@@ -99,10 +99,10 @@
             bottom: 5px
 
         .item-meta
+          border: 1px solid $secondary-color
           +border-radius(3px)
           display: inline
           background: #F2EAB5
-          border: 1px solid $secondary-color
           padding: 3px 5px
           color: #444
           font:

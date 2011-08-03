@@ -1,28 +1,91 @@
-@import url(menu.css);
-@import url(header.css);
-@import url(sidebar.css);
-@import url(contents.css);
-@import url(footer.css);
-body {
-  background: url(../../images/leafnode/bg.jpg) repeat-x bottom center;
-  height: 1700px;
-  font-family: Trebuchet MS, Arial, sans-serif;
-  font-size: 14px; }
+/*
+Syntax error: Invalid mixin "10px".
+        on line 41 of /Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/mixins.sass
+        from line 3 of /Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/leafnode/main.sass
 
-a {
-  color: #ff3fb2; }
+36: 
+37: =14px
+38:   :font
+39:     :size 14px
+40: 
+41: =15px
+42:   :font
+43:     :size 15px
+44:     
+45: =verdana
+46:   :font
 
-#container {
-  margin: auto;
-  width: 950px; }
-  #container #banner-ad {
-    width: 870px;
-    margin: auto;
-    margin-top: 5px;
-    margin-bottom: 10px; }
-
-.search-by {
-  background: #fff url(../../images/leafnode/search-arrow.jpg) right no-repeat; }
-
-.centered {
-  text-align: center !important; }
+Backtrace:
+/Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/mixins.sass:41
+/Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/leafnode/main.sass:3
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:773:in `parse_mixin_definition'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:546:in `parse_line'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:447:in `build_tree'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:466:in `block in append_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:465:in `each'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:465:in `append_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:322:in `_to_tree'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:249:in `block in to_tree'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:249:in `to_tree'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:144:in `visit_import'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/tree/root_node.rb:20:in `render'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:291:in `_render'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:239:in `block in render'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:239:in `render'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:175:in `each'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:173:in `each'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/rack.rb:51:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/Users/eumir/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/eumir/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/eumir/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid mixin \"10px\".\A         on line 41 of /Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/mixins.sass\A         from line 3 of /Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/leafnode/main.sass\A \A 36: \A 37: =14px\A 38:   :font\A 39:     :size 14px\A 40: \A 41: =15px\A 42:   :font\A 43:     :size 15px\A 44:     \A 45: =verdana\A 46:   :font"; }

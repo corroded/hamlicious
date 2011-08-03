@@ -1,0 +1,120 @@
+#activity-stream
+  > li
+    list-style-type: none
+    margin: 0
+      bottom: 10px
+    +pie-clearfix
+    border:
+      bottom: 1px dotted $main-color
+    padding:
+      bottom: 10px
+
+    p
+      margin:
+        bottom: 10px
+
+    .activity-avatar
+      +grid(2)
+      +alpha
+
+      img
+        +single-box-shadow
+        width: 50px
+        height: 50px
+
+    .activity-content
+      +grid(13)
+      +omega
+
+      .activity-header
+        font:
+          size: 11px
+
+      .activity-meta
+        +pie-clearfix
+        a
+          font:
+            size: 11px
+          float: left
+          display: inline
+          padding: 3px 5px
+          border: 1px solid $main-color
+          +border-radius(5px)
+          margin:
+            right: 5px
+
+          span
+            background: $main-color
+            padding: 2px
+            color: #fff
+            +border-radius(3px)
+
+          &:hover
+            background: #efefef
+
+
+    .activity-comments
+      +grid(13)
+      +grid-push(2)
+      +alpha
+      +omega
+      margin:
+        top: 10px
+
+      li
+        +grid(13)
+        list-style-type: none
+        margin: 0
+        +pie-clearfix
+        font:
+          size: 11px
+        background: #efefef
+
+        ul
+          margin:
+            left: 10px
+
+        .acomment-avatar
+          float: left
+          margin: 10px
+            bottom: 0
+          img
+            width: 25px
+            height: 25px
+
+        .acomment-meta
+          float: left
+          margin:
+            top: 10px
+            right: 10px
+
+        .acomment-content,
+        .acomment-options
+          clear: both
+          float: left
+          margin:
+            top: 0
+            left: 45px
+
+.activity-type-tabs
+  +grid(15)
+  +alpha
+  background: $light-main-background
+  +border-top-radius(5px)
+
+  ul
+    +pie-clearfix
+    margin:
+      bottom: 0
+
+    li
+      float: left
+      padding: 5px 10px
+      margin:
+        left: 10px
+
+      &.selected
+        a
+          background: #fff
+          +border-radius(3px)
+          padding: 3px 10px

@@ -8,27 +8,19 @@
   src: local("☺"), url("museo_slab_500-webfont.woff") format("woff"), url("museo_slab_500-webfont.ttf") format("truetype"), url("museo_slab_500-webfont.svg#webfontoDo94HPg") format("svg");
 }
 
-/* line 4, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
-html, body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
-
-/* line 6, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html {
-  font-size: 100.01%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-/* line 16, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
-div, span, object, iframe, h1, h2, h3, h4, h5, h6, h2, h3, h4, h5, h6, p,
-pre, a, abbr, acronym, address, code, del, dfn, em, img,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+.bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
+div, span, object, iframe, p,
+pre, a, abbr, acronym, address,
+code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend,
+caption, tbody, tfoot, thead, tr {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,158 +31,113 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, th
   vertical-align: baseline;
 }
 
-/* line 18, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
 blockquote, q {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
   quotes: "" "";
 }
-/* line 45, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 20, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 th, td, caption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
+  float: none !important;
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 table {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 24, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 3, ../../../../app/stylesheets/idq/_content.sass */
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
   color: #329ac8;
 }
-/* line 6, ../../../../app/stylesheets/idq/_content.sass */
 #content #map {
   border: 1px solid #cccccc;
   height: 370px;
   margin: 20px 0;
 }
-/* line 12, ../../../../app/stylesheets/idq/_content.sass */
 #content #quiz .correct-answer, #content #quiz .wrong-answer {
   color: #016800;
   padding: 0;
   padding-left: 20px;
 }
-/* line 17, ../../../../app/stylesheets/idq/_content.sass */
 #content #quiz .wrong-answer {
   color: #cb0000;
 }
-/* line 21, ../../../../app/stylesheets/idq/_content.sass */
 #content #quiz .action-links {
   position: relative;
   background: #f2f2f2;
   border: 1px solid #cccccc;
   padding: 15px;
 }
-/* line 27, ../../../../app/stylesheets/idq/_content.sass */
 #content #quiz .action-links .submit-quiz {
   float: right;
 }
 
-/* line 31, ../../../../app/stylesheets/idq/_content.sass */
 .search-box {
   *zoom: 1;
   margin-top: 10px;
   padding: 10px;
   background: #d0ebfe;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .search-box:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 38, ../../../../app/stylesheets/idq/_content.sass */
 .search-box p {
   margin: 0;
   padding: 0;
 }
-/* line 41, ../../../../app/stylesheets/idq/_content.sass */
 .search-box input {
   margin-left: 10px;
 }
 
-/* line 45, ../../../../app/stylesheets/idq/_content.sass */
 .sort-by {
   background: #cccccc;
   padding: 10px;
   margin-top: 10px;
 }
-/* line 51, ../../../../app/stylesheets/idq/_content.sass */
 .sort-by p {
   margin: 0;
   padding: 0;
 }
-/* line 54, ../../../../app/stylesheets/idq/_content.sass */
 .sort-by strong {
   color: #999999;
 }
 
-/* line 57, ../../../../app/stylesheets/idq/_content.sass */
 .quiz-description {
   margin-bottom: 0 !important;
   width: 640px;
 }
 
-/* line 62, ../../../../app/stylesheets/idq/_content.sass */
 .quiz-photo {
   position: absolute;
   right: 0;
   padding-right: 20px;
 }
 
-/* line 67, ../../../../app/stylesheets/idq/_content.sass */
 .challenge-quiz {
   font-size: 1em !important;
 }
 
-/* line 2, ../../../../app/stylesheets/idq/_header.sass */
 #header {
   position: relative;
   height: 180px;
   background: #313131 url(/images/idq/header-no-pins.jpg) no-repeat bottom center;
   padding-top: 10px;
 }
-/* line 9, ../../../../app/stylesheets/idq/_header.sass */
 #header #login-box, #header #welcome-message {
   position: absolute;
   right: 0;
@@ -199,20 +146,16 @@ a img {
   font-weight: bold;
   font-size: 1.1em;
 }
-/* line 18, ../../../../app/stylesheets/idq/_header.sass */
 #header #login-box a, #header #welcome-message a {
   text-decoration: underline;
 }
-/* line 22, ../../../../app/stylesheets/idq/_header.sass */
 #header #welcome-message {
   font-weight: normal;
 }
-/* line 26, ../../../../app/stylesheets/idq/_header.sass */
 #header #welcome-message a {
   text-decoration: none;
   font-size: 0.8em;
 }
-/* line 32, ../../../../app/stylesheets/idq/_header.sass */
 #header #sub-heading {
   position: absolute;
   right: 0;
@@ -222,19 +165,16 @@ a img {
   color: #0069a0;
 }
 
-/* line 1, ../../../../app/stylesheets/idq/_footer.sass */
 #footer {
   padding: 0 10px;
   margin-top: 10px;
   border-top: 5px double #cccccc;
 }
 
-/* line 1, ../../../../app/stylesheets/idq/_form.sass */
 input[type=image] {
   vertical-align: middle;
 }
 
-/* line 4, ../../../../app/stylesheets/idq/_form.sass */
 input[type=submit] {
   background: url(/images/idq/submit-bg.png) repeat-x;
   border: 1px solid #984c02;
@@ -242,21 +182,17 @@ input[type=submit] {
   font-weight: bold;
 }
 
-/* line 11, ../../../../app/stylesheets/idq/_form.sass */
 label {
   font-weight: bold;
 }
 
-/* line 17, ../../../../app/stylesheets/idq/_form.sass */
 form fieldset li label {
   display: block;
 }
-/* line 20, ../../../../app/stylesheets/idq/_form.sass */
 form fieldset li input[type=image] {
   padding-top: 20px;
 }
 
-/* line 24, ../../../../app/stylesheets/idq/_form.sass */
 input[type=checkbox],
 .checkbox-label {
   margin: 0;
@@ -265,54 +201,41 @@ input[type=checkbox],
   font-weight: 100;
 }
 
-/* line 1, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #lightbox {
   position: relative;
 }
-/* line 4, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #lightbox h3 {
   color: #329ac8;
 }
-/* line 6, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #lightbox strong {
   font-size: 1.3em;
   font-weight: bold;
 }
-/* line 11, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #lightbox p {
   *zoom: 1;
   margin: 5px 0;
   padding: 0;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #lightbox p:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 16, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #lightbox label {
   float: left;
   display: inline-block;
   width: 100px;
 }
-/* line 20, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #lightbox input {
   width: 250px;
 }
-/* line 23, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #lightbox input[type=submit] {
   width: 100px;
 }
-/* line 26, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #lightbox .additional-field {
   padding: 0 10px;
 }
 
-/* line 29, ../../../../app/stylesheets/idq/_challenge_lightbox.sass */
 #fancybox-close {
   position: absolute;
   right: 0;
@@ -324,49 +247,35 @@ input[type=checkbox],
   right: 0 !important;
 }
 
-/* line 2, ../../../../app/stylesheets/idq/_lists.sass */
 ul {
   margin-top: 10px;
   list-style-position: inside;
 }
-/* line 7, ../../../../app/stylesheets/idq/_lists.sass */
 ul li {
   *zoom: 1;
   margin-top: 10px;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 ul li:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 14, ../../../../app/stylesheets/idq/_lists.sass */
 ul.bordered li {
   *zoom: 1;
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 ul.bordered li:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 21, ../../../../app/stylesheets/idq/_lists.sass */
 ul.bordered li:first-child {
   border-top: 1px solid #cccccc;
 }
-/* line 26, ../../../../app/stylesheets/idq/_lists.sass */
 ul.action-links li {
   margin-top: 5px;
 }
-/* line 29, ../../../../app/stylesheets/idq/_lists.sass */
 ul.action-links li a {
   text-transform: uppercase;
   font-size: 0.9em;
@@ -376,57 +285,44 @@ ul.action-links li a {
   display: block;
   text-align: center;
 }
-/* line 41, ../../../../app/stylesheets/idq/_lists.sass */
 ul.quiz-list li, ul.quiz-stats li, ul.quiz-list-result li {
   display: list-item;
   list-style-image: url(/images/idq/blue-bullet.png);
   list-style-position: inside;
 }
-/* line 47, ../../../../app/stylesheets/idq/_lists.sass */
 ul.quiz-list li a, ul.quiz-stats li a, ul.quiz-list-result li a {
   font-size: 1.3em;
 }
-/* line 51, ../../../../app/stylesheets/idq/_lists.sass */
 ul.quiz-list li p, ul.quiz-stats li p, ul.quiz-list-result li p {
   margin: 0;
   margin-bottom: 10px;
 }
-/* line 55, ../../../../app/stylesheets/idq/_lists.sass */
 ul.quiz-list li p.release-date, ul.quiz-stats li p.release-date, ul.quiz-list-result li p.release-date {
   padding-top: 10px;
   color: #999999;
   font-size: 0.8em;
 }
-/* line 64, ../../../../app/stylesheets/idq/_lists.sass */
 ul.quiz-stats li {
   border-top: 0 !important;
   margin-top: 0;
 }
-/* line 72, ../../../../app/stylesheets/idq/_lists.sass */
 ul.quiz-list-result li {
   position: relative;
   display: block;
   border-bottom: 1px solid #cccccc;
 }
-/* line 78, ../../../../app/stylesheets/idq/_lists.sass */
 ul.quiz-list-result li ul li {
   border-bottom: 0;
 }
-/* line 82, ../../../../app/stylesheets/idq/_lists.sass */
 ul.inline-bullet-list {
   margin: 0;
   *zoom: 1;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 ul.inline-bullet-list:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 85, ../../../../app/stylesheets/idq/_lists.sass */
 ul.inline-bullet-list li {
   float: left;
   display: inline-block;
@@ -435,22 +331,16 @@ ul.inline-bullet-list li {
   list-style-position: inside;
   margin-right: 10px;
 }
-/* line 94, ../../../../app/stylesheets/idq/_lists.sass */
 ul.minor-detail-list {
   *zoom: 1;
   margin: 0;
   color: #999999;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 ul.minor-detail-list:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 99, ../../../../app/stylesheets/idq/_lists.sass */
 ul.minor-detail-list li {
   float: left;
   display: inline-block;
@@ -458,20 +348,16 @@ ul.minor-detail-list li {
   font-size: 0.9em;
   padding: 0 5px;
 }
-/* line 107, ../../../../app/stylesheets/idq/_lists.sass */
 ul.minor-detail-list li:first-child {
   padding-left: 0;
 }
-/* line 111, ../../../../app/stylesheets/idq/_lists.sass */
 ul.minor-detail-list li:last-child {
   border: 0;
 }
-/* line 114, ../../../../app/stylesheets/idq/_lists.sass */
 ul.minor-detail-list li a {
   font-size: inherit;
 }
 
-/* line 118, ../../../../app/stylesheets/idq/_lists.sass */
 ol {
   font-weight: bold;
   font-size: 1.2em;
@@ -479,25 +365,20 @@ ol {
   list-style-type: decimal;
 }
 
-/* line 125, ../../../../app/stylesheets/idq/_lists.sass */
 .quiz-questions {
   list-style-position: inside;
 }
-/* line 127, ../../../../app/stylesheets/idq/_lists.sass */
 .quiz-questions li {
   margin-top: 20px;
 }
 
-/* line 131, ../../../../app/stylesheets/idq/_lists.sass */
 .faq {
   margin-top: 10px;
 }
-/* line 134, ../../../../app/stylesheets/idq/_lists.sass */
 .faq li {
   margin-bottom: 20px;
   font-size: 0.8em;
 }
-/* line 139, ../../../../app/stylesheets/idq/_lists.sass */
 .faq p {
   margin: 0;
   padding: 0;
@@ -506,41 +387,31 @@ ol {
   font-weight: 100;
 }
 
-/* line 148, ../../../../app/stylesheets/idq/_lists.sass */
 .choices {
   margin: 15px;
   font-size: 0.9em;
   font-weight: 100;
 }
-/* line 153, ../../../../app/stylesheets/idq/_lists.sass */
 .choices li {
   margin-top: 5px;
 }
 
-/* line 157, ../../../../app/stylesheets/idq/_lists.sass */
 .link-list {
   margin: 0;
   margin-top: 20px;
 }
-/* line 160, ../../../../app/stylesheets/idq/_lists.sass */
 .link-list li {
   margin: 0;
 }
 
-/* line 163, ../../../../app/stylesheets/idq/_lists.sass */
 .friend-list {
   *zoom: 1;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .friend-list:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 165, ../../../../app/stylesheets/idq/_lists.sass */
 .friend-list li {
   float: left;
   display: inline-block;
@@ -548,20 +419,17 @@ ol {
   overflow: none;
   margin-right: 20px;
 }
-/* line 172, ../../../../app/stylesheets/idq/_lists.sass */
 .friend-list li label {
   font-weight: 100;
   font-size: 0.8em;
   color: #329ac8;
 }
-/* line 178, ../../../../app/stylesheets/idq/_lists.sass */
 .friend-list li input[type=checkbox] {
   display: inline;
   padding: 0;
   margin: 0;
 }
 
-/* line 2, ../../../../app/stylesheets/idq/_nav.sass */
 #nav, #sub-nav {
   *zoom: 1;
   position: relative;
@@ -572,23 +440,17 @@ ol {
   margin: 0;
   padding: 0;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #nav:after, #sub-nav:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 13, ../../../../app/stylesheets/idq/_nav.sass */
 #nav li, #sub-nav li {
   float: left;
   display: inline-block;
   margin: 0;
   height: 38px;
 }
-/* line 18, ../../../../app/stylesheets/idq/_nav.sass */
 #nav li.presented, #sub-nav li.presented {
   position: absolute;
   right: 0;
@@ -598,45 +460,37 @@ ol {
   font-size: 0.7em;
   padding-right: 10px;
 }
-/* line 28, ../../../../app/stylesheets/idq/_nav.sass */
 #nav li a, #sub-nav li a {
   display: block;
   color: #a4a4a4;
   padding: 10px 15px;
   height: 18px;
 }
-/* line 34, ../../../../app/stylesheets/idq/_nav.sass */
 #nav li a.current-tab, #sub-nav li a.current-tab, #nav li a:hover, #sub-nav #nav li a:hover, #nav #sub-nav li a:hover, #nav #sub-nav li a:hover, #sub-nav #nav li a:hover, #sub-nav li a:hover {
   background: #329ac8;
   color: white;
 }
-/* line 38, ../../../../app/stylesheets/idq/_nav.sass */
 #nav li a:hover, #sub-nav li a:hover {
   text-decoration: none;
 }
 
-/* line 43, ../../../../app/stylesheets/idq/_nav.sass */
 #sub-nav {
   background: #329ac8;
   font-size: 1.1em;
   height: 38px;
 }
-/* line 51, ../../../../app/stylesheets/idq/_nav.sass */
 #sub-nav li a {
   padding: 10px 15px;
   color: white;
 }
-/* line 55, ../../../../app/stylesheets/idq/_nav.sass */
 #sub-nav li a.current-tab, #sub-nav #nav li a:hover, #nav #sub-nav li a:hover, #sub-nav li a:hover {
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 61, ../../../../app/stylesheets/idq/_nav.sass */
 #sub-nav li a:hover {
   font-weight: normal;
 }
 
-/* line 66, ../../../../app/stylesheets/idq/_nav.sass */
 .updated {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -644,22 +498,20 @@ ol {
   -ms-border-radius: 10px;
   -khtml-border-radius: 10px;
   border-radius: 10px;
-  -moz-box-shadow: black 0px 0px 10px 0;
-  -webkit-box-shadow: black 0px 0px 10px 0;
-  -o-box-shadow: black 0px 0px 10px 0;
-  box-shadow: black 0px 0px 10px 0;
+  -moz-box-shadow: 0px 0px 10px black;
+  -webkit-box-shadow: 0px 0px 10px black;
+  -o-box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px black;
   background: red;
   padding: 1px 5px;
   margin-left: 5px;
   font-size: 0.8em;
 }
-/* line 76, ../../../../app/stylesheets/idq/_nav.sass */
 .updated a {
   display: inline;
   padding: 0;
 }
 
-/* line 2, ../../../../app/stylesheets/idq/_pagination.sass */
 .pagination-section {
   font-size: 0.9em;
   font-weight: bold;
@@ -668,17 +520,14 @@ ol {
   border-top: 0px solid #999999;
   padding: 5px;
 }
-/* line 13, ../../../../app/stylesheets/idq/_pagination.sass */
 .pagination-section .small-caps {
   font-weight: normal;
 }
 
-/* line 16, ../../../../app/stylesheets/idq/_pagination.sass */
 .pagination {
   text-align: center;
   margin: 30px 0 15px;
 }
-/* line 21, ../../../../app/stylesheets/idq/_pagination.sass */
 .pagination a {
   font-weight: normal;
   text-decoration: none;
@@ -686,11 +535,9 @@ ol {
   margin: 0 2px;
   padding: 1px 5px;
 }
-/* line 30, ../../../../app/stylesheets/idq/_pagination.sass */
 .pagination a:hover, .pagination a:active {
   color: #ff9900;
 }
-/* line 34, ../../../../app/stylesheets/idq/_pagination.sass */
 .pagination span.current {
   font-weight: bold;
   color: white;
@@ -699,7 +546,6 @@ ol {
   margin: 0 2px;
   padding: 1px 5px;
 }
-/* line 43, ../../../../app/stylesheets/idq/_pagination.sass */
 .pagination span.disabled {
   color: #dddddd;
   border: 1px solid #eeeeee;
@@ -707,7 +553,6 @@ ol {
   padding: 1px 5px;
 }
 
-/* line 2, ../../../../app/stylesheets/idq/_profile.sass */
 #profile #profile-box {
   *zoom: 1;
   background: #f2f2f2;
@@ -716,16 +561,11 @@ ol {
   padding-top: 15px;
   border: 1px solid #cccccc;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #profile #profile-box:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 10, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .profile-details {
   float: left;
   display: inline-block;
@@ -733,18 +573,15 @@ ol {
   margin: 0;
   padding: 0;
 }
-/* line 16, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .profile-details .profile-name {
   font-size: 1.3em;
   font-weight: bold;
 }
-/* line 21, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .profile-details .profile-rank {
   padding-top: 20px;
   display: block;
   color: #329ac8;
 }
-/* line 27, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .profile-stats {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -761,95 +598,73 @@ ol {
   width: 145px;
   text-align: center;
 }
-/* line 39, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .profile-stats .stat-name {
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: bold;
 }
-/* line 45, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .profile-stats .stat-value {
   font-size: 3em;
   display: block;
 }
-/* line 50, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .recent-history {
   margin-top: 20px;
   border-collapse: collapse;
 }
-/* line 55, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .recent-history th {
   text-align: center;
 }
-/* line 58, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .recent-history th:first-child {
   text-align: left;
 }
-/* line 62, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .recent-history td {
   text-align: center;
   padding: 0 10px;
   padding-bottom: 5px;
 }
-/* line 67, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .recent-history td:first-child {
   text-align: left;
 }
-/* line 71, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .recent-history td.action-value {
   padding-top: 10px;
   font-size: 1.3em;
 }
-/* line 78, ../../../../app/stylesheets/idq/_profile.sass */
 #profile .recent-history tr.row-border {
   border-bottom: 1px solid #cccccc;
 }
-/* line 82, ../../../../app/stylesheets/idq/_profile.sass */
 #profile #level-up {
   *zoom: 1;
   margin-top: 20px;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #profile #level-up:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 87, ../../../../app/stylesheets/idq/_profile.sass */
 #profile #level-up h3 {
   padding: 0;
 }
-/* line 89, ../../../../app/stylesheets/idq/_profile.sass */
 #profile #level-up p {
   padding: 0;
   font-size: 1.3em;
   color: #329ac8;
 }
-/* line 95, ../../../../app/stylesheets/idq/_profile.sass */
 #profile #level-up img {
   float: right;
 }
 
-/* line 3, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar h5 {
   margin-top: 5px;
 }
-/* line 7, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar p {
   padding-top: 0;
 }
-/* line 11, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar .activity {
   width: 180px;
 }
-/* line 14, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar .feature-box {
   margin-top: 20px;
 }
-/* line 18, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar .feature-box h4 {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -868,7 +683,6 @@ ol {
   color: black;
   font-weight: bold;
 }
-/* line 26, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar .feature-box .box-content {
   -moz-border-radius-bottomleft: 10px;
   -webkit-border-bottom-left-radius: 10px;
@@ -886,39 +700,32 @@ ol {
   border: 1px solid #ff9900;
   padding: 10px;
 }
-/* line 32, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar .quiz-image {
   display: block;
   width: 270px;
   height: 145px;
   border: 1px solid #cccccc;
 }
-/* line 39, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #leaderboard p {
   margin: 0;
   padding: 0;
 }
-/* line 43, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #leaderboard table {
   padding-top: 10px;
 }
-/* line 47, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #leaderboard table th {
   text-transform: uppercase;
   font-size: 0.8em;
 }
-/* line 52, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #leaderboard table th,
 #sidebar #leaderboard table td {
   text-align: center;
   padding-bottom: 10px;
 }
-/* line 59, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #leaderboard table th:first-child,
 #sidebar #leaderboard table td:first-child {
   text-align: left;
 }
-/* line 64, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #my-challenges .action-links {
   padding: 0;
   padding-left: 50px;
@@ -928,24 +735,19 @@ ol {
   font-size: 0.9em;
   clear: both;
 }
-/* line 75, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #my-challenges .action-links a {
   padding: 0 10px;
 }
-/* line 80, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #new-quizzes p,
 #sidebar #recommended-quizzes p {
   padding: 0;
 }
-/* line 83, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #challenge-a-friend {
   padding-bottom: 10px;
 }
-/* line 87, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar #contact-us {
   padding-bottom: 10px;
 }
-/* line 91, ../../../../app/stylesheets/idq/_sidebar.sass */
 #sidebar .contact-box {
   margin: 10px 0;
   padding: 10px;
@@ -953,55 +755,45 @@ ol {
   border: 1px solid #cccccc;
 }
 
-/* line 3, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content h5 {
   margin-top: 5px;
 }
-/* line 7, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content .quiz-sub-box {
   margin-bottom: 10px;
   border: 1px solid #cccccc;
 }
-/* line 12, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content .quiz-sub-box h4 {
   background: #cccccc;
   color: black;
   padding: 5px 0;
   text-align: center;
 }
-/* line 19, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content .quiz-sub-box .started, #sub-content .quiz-sub-box .results {
   color: #d30004;
   background: #ffffcf !important;
 }
-/* line 23, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content .quiz-sub-box .results {
   margin: 0;
   padding: 10px;
   padding-top: 0;
   color: #666666;
 }
-/* line 30, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content .quiz-sub-box .results li {
   border-top: 1px solid #cccccc;
 }
-/* line 34, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content .quiz-sub-box .results li:first-child {
   border: 0;
   margin: 0;
 }
-/* line 38, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content .quiz-sub-box .results li p {
   margin: 0;
 }
-/* line 41, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content .quiz-sub-box .results .passed {
   font-size: 2em;
   color: #016800;
   text-align: center;
   margin: 0;
 }
-/* line 51, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content #time-left #start-quiz {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1016,7 +808,6 @@ ol {
   padding: 5px 10px;
   color: white;
 }
-/* line 60, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content #time-left p {
   background: #f2f2f2;
   padding: 5px 10px;
@@ -1025,56 +816,46 @@ ol {
   margin: 0;
   font-weight: bold;
 }
-/* line 70, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content #time-left p .time {
   font-size: 3em;
 }
-/* line 74, ../../../../app/stylesheets/idq/_sub_content.sass */
 #sub-content #time-left p .time-unit {
   font-size: 1.5em;
 }
 
-/* line 1, ../../../../app/stylesheets/idq/_tables.sass */
 table {
   width: 100%;
 }
-/* line 3, ../../../../app/stylesheets/idq/_tables.sass */
 table .heading {
   text-transform: uppercase;
   width: 100%;
   background: #cccccc;
   color: #333333;
 }
-/* line 9, ../../../../app/stylesheets/idq/_tables.sass */
 table th {
   font-weight: bold;
   padding: 10px;
   font-size: 0.8em;
 }
 
-/* line 15, ../../../../app/stylesheets/idq/_tables.sass */
 .pin-table {
   border-collapse: collapse;
   margin-bottom: 30px;
 }
-/* line 20, ../../../../app/stylesheets/idq/_tables.sass */
 .pin-table td {
   padding: 10px 0;
   border-bottom: 1px solid #cccccc;
 }
-/* line 24, ../../../../app/stylesheets/idq/_tables.sass */
 .pin-table img {
   vertical-align: middle;
   margin-right: 10px;
 }
 
-/* line 2, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .section-footer {
   text-transform: uppercase;
   font-size: 0.9em;
 }
 
-/* line 7, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .avatar {
   float: left;
   display: inline-block;
@@ -1082,7 +863,6 @@ table th {
   margin-bottom: 10px;
 }
 
-/* line 13, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .activity {
   float: left;
   display: inline-block;
@@ -1091,28 +871,23 @@ table th {
   width: 400px;
 }
 
-/* line 20, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .time-ago {
   font-size: 0.8em;
   color: #999999;
 }
 
-/* line 25, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .clear {
   clear: both;
 }
 
-/* line 28, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .centered {
   text-align: center;
 }
 
-/* line 32, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 35, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .button-link {
   text-transform: uppercase;
   -moz-border-radius: 3px;
@@ -1128,19 +903,16 @@ table th {
   padding: 3px 10px;
 }
 
-/* line 45, ../../../../app/stylesheets/idq/_utility_classes.sass */
 .padded-box {
   padding: 10px;
 }
 
-/* line 24, ../../../../app/stylesheets/idq/main.sass */
 body {
   background: #323232;
   font-family: Arial, sans-serif;
   font-size: 13px;
 }
 
-/* line 30, ../../../../app/stylesheets/idq/main.sass */
 #container {
   width: 980px;
   margin: 0 auto;
@@ -1148,58 +920,44 @@ body {
   padding: 0;
   padding-bottom: 10px;
 }
-/* line 37, ../../../../app/stylesheets/idq/main.sass */
 #container #main {
   *zoom: 1;
   background: url(/images/idq/body-bg.gif) repeat-y;
   margin-top: 10px;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #container #main:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 43, ../../../../app/stylesheets/idq/main.sass */
 #container #main #sub-content {
   float: left;
   display: inline-block;
   width: 170px;
   padding: 10px;
 }
-/* line 48, ../../../../app/stylesheets/idq/main.sass */
 #container #main #content {
   float: left;
   display: inline-block;
   width: 470px;
   padding: 10px;
 }
-/* line 53, ../../../../app/stylesheets/idq/main.sass */
 #container #main #sidebar {
   float: left;
   display: inline-block;
   width: 270px;
   padding: 10px;
 }
-/* line 58, ../../../../app/stylesheets/idq/main.sass */
 #container #main-left {
   *zoom: 1;
   background: url(/images/idq/body-bg-left.gif) repeat-y;
   margin-top: 10px;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #container #main-left:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 64, ../../../../app/stylesheets/idq/main.sass */
 #container #main-left #sub-content {
   float: left;
   display: inline-block;
@@ -1207,36 +965,28 @@ body {
   padding: 10px;
   border-right: 1px solid #cccccc;
 }
-/* line 71, ../../../../app/stylesheets/idq/main.sass */
 #container #main-left #content {
   float: left;
   display: inline-block;
   width: 750px;
   padding: 10px;
 }
-/* line 76, ../../../../app/stylesheets/idq/main.sass */
 #container #main-right {
   *zoom: 1;
   background: url(/images/idq/body-bg-right.gif) repeat-y;
   margin-top: 10px;
 }
-/* line 22, ../../../../../../.rvm/gems/ruby-1.8.7-p174@hamlicious/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #container #main-right:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 82, ../../../../app/stylesheets/idq/main.sass */
 #container #main-right #content {
   float: left;
   display: inline-block;
   width: 660px;
   padding: 10px;
 }
-/* line 87, ../../../../app/stylesheets/idq/main.sass */
 #container #main-right #sidebar {
   float: left;
   display: inline-block;
@@ -1244,23 +994,19 @@ body {
   padding: 10px;
 }
 
-/* line 92, ../../../../app/stylesheets/idq/main.sass */
 a {
   color: #003f92;
   text-decoration: none;
 }
-/* line 97, ../../../../app/stylesheets/idq/main.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 101, ../../../../app/stylesheets/idq/main.sass */
 p {
   margin: 10px 0;
   padding-top: 10px;
 }
 
-/* line 107, ../../../../app/stylesheets/idq/main.sass */
 h1, h2, h3, h4, h5, h6 {
   font-family: "MuseoSlab500", sans-serif;
   font-size: 2em;
@@ -1268,27 +1014,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #329ac8;
 }
 
-/* line 114, ../../../../app/stylesheets/idq/main.sass */
 h2 {
   font-size: 1.8em;
 }
 
-/* line 119, ../../../../app/stylesheets/idq/main.sass */
 h3 {
   font-size: 1.5em;
 }
 
-/* line 124, ../../../../app/stylesheets/idq/main.sass */
 h4 {
   font-size: 1.3em;
 }
 
-/* line 129, ../../../../app/stylesheets/idq/main.sass */
 h5 {
   font-size: 1.2em;
 }
 
-/* line 134, ../../../../app/stylesheets/idq/main.sass */
 h6 {
   font-size: 1.1em;
 }

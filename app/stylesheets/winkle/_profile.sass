@@ -1,0 +1,145 @@
+#item-header
+  +grid(15)
+  +alpha
+  +omega
+  +pie-clearfix
+
+  #item-header-avatar
+    +grid(4)
+    +alpha
+
+    img
+      +single-box-shadow
+
+  #item-header-content
+    +grid(11)
+    +omega
+
+    .user-nicename
+      font:
+        size: 15px
+        weight: bold
+
+    .activity
+      border: 1px solid $secondary-color
+      +border-radius(3px)
+      display: inline
+      background: #F2EAB5
+      padding: 3px 5px
+      color: #444
+      font:
+        size: 11px
+
+    #item-meta
+      padding:
+        top: 20px
+
+      #item-buttons
+        +pie-clearfix
+        margin:
+          top: 10px
+        .generic-button
+          border: 1px solid $main-color
+          +border-radius(3px)
+          display: block
+          float: left
+          padding: 5px
+            bottom: 3px
+          margin:
+            right: 10px
+          background: #efefef
+
+          &:hover
+            background: #fff
+
+          a
+            text-indent: 5px
+            display: block
+
+#item-nav
+  +grid(15)
+  +alpha
+  +omega
+  +clearfix
+  margin:
+    top: 20px
+
+  #object-nav
+    background: $light-main-background
+    +border-top-radius(5px)
+
+    ul
+      +pie-clearfix
+      margin: 0
+    li
+      padding: 5px
+      margin: 0 5px
+      float: left
+      list-style-type: none
+
+      &.current
+        a
+          background: #fff
+          color: $main-color
+
+      &:hover
+        a
+          background: #efefef
+          color: $main-color
+
+      a
+        color: #fff
+        padding: 3px 10px
+        +border-radius(5px)
+
+
+#item-body
+  +grid(15)
+  +alpha
+  +omega
+
+#subnav
+  clear: both
+  ul
+    background: #efefef
+    +clearfix
+    +border-bottom-radius(5px)
+    padding: 5px 0
+
+    li
+      padding: 0 5px
+      margin: 0 5px
+      float: left
+      list-style-type: none
+      +pie-clearfix
+
+      &.current
+        a
+          +border-radius(5px)
+          background: $light-main-background
+          padding: 3px 10px
+          color: #fff
+
+      &.last
+        float: right
+      label
+        margin: 0
+          right: 10px
+        float: left
+
+      &.feed
+        a
+          display: inline
+          overflow: hidden
+          height: 18px
+          padding-left: 23px
+          padding-bottom: 0px
+          background-repeat: no-repeat
+          background-image: url( /images/winkle/silkicons.png)
+          background-position: 0px -13522px
+          margin:
+            left: 10px
+
+      select
+        float: left
+

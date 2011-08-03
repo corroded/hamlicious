@@ -1,328 +1,84 @@
-body {
-  background: url(../../images/biofuelshub/body-bg.gif) repeat-x;
-  font-family: Georgia, serif;
-  font-size: 12px;
-  margin: auto; }
+/*
+Syntax error: Invalid CSS after "": expected expression (e.g. 1px, bold), was "= !main_color"
+        on line 43 of /Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/biofuelshub/main.sass
 
-ul {
-  list-style-type: none; }
+38:   :padding 0 5px
+39:   :text
+40:     :align center
+41:     :transform uppercase
+42:       
+43: .clear
+44:   :clear both
+45:   
+46: form
+47:   :font
+48:     :family Arial, sans-serif
 
-h2 {
-  color: #a4b746;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-input {
-  border: 1px solid;
-  border-color: #a4b746;
-  font-family: Arial, sans-serif;
-  padding: 0 5px;
-  background: transparent; }
-
-.submit {
-  padding: 0 5px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.clear {
-  clear: both; }
-
-form {
-  font-family: Arial, sans-serif; }
-
-a {
-  text-decoration: none;
-  color: #996600; }
-  a:hover {
-    text-decoration: underline; }
-
-#container {
-  width: 800px;
-  margin: auto; }
-  #container h1#header {
-    background: url(../../images/biofuelshub/logo.jpg) no-repeat;
-    width: 780px;
-    margin: 10px;
-    height: 170px;
-    border: 1px solid;
-    border-color: #a4b746;
-    font-size: 40px;
-    text-indent: -1000px; }
-    #container h1#header a {
-      display: block;
-      height: 170px;
-      width: 780px;
-      overflow: hidden; }
-  #container #menu {
-    background: url(../../images/biofuelshub/news-bg.jpg);
-    width: 770px;
-    border: 1px solid;
-    border-color: #a4b746;
-    margin-bottom: 0;
-    margin-right: 10px;
-    margin-left: 10px;
-    clear: both;
-    height: 20px;
-    padding: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 15px; }
-    #container #menu ul li {
-      float: left;
-      padding: 2px 12px; }
-      #container #menu ul li a {
-        display: block;
-        font-weight: bold; }
-        #container #menu ul li a:hover {
-          text-decoration: none;
-          border-bottom: 3px solid;
-          border-color: #996600; }
-  #container #searchbox {
-    float: right; }
-    #container #searchbox .textfield {
-      font-size: 11px;
-      width: 100px;
-      margin-top: -10px;
-      height: 15px; }
-    #container #searchbox .submit {
-      font-size: 11px;
-      font-weight: bold;
-      margin-top: 0;
-      background: #a4b746;
-      color: #eef1e0; }
-  #container #main {
-    margin-top: 15px; }
-    #container #main #sidebar {
-      display: inline;
-      float: left;
-      position: relatve;
-      width: 140px;
-      margin: 0 10px; }
-      #container #main #sidebar #login-details,
-      #container #main #sidebar #logged-in {
-        display: block;
-        padding: 10px 0;
-        width: 140px;
-        background: url(../../images/biofuelshub/news-bg.jpg) no-repeat;
-        border: 1px solid;
-        border-color: #a4b746; }
-        #container #main #sidebar #login-details h4,
-        #container #main #sidebar #logged-in h4 {
-          margin: 5px;
-          margin-top: 0;
-          font-size: 14px;
-          font-weight: bold;
-          color: #a4b746;
-          border-bottom: 1px solid;
-          border-color: #a4b746; }
-        #container #main #sidebar #login-details input,
-        #container #main #sidebar #logged-in input {
-          clear: both;
-          width: 120px;
-          margin: 3px 5px;
-          height: 15px; }
-        #container #main #sidebar #login-details .submit,
-        #container #main #sidebar #logged-in .submit {
-          height: 25px;
-          width: 132px;
-          padding: 3px 5px;
-          font-size: 13px;
-          font-weight: bold;
-          color: #eef1e0;
-          background: #a4b746; }
-        #container #main #sidebar #login-details .signup,
-        #container #main #sidebar #logged-in .signup {
-          font-family: Arial, serif;
-          font-weight: bold;
-          margin-left: 5px;
-          margin-top: 3px;
-          padding: 0; }
-        #container #main #sidebar #login-details ul li,
-        #container #main #sidebar #logged-in ul li {
-          border: 1px solid;
-          border-color: #a4b746;
-          margin: 5px; }
-          #container #main #sidebar #login-details ul li a,
-          #container #main #sidebar #logged-in ul li a {
-            padding: 5px;
-            display: block;
-            color: #a4b746;
-            text-align: center; }
-            #container #main #sidebar #login-details ul li a:hover,
-            #container #main #sidebar #logged-in ul li a:hover {
-              text-decoration: none;
-              background: #a4b746;
-              color: #eef1e0; }
-      #container #main #sidebar #login-details {
-        display: none; }
-      #container #main #sidebar #feed-link {
-        width: 100%;
-        margin-top: 10px;
-        font-size: 15px;
-        font-family: Arial, serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center; }
-        #container #main #sidebar #feed-link a {
-          color: #FA9D39; }
-        #container #main #sidebar #feed-link img {
-          width: 12px;
-          height: 12px;
-          border: 0; }
-      #container #main #sidebar #media-partners,
-      #container #main #sidebar #sister-sites {
-        width: 100%;
-        background: url(../../images/biofuelshub/news-bg.jpg) no-repeat;
-        border: 1px solid;
-        border-color: #a4b746;
-        margin-top: 10px; }
-        #container #main #sidebar #media-partners h3,
-        #container #main #sidebar #sister-sites h3 {
-          font-size: 18px;
-          font-weight: bold;
-          color: #a4b746;
-          text-align: center; }
-        #container #main #sidebar #media-partners ul li,
-        #container #main #sidebar #sister-sites ul li {
-          clear: both;
-          margin: 10px auto;
-          width: 120px;
-          height: 60px;
-          background: #a4b746; }
-      #container #main #sidebar #skyscraper-ad {
-        width: 100%; }
-        #container #main #sidebar #skyscraper-ad img {
-          display: block;
-          clear: both;
-          margin: 10px;
-          width: 120px;
-          height: 600px;
-          background: #a4b746; }
-    #container #main #content {
-      float: left;
-      width: 630px; }
-      #container #main #content #top-stories h2 {
-        letter-spacing: -1px; }
-      #container #main #content #top-stories ul {
-        background: url(../../images/biofuelshub/news-bg.jpg) no-repeat;
-        height: 200px;
-        padding: 0 10px;
-        border: 1px solid;
-        border-color: #a4b746; }
-        #container #main #content #top-stories ul li {
-          display: inline;
-          float: left;
-          margin: 10px;
-          width: 130px; }
-          #container #main #content #top-stories ul li .top-image {
-            background: #a4b746;
-            display: block; }
-            #container #main #content #top-stories ul li .top-image img {
-              width: 130px;
-              height: 100px; }
-          #container #main #content #top-stories ul li .top-headline {
-            display: block;
-            text-transform: uppercase;
-            text-align: center; }
-          #container #main #content #top-stories ul li a {
-            color: #996600;
-            font-size: 16px;
-            font-weight: bold; }
-      #container #main #content #latest-news {
-        margin: 10px 0; }
-        #container #main #content #latest-news h2 {
-          letter-spacing: -1px; }
-        #container #main #content #latest-news .banner-ad {
-          display: inline;
-          float: left;
-          width: 468px;
-          height: 90px;
-          background: #a4b746;
-          margin-bottom: 10px;
-          margin-left: 80px; }
-        #container #main #content #latest-news .news-item {
-          width: 610px;
-          background: url(../../images/biofuelshub/news-bg.jpg) no-repeat;
-          float: left;
-          margin-bottom: 10px;
-          border: 1px solid;
-          border-color: #a4b746;
-          padding-top: 10px;
-          padding-bottom: 20px;
-          padding-left: 10px;
-          padding-right: 10px; }
-          #container #main #content #latest-news .news-item h3.news-title {
-            color: #996600;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase; }
-          #container #main #content #latest-news .news-item .news-details {
-            float: left;
-            width: 130px; }
-            #container #main #content #latest-news .news-item .news-details .news-image {
-              background: #a4b746;
-              width: 130px;
-              height: 100px;
-              margin: 5px 0; }
-              #container #main #content #latest-news .news-item .news-details .news-image img {
-                width: 130px;
-                height: 100px; }
-            #container #main #content #latest-news .news-item .news-details .full-date {
-              width: 130px;
-              color: #a4b746;
-              margin: 5px 0;
-              font-style: italic;
-              font-size: 12px;
-              font-weight: 100; }
-              #container #main #content #latest-news .news-item .news-details .full-date .date {
-                font-size: 20px; }
-            #container #main #content #latest-news .news-item .news-details .news-tags {
-              color: #996600;
-              margin: 5px 0; }
-              #container #main #content #latest-news .news-item .news-details .news-tags ul {
-                display: inline;
-                width: 130px; }
-                #container #main #content #latest-news .news-item .news-details .news-tags ul li {
-                  display: inline; }
-            #container #main #content #latest-news .news-item .news-details .news-comments {
-              margin: 5px 0; }
-            #container #main #content #latest-news .news-item .news-details .news-views {
-              margin: 5px 0;
-              color: #a4b746;
-              font-style: italic; }
-          #container #main #content #latest-news .news-item .news-content {
-            float: left;
-            width: 450px;
-            padding: 0 10px; }
-            #container #main #content #latest-news .news-item .news-content p {
-              font-size: 14px;
-              line-height: 20px;
-              margin-bottom: 10px; }
-            #container #main #content #latest-news .news-item .news-content .read-more {
-              font-weight: bold; }
-        #container #main #content #latest-news ul#pagination {
-          float: left;
-          width: 100%;
-          text-align: center;
-          display: block; }
-          #container #main #content #latest-news ul#pagination li {
-            float: left;
-            color: #a4b746; }
-            #container #main #content #latest-news ul#pagination li a {
-              display: block;
-              margin-right: 10px;
-              margin-top: 0;
-              margin-bottom: 10px;
-              border: 1px solid;
-              border-color: #a4b746;
-              padding: 2px 5px;
-              color: #a4b746; }
-              #container #main #content #latest-news ul#pagination li a:hover {
-                color: #eef1e0;
-                background: #a4b746;
-                text-decoration: none; }
-  #container #footer {
-    text-align: center; }
-    #container #footer p {
-      text-align: center;
-      color: #a4b746; }
+Backtrace:
+/Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/biofuelshub/main.sass:43
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/scss/parser.rb:898:in `expected'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/script/lexer.rb:193:in `expected!'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/script/parser.rb:443:in `assert_expr'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/script/parser.rb:49:in `parse'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/script/parser.rb:140:in `parse'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/script.rb:32:in `parse'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:808:in `parse_script'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:584:in `parse_property'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:535:in `parse_line'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:447:in `build_tree'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:466:in `block in append_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:465:in `each'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:465:in `append_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:456:in `block in build_tree'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:449:in `each'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:449:in `build_tree'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:466:in `block in append_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:465:in `each'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:465:in `append_children'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:322:in `_to_tree'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:291:in `_render'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:239:in `block in render'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/engine.rb:239:in `render'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:175:in `each'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:173:in `each'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/sass-3.1.4/lib/sass/plugin/rack.rb:51:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/activesupport-3.0.4/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/railties-3.0.4/lib/rails/rack/logger.rb:13:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/activesupport-3.0.4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/actionpack-3.0.4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/railties-3.0.4/lib/rails/application.rb:168:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/railties-3.0.4/lib/rails/application.rb:77:in `method_missing'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/railties-3.0.4/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/eumir/.rvm/gems/ruby-1.9.2-p180@hamlicious/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/Users/eumir/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/eumir/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/eumir/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"\": expected expression (e.g. 1px, bold), was \"= !main_color\"\A         on line 43 of /Users/eumir/rails_apps/hamlicious-git/public/stylesheets/sass/biofuelshub/main.sass\A \A 38:   :padding 0 5px\A 39:   :text\A 40:     :align center\A 41:     :transform uppercase\A 42:       \A 43: .clear\A 44:   :clear both\A 45:   \A 46: form\A 47:   :font\A 48:     :family Arial, sans-serif"; }
